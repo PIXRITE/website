@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  @include link-colors($blue, $asher, $asher);
+}
+
+p a:hover {
+  text-decoration: underline;
+}

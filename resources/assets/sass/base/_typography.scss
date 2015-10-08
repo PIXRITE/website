@@ -1,0 +1,53 @@
+body {
+  @include font-size;
+  font-family: $f_sans;
+  font-weight: 400;
+  line-height: 1;
+  color: $text;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+  color: $heading;
+}
+h1 {
+  @include font-size(40);
+}
+h2 {
+  @include font-size(36);
+}
+h3 {
+  @include font-size(30);
+}
+h4 {
+  @include font-size(24);
+}
+h5 {
+  @include font-size(20);
+}
+h6 {
+  @include font-size(18);
+}
+
+
+p {
+  margin: 0;
+  @include font-size(16);
+  line-height: 1.5;
+}
+
+small {
+  font-size: 80%;
+}
+
+.text_center {
+  text-align: center;
+}
+
+ul {
+  margin: 0 0 0 2em;
+  padding: 0;
+}

@@ -1,0 +1,124 @@
+// #Services
+// ---------------------------------------
+.services_list {
+    position: absolute;
+    right: 0;
+    bottom: $h-pageBar + 40px;
+    left: 0;
+    margin: 0;
+    padding: 0 5%;
+    list-style: none;
+}
+
+.services_list--item {
+    float: left;
+    height: 180px;
+    width: 22%;
+    
+    
+    &.first {
+        margin-right: 4%;
+    }
+    &.second {
+        margin-right: 4%;
+    }
+    &.last {
+        margin-left: 4%;
+    }
+}
+
+.services_list--link {
+    display: block;
+    height: 100%;
+    padding: 10px 16px;
+    font-size: 24px;
+    border-top-left-radius: 18px;
+    line-height: 1.25;
+    
+    span {
+        display: block;
+    }
+    
+    &:link,
+    &:visited {
+        color: $white;
+    }
+    
+    &.brand {
+        background-color: $yellow;
+    }
+    &.marketing {
+        background-color: $purple;
+    }
+    &.web {
+        background-color: $green;
+    }
+    &.ux {
+        background-color: $red;
+    }
+}
+
+
+// #Quotes
+// ---------------------------------------
+.home_quotes {
+    position: relative;
+    padding: 40px 5%;
+}
+
+.home_quotes--prev,
+.home_quotes--next {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    
+    i {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -24px;
+        font-size: 48px;
+        color: $blue;
+        text-align: center;
+    }
+}
+.home_quotes--prev {
+    left: 5%;
+}
+.home_quotes--next {
+    right: 5%;
+}
+
+.home_quotes--item {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home_quotes--text {
+    
+}
+.home_quotes--author {
+    font-size: 14px;
+    text-align: right;
+}
+.home_quotes--company {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+// #Customers
+// ---------------------------------------
+.home_customers {
+    @include clearfix;
+    margin: 0;
+    padding: 10px 5%;
+    background-color: $pearl;
+    list-style: none;    
+}
+
+.home_customers--item {
+    float: left;
+    width: 8.3%;
+    text-align: center;
+}

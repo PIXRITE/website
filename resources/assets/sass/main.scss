@@ -1,0 +1,40 @@
+/*
+Theme Name: novelize
+Author: Josh Evensen
+Author URI: http://www.joshevensen.com
+Text Domain: novelize
+*/
+
+// 1. Vendors
+@import
+  'vendor/normalize',
+  'vendor/magnific-popup';
+
+// 2. Configuration and helpers
+@import
+  'utils/variables',
+  'utils/color',
+  'utils/mixins';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/buttons',
+  'base/forms',
+  'base/links',
+  'base/media',
+  'base/typography';
+
+// 4. Layout-related sections
+@import
+  'layout/structure',
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/page-top';
+
+// 6. Page
+@import
+  'pages/index';

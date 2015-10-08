@@ -1,0 +1,99 @@
+.site_header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: $w-logo + 10px;
+}
+
+
+// #Logo
+// ---------------------------------------
+.site_logo {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    width: 10%;
+    margin-left: -5%;
+    text-align: center;
+}
+
+.site_logo--icon {
+    position: relative;
+    display: inline-block;
+    height: $w-logo;
+    width: $w-logo;
+    margin-left: -4px; // inline-block gap fix
+    background-color: $blue;
+    
+    &:hover {
+
+        .site_logo--icon--square {
+            border-radius: 60%;
+        }
+
+        .site_logo--icon--circle {
+            border-radius: 0;
+        }
+    }
+}
+
+.site_logo--icon--square,
+.site_logo--icon--circle {
+    display: block;
+    position: absolute;
+    left: 12%;
+    height: 23%;
+    width: 23%;
+    background-color: $jet;
+    transition: all $t-default;
+}
+
+.site_logo--icon--square {
+    top: 33%;
+}
+
+.site_logo--icon--circle {
+    top: 66%;
+    border-radius: 60%;
+}
+
+.site_logo--title {
+    font-size: 24px;
+    color: $blue;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+
+// #Nav
+// ---------------------------------------
+.site_nav {
+}
+
+.site_nav--menu {
+    position: absolute;
+    bottom: 0;
+    width: 45%;
+    margin: 0;
+    list-style: none;
+    border-bottom: 1px solid $blue;
+    
+    &.first {
+        left: 0;
+        padding-left: 5%;
+    }
+    &.second {
+        right: 0;
+        padding-right: 5%;
+        text-align: right;
+    }
+}
+
+.site_nav--item {
+    display: inline-block;
+    padding: 0 8px 8px;
+    font-size: 18px;
+    color: $white;
+}

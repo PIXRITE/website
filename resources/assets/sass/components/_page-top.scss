@@ -1,0 +1,72 @@
+.page_top {
+    position: relative;
+    padding-top: 90px;
+    background-color: transparentize($darkblueOverlay, 0.1);
+
+    &.index {
+        height: 85%;
+    }
+}
+
+.page_top--image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.page_top--heading {
+    margin-top: 12%;
+    color: $white;
+    text-align: center;
+}
+
+
+// #Bar
+// ---------------------------------------
+.page_top--bar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: $h-pageBar;
+    padding: 0 5%;
+    background-color: $blue;
+}
+
+.page_top--social {
+    float: left;
+    margin: 0;
+    list-style: none;
+}
+.page_top--social--item {
+    display: inline-block;
+    width: 40px;
+    margin-right: 4px;
+    font-size: 32px;
+    color: $white;
+    line-height: $h-pageBar;
+}
+
+.page_top--cta {
+    float: right;
+    display: inline-block;
+    height: 30px;
+    margin: (($h-pageBar - 30px) / 2) 0;
+    padding: 0 12px;
+    background-color: $white;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    
+    &:link,
+    &:visited {
+        color: $blue;
+    }
+}

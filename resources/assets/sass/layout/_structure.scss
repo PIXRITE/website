@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+	min-width: 360px;
+}
+
+.row_content {
+	@include clearfix();
+	width: 90%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
