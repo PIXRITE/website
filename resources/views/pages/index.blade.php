@@ -12,16 +12,16 @@
     <!-- Services -->
     <ul class="services_list">
         <li class="services_list--item first">
-            <a href="/" class="services_list--link brand">BRAND</a>
+            <a href="{{ route('brand-page') }}" class="services_list--link brand">BRAND</a>
         </li>
         <li class="services_list--item second">
-            <a href="/" class="services_list--link marketing">DIGITAL <span>MARKETING</span></a>
+            <a href="{{ route('marketing-page') }}" class="services_list--link marketing">DIGITAL <span>MARKETING</span></a>
         </li>
         <li class="services_list--item">
-            <a href="/" class="services_list--link web">WEB</a>
+            <a href="{{ route('web-page') }}" class="services_list--link web">WEB</a>
         </li>
         <li class="services_list--item last">
-            <a href="/" class="services_list--link ux">UI/UX</a>
+            <a href="{{ route('ux-page') }}" class="services_list--link ux">UI/UX</a>
         </li>
     </ul>
     
@@ -45,7 +45,11 @@
         <div class="home_quotes--prev"><i class="fa fa-angle-left"></i></div>
         <div class="home_quotes--next"><i class="fa fa-angle-right"></i></div>
     </div>
-    
+</div>
+
+
+<!-- Page Bar -->
+<div class="page_bar">  
     <!-- Customers -->
     <ul class="home_customers">
         <li class="home_customers--item"><img src="img/customer_logos/american_express_sm.png" alt=""></li>

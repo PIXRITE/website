@@ -7,10 +7,30 @@ body {
 	min-width: 360px;
 }
 
-.row_content {
+
+// #PageBody
+// ---------------------------------------
+.page_body {
 	@include clearfix();
 	width: 90%;
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+    padding: 20px 0;
+}
+
+.page_body--right {
+    float: right;
+    width: 48%;
+}
+
+.page_body--left {
+    float: left;
+    width: 48%;
+}
+
+
+// #PageBar
+// ---------------------------------------
+.page_bar {
 }

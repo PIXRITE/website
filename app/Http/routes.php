@@ -12,51 +12,51 @@
 */
 
 Route::get( '/', [
-    'as' => 'index_page',
+    'as' => 'index-page',
     'uses' => 'PagesController@index'
 ]);
 
 Route::get( '/work', [
-    'as' => 'work_page',
+    'as' => 'work-page',
     'uses' => 'PagesController@work'
 ]);
 
 Route::get( '/services', [
-    'as' => 'services_page',
+    'as' => 'services-page',
     'uses' => 'PagesController@services'
 ]);
 
 Route::get( '/services/brand', [
-    'as' => 'brand_page',
+    'as' => 'brand-page',
     'uses' => 'PagesController@brand'
 ]);
 
 Route::get( '/services/digital-marketing', [
-    'as' => 'marketing_page',
+    'as' => 'marketing-page',
     'uses' => 'PagesController@marketing'
 ]);
 
 Route::get( '/services/web', [
-    'as' => 'web_page',
+    'as' => 'web-page',
     'uses' => 'PagesController@web'
 ]);
 
 Route::get( '/services/ui-ux', [
-    'as' => 'ui_page',
-    'uses' => 'PagesController@ui'
+    'as' => 'ux-page',
+    'uses' => 'PagesController@ux'
 ]);
 
 Route::get( '/about', [
-    'as' => 'about_page',
+    'as' => 'about-page',
     'uses' => 'PagesController@about'
 ]);
 
 Route::get( '/contact', [
-    'as' => 'contact_page',
+    'as' => 'contact-page',
     'uses' => 'PagesController@contact'
 ]);
 
 Route::get( '/hire', [
-    'as' => 'hire_page',
+    'as' => 'hire-page',
     'uses' => 'PagesController@hire'
 ]);

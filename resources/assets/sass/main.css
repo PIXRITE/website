@@ -901,7 +901,7 @@ select {
   width: 100%;
   margin-bottom: 14px;
   padding: 6px;
-  border: 1px solid #c7c7c9; }
+  border: 1px solid #C7C7C9; }
 
 /* line 33, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 textarea {
@@ -922,12 +922,12 @@ button[type="submit"] {
   border-radius: 2px;
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff; }
+  color: #FFFFFF; }
   /* line 54, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   button[type="submit"]:focus,
   button[type="submit"]:hover {
     background-color: #373537;
-    color: #ffffff; }
+    color: #FFFFFF; }
 
 /* line 60, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .error_message {
@@ -962,7 +962,7 @@ form {
   padding: 30px 40px 20px;
   background-color: #00B6FF;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3);
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 /* line 96, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_modal--close {
@@ -977,7 +977,7 @@ form {
 /* line 107, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_modal--heading {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #FFFFFF;
   text-align: center; }
 
 /* line 113, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
@@ -1027,9 +1027,9 @@ img {
     right: 0;
     bottom: 0;
     width: 24px;
-    background-color: #c7c7c9;
+    background-color: #C7C7C9;
     font-size: 18px;
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     line-height: 24px; }
   /* line 29, C:/wamp/www/pixrite/resources/assets/sass/base/_media.scss */
@@ -1110,18 +1110,29 @@ body {
 body {
   min-width: 360px; }
 
-/* line 10, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
-.row_content {
+/* line 13, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
+.page_body {
   content: "";
   display: table;
   width: 100%;
   width: 90%;
   max-width: 1200px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding: 20px 0; }
   /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
-  .row_content:after {
+  .page_body:after {
     clear: both; }
+
+/* line 22, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
+.page_body--right {
+  float: right;
+  width: 48%; }
+
+/* line 27, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
+.page_body--left {
+  float: left;
+  width: 48%; }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_header {
@@ -1206,7 +1217,7 @@ body {
   display: inline-block;
   padding: 0 8px 8px;
   font-size: 18px;
-  color: #ffffff; }
+  color: #FFFFFF; }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer {
@@ -1228,8 +1239,11 @@ body {
   /* line 6, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
   .page_top.index {
     height: 85%; }
+    /* line 9, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+    .page_top.index .page_top--heading {
+      margin-top: 7%; }
 
-/* line 11, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 15, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--image {
   position: absolute;
   top: 0;
@@ -1241,13 +1255,13 @@ body {
   background-size: cover;
   background-position: center center; }
 
-/* line 23, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 27, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--heading {
-  margin-top: 12%;
-  color: #ffffff;
+  padding: 60px 0 108px;
+  color: #FFFFFF;
   text-align: center; }
 
-/* line 32, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 36, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--bar {
   position: absolute;
   right: 0;
@@ -1257,34 +1271,34 @@ body {
   padding: 0 5%;
   background-color: #00B6FF; }
 
-/* line 42, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 46, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--social {
   float: left;
   margin: 0;
   list-style: none; }
 
-/* line 47, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 51, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--social--item {
   display: inline-block;
   width: 40px;
   margin-right: 4px;
   font-size: 32px;
-  color: #ffffff;
+  color: #FFFFFF;
   line-height: 48px; }
 
-/* line 56, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+/* line 60, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
 .page_top--cta {
   float: right;
   display: inline-block;
   height: 30px;
   margin: 9px 0;
   padding: 0 12px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border-radius: 4px;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px; }
-  /* line 69, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
+  /* line 73, C:/wamp/www/pixrite/resources/assets/sass/components/_page-top.scss */
   .page_top--cta:link,
   .page_top--cta:visited {
     color: #00B6FF; }
@@ -1328,7 +1342,7 @@ body {
   /* line 43, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_list--link:link,
   .services_list--link:visited {
-    color: #ffffff; }
+    color: #FFFFFF; }
   /* line 47, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_list--link.brand {
     background-color: #D9B346; }
@@ -1394,7 +1408,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 10px 5%;
-  background-color: #e2e3e4;
+  background-color: #E2E3E4;
   list-style: none; }
   /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
   .home_customers:after {

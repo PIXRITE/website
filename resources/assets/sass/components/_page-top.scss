@@ -5,6 +5,10 @@
 
     &.index {
         height: 85%;
+        
+        .page_top--heading {
+            margin-top: 7%;
+        }
     }
 }
 
@@ -21,7 +25,7 @@
 }
 
 .page_top--heading {
-    margin-top: 12%;
+    padding: 60px 0 (60px + $h-pageBar);
     color: $white;
     text-align: center;
 }

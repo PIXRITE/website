@@ -15,9 +15,9 @@
 
 <!-- Page Body -->
 <div class="page_body">
-    <div class="page_bdoy--left"></div>
+    <div class="page_body--left">Test Content</div>
     
-    <div class="page_body--right"></div>    
+    <div class="page_body--right">Test Content</div>    
 </div>
 
 @endsection

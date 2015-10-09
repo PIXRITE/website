@@ -69,13 +69,13 @@ class PagesController extends Controller
     }
     
     /**
-     * Display the ui page.
+     * Display the ux page.
      *
      * @return view
      */
-    public function ui()
+    public function ux()
     {
-		return view('pages.ui');
+		return view('pages.ux');
     }
     
     /**

@@ -11,15 +11,15 @@
     
     <nav class="site_nav">
        <ul class="site_nav--menu first">
-           <li class="site_nav--item">HOME</li>
-           <li class="site_nav--item">WORK</li>
-           <li class="site_nav--item">SERVICES</li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('index-page') }}">HOME</a></li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('work-page') }}">WORK</a></li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('services-page') }}">SERVICES</a></li>
        </ul>
         
        <ul class="site_nav--menu second">
-           <li class="site_nav--item">ABOUT</li>
-           <li class="site_nav--item">CONTACT</li>
-           <li class="site_nav--item">HIRE</li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('about-page') }}">ABOUT</a></li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('contact-page') }}">CONTACT</a></li>
+           <li class="site_nav--item"><a class="site_nav--link" href="{{ route('hire-page') }}">HIRE</a></li>
        </ul>
     </nav>
 </header>
