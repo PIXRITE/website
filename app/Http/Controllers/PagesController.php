@@ -39,6 +39,46 @@ class PagesController extends Controller
     }
     
     /**
+     * Display the brand page.
+     *
+     * @return view
+     */
+    public function brand()
+    {
+		return view('pages.brand');
+    }
+    
+    /**
+     * Display the marketing page.
+     *
+     * @return view
+     */
+    public function marketing()
+    {
+		return view('pages.marketing');
+    }
+    
+    /**
+     * Display the web page.
+     *
+     * @return view
+     */
+    public function web()
+    {
+		return view('pages.web');
+    }
+    
+    /**
+     * Display the ui page.
+     *
+     * @return view
+     */
+    public function ui()
+    {
+		return view('pages.ui');
+    }
+    
+    /**
      * Display the about page.
      *
      * @return view

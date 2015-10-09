@@ -26,6 +26,26 @@ Route::get( '/services', [
     'uses' => 'PagesController@services'
 ]);
 
+Route::get( '/services/brand', [
+    'as' => 'brand_page',
+    'uses' => 'PagesController@brand'
+]);
+
+Route::get( '/services/digital-marketing', [
+    'as' => 'marketing_page',
+    'uses' => 'PagesController@marketing'
+]);
+
+Route::get( '/services/web', [
+    'as' => 'web_page',
+    'uses' => 'PagesController@web'
+]);
+
+Route::get( '/services/ui-ux', [
+    'as' => 'ui_page',
+    'uses' => 'PagesController@ui'
+]);
+
 Route::get( '/about', [
     'as' => 'about_page',
     'uses' => 'PagesController@about'
