@@ -1,4 +1,5 @@
 @extends('pages')
+@section('page_tag', 'home')
 
 @section('content')
 	

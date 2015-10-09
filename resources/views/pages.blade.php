@@ -22,7 +22,7 @@
 	@yield('head_script')
 </head>
 
-<body class="@yield('body_class')">
+<body id="@yield('page_tag')">
 	@yield('content')
 
     <!-- Footer -->

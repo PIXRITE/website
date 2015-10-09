@@ -1,4 +1,5 @@
 @extends('pages')
+@section('page_tag', 'hire')
 
 @section('content')
 	
@@ -14,7 +15,9 @@
 
 <!-- Page Body -->
 <div class="page_body">
-
+    <div class="page_bdoy--left"></div>
+    
+    <div class="page_body--right"></div> 
 </div>
 
 @endsection
