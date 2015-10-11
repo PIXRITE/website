@@ -19,6 +19,8 @@
     "layout/_footer.scss",
     "components/_page-top.scss",
     "pages/_index.scss",
+    "pages/_services.scss",
+    "pages/_work.scss",
     "_quickfix.scss"
   ],
   "sourcesContent": [],

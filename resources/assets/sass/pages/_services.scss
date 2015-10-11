@@ -1,0 +1,66 @@
+.quote {
+    float:right;
+    margin: 10px;
+    margin-top: 0;
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    width:200px;
+    height:auto;
+}
+
+.quote--text {
+    @include font-size(12);
+    font-family: Georgia, "Times New Roman", Times, serif; 
+    line-height: 14pt;
+    color:orange;
+}
+.quote--credit {
+    float: right; 
+    font-size: 10px; 
+    margin-top: 10px;
+    color:grey;
+}
+    
+.allservices {
+    font-size:8pt;
+    clear:both;
+    h5 {
+        font-size: 10pt;
+        font-weight: 600; 
+    }
+   
+}
+
+.lefthalf {   
+    float: left; 
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    padding-right: 5px; 
+}
+
+.caption {
+    line-height: 1.0em; 
+    font-size: 10px;
+    padding-top:5px;
+}
+
+.servicelist {
+    h3 {
+        clear: both;
+        font-size: 2em;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+.orange {
+    color: orange;
+}
+
+.floater {
+    float:left;
+    width:33%;
+}
