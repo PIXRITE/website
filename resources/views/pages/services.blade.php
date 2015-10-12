@@ -16,27 +16,28 @@
 
 <!-- Page Body -->
 <div class="page_body">
-    <div class="page_body--left">
-        
-        <h2>We are Web done right.</h2>
-            <aside class="quote">
-                <p class="quote--text">"We're honored with all of the testimonials and referrals you continue to send our way. For nearly 15 years, you have been the reason PIXRITE keeps its doors open.<br> Thank you for keeping it real!"
-                </p>
-                <span class="quote--credit">Jared Rowe, PIXRITE CEO & Creative</span>    
-            </aside>
-        <p >Truth is, not all Web is created equal. Your brother-in-law's best friend from high school can probably set up a site for you overnight. There are companies out there offering Web design for next to nothing—or even free. If you're "lucky," they'll even put a shopping cart together for you—and only charge you a monthly subscription.</p>
+    <div class="section_inner">
+        <div class="page_body--left">
 
-        <p>But today's sophisticated online customers demand more ease of use, more engaging content, more innovation than most high school buds can produce. You require detailed analytics to monitor conversion rates, track search trends, manage brand equity and more.</p>
+            <h2>We are Web done right.</h2>
+                <aside class="quote">
+                    <p class="quote--text">"We're honored with all of the testimonials and referrals you continue to send our way. For nearly 15 years, you have been the reason PIXRITE keeps its doors open.<br> Thank you for keeping it real!"
+                    </p>
+                    <span class="quote--credit">Jared Rowe, PIXRITE CEO & Creative</span>    
+                </aside>
+            <p >Truth is, not all Web is created equal. Your brother-in-law's best friend from high school can probably set up a site for you overnight. There are companies out there offering Web design for next to nothing—or even free. If you're "lucky," they'll even put a shopping cart together for you—and only charge you a monthly subscription.</p>
 
-        <p>PIXRITE provides complete Web and interface design, brand building and marketing analysis, search optimization, PPC expert services, and ecommerce that works right and stays fresh.</p>
-        <br><br>
-        <h2>Your satisfaction guaranteed is our promise to you.</h2>
-            <p>Over the last several years, we've learned that nothing pays like making your customers happy. That's why we're giving you our word and commitment, "You'll be taken care of at PIXRITE for however long you decide to stay with us."</p>
-            <p>Should the occasion arise when you have any concerns or reservations about the services we provide, please feel free to let us know immediately and we'll work to help ensure you have reason to prolong your loyalty.</p>
-        
-    </div>
-    
-    <div class="page_body--right">
+            <p>But today's sophisticated online customers demand more ease of use, more engaging content, more innovation than most high school buds can produce. You require detailed analytics to monitor conversion rates, track search trends, manage brand equity and more.</p>
+
+            <p>PIXRITE provides complete Web and interface design, brand building and marketing analysis, search optimization, PPC expert services, and ecommerce that works right and stays fresh.</p>
+            <br><br>
+            <h2>Your satisfaction guaranteed is our promise to you.</h2>
+                <p>Over the last several years, we've learned that nothing pays like making your customers happy. That's why we're giving you our word and commitment, "You'll be taken care of at PIXRITE for however long you decide to stay with us."</p>
+                <p>Should the occasion arise when you have any concerns or reservations about the services we provide, please feel free to let us know immediately and we'll work to help ensure you have reason to prolong your loyalty.</p>
+
+        </div>
+
+        <div class="page_body--right">
         <div class="servicelist">
             <h3><span class="orange">brand & marketing services</span></h3>
             <h4>investigate imagine ignite influence</h4>
@@ -128,7 +129,8 @@
                 </ul>
             </div>
         </div>    
-    </div>    
+    </div>
+    </div> 
 </div>
 
 @endsection

@@ -16,25 +16,26 @@
 
 <!-- Page Body -->
 <div class="page_body">
-    <div class="page_body--left">  
-        <h2>Custom website design speaks your brand and delights audiences.</h2>
-                <aside class="quote">
-                    <p class="quote--text">"The best website designs feel like they were meant to be coded. The cleanest code feels like an artistic masterpiece. When you combine both of these ideals, you end up with a PIXRITE solution that loads fast and looks good."
-                    </p>
-                    <span class="quote--credit">Andrew Baugh, PIXRITE Development</span>    
-                </aside>
-            <p >The best web designers produce sites that stand on a foundation of great architecture and efficient coding. A truly beautiful website: performs across browser technologies, is easy to maintain, and converts visitors to loyal customers!</p>
+    <div class="section_inner">
+        <div class="page_body--left">  
+            <h2>Custom website design speaks your brand and delights audiences.</h2>
+                    <aside class="quote">
+                        <p class="quote--text">"The best website designs feel like they were meant to be coded. The cleanest code feels like an artistic masterpiece. When you combine both of these ideals, you end up with a PIXRITE solution that loads fast and looks good."
+                        </p>
+                        <span class="quote--credit">Andrew Baugh, PIXRITE Development</span>    
+                    </aside>
+                <p >The best web designers produce sites that stand on a foundation of great architecture and efficient coding. A truly beautiful website: performs across browser technologies, is easy to maintain, and converts visitors to loyal customers!</p>
 
-            <p>If you hire a website design agency and they start sending you previews in PDF format, don't waste any more time. You've just bumped into a design house who can probably make masterpieces in the printed world. But on screen, they're just not getting it.</p>
+                <p>If you hire a website design agency and they start sending you previews in PDF format, don't waste any more time. You've just bumped into a design house who can probably make masterpieces in the printed world. But on screen, they're just not getting it.</p>
 
-            <p>Websites look best in Photoshop because you don't have to worry about dpi, complicated press color profiles or font managers. Once you have an approved design, you don't have to export it to another program that handles rasterized image optimimzation. Intead, it's ready to slice and dice - because you've designed it within the same environment it will ultimately be viewed in. (And that's one of the only secrets to great site design that we'll share with you!)</p>
-            <br><br>
-            <h2>Site launch is just the beginning.</h2>
-                <p>Many local Utah businesses are intimidated by the work involved in keeping a site fresh. We offer several site maintenance and optimization packages including services like: refreshing content, email newsletters and subscription management, email campaigns built off your site analytics and more!</p>
-        </div>
- 
-    
-    <div class="page_body--right">
+                <p>Websites look best in Photoshop because you don't have to worry about dpi, complicated press color profiles or font managers. Once you have an approved design, you don't have to export it to another program that handles rasterized image optimimzation. Intead, it's ready to slice and dice - because you've designed it within the same environment it will ultimately be viewed in. (And that's one of the only secrets to great site design that we'll share with you!)</p>
+                <br><br>
+                <h2>Site launch is just the beginning.</h2>
+                    <p>Many local Utah businesses are intimidated by the work involved in keeping a site fresh. We offer several site maintenance and optimization packages including services like: refreshing content, email newsletters and subscription management, email campaigns built off your site analytics and more!</p>
+            </div>
+
+
+        <div class="page_body--right">
          <div class="columns3"> 
             <div class="floater3">
                <h5>New Site Design</h5>
@@ -86,6 +87,7 @@
            </div>
             
         </div>   
+    </div>
     </div>
 </div> 
 @endsection
