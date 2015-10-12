@@ -1755,4 +1755,280 @@ body {
   text-decoration: none;
   text-transform: uppercase; }
 
+/* line 1, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.quote {
+  float: right;
+  margin: 10px;
+  margin-top: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  height: auto; }
+
+/* line 13, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.quote--text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 14pt;
+  color: orange; }
+
+/* line 19, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.quote--credit {
+  float: right;
+  font-size: 10px;
+  margin-top: 10px;
+  color: grey; }
+
+/* line 26, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.columns2 {
+  font-size: 1em;
+  clear: both;
+  padding-top: 40px; }
+  /* line 30, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+  .columns2 h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 10px; }
+
+/* line 37, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.promoimage {
+  align: center;
+  padding-top: 30px;
+  width: 100%; }
+
+/* line 43, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.columns3 {
+  font-size: 8pt;
+  clear: both; }
+  /* line 46, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+  .columns3 h5 {
+    background-color: orange;
+    font-size: 10pt;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3em; }
+
+/* line 55, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.floater2 {
+  float: left;
+  width: 50%; }
+
+/* line 60, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.floater3 {
+  float: left;
+  width: 33%;
+  border: 1px solid #ccc; }
+  /* line 64, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+  .floater3 h5 {
+    color: white;
+    font-size: 1.2em; }
+  /* line 68, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+  .floater3 p {
+    font-size: 1em;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    line-height: normal; }
+
+/* line 77, C:/wamp/www/Pixrite/resources/assets/sass/pages/_brand.scss */
+.grey_button {
+  background: grey;
+  color: white;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 18px;
+  letter-spacing: .15em;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 1, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.quote {
+  float: right;
+  margin: 10px;
+  margin-top: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  height: auto; }
+
+/* line 13, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.quote--text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 14pt;
+  color: orange; }
+
+/* line 19, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.quote--credit {
+  float: right;
+  font-size: 10px;
+  margin-top: 10px;
+  color: grey; }
+
+/* line 26, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.columns2 {
+  font-size: 1em;
+  clear: both;
+  padding-top: 40px; }
+  /* line 30, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+  .columns2 h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 10px; }
+
+/* line 37, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.promoimage {
+  align: center;
+  padding-top: 30px;
+  width: 100%; }
+
+/* line 43, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.columns3 {
+  font-size: 8pt;
+  clear: both; }
+  /* line 46, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+  .columns3 h5 {
+    background-color: orange;
+    font-size: 10pt;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3em; }
+
+/* line 55, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.floater2 {
+  float: left;
+  width: 50%; }
+
+/* line 60, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.floater3 {
+  float: left;
+  width: 33%;
+  border: 1px solid #ccc; }
+  /* line 64, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+  .floater3 h5 {
+    color: white;
+    font-size: 1.2em; }
+  /* line 68, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+  .floater3 p {
+    font-size: 1em;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    line-height: normal; }
+
+/* line 77, C:/wamp/www/Pixrite/resources/assets/sass/pages/_marketing.scss */
+.grey_button {
+  background: grey;
+  color: white;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 18px;
+  letter-spacing: .15em;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 1, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.quote {
+  float: right;
+  margin: 10px;
+  margin-top: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 40%;
+  height: auto; }
+
+/* line 13, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.quote--text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 14pt;
+  color: orange; }
+
+/* line 19, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.quote--credit {
+  float: right;
+  font-size: 10px;
+  margin-top: 10px;
+  color: grey; }
+
+/* line 26, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.columns2 {
+  font-size: 1em;
+  clear: both;
+  padding-top: 40px; }
+  /* line 30, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+  .columns2 h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 10px; }
+
+/* line 37, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.promoimage {
+  align: center;
+  padding-top: 30px;
+  width: 100%; }
+
+/* line 43, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.columns3 {
+  font-size: 8pt;
+  clear: both; }
+  /* line 46, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+  .columns3 h5 {
+    background-color: orange;
+    font-size: 10pt;
+    font-weight: 600;
+    text-align: center;
+    line-height: 3em; }
+
+/* line 55, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.floater2 {
+  float: left;
+  width: 50%; }
+
+/* line 60, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.floater3 {
+  float: left;
+  width: 33%;
+  border: 1px solid #ccc; }
+  /* line 64, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+  .floater3 h5 {
+    color: white;
+    font-size: 1.2em; }
+  /* line 68, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+  .floater3 p {
+    font-size: 1em;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    line-height: normal; }
+
+/* line 77, C:/wamp/www/Pixrite/resources/assets/sass/pages/_ux.scss */
+.grey_button {
+  background: grey;
+  color: white;
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  height: 18px;
+  letter-spacing: .15em;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=main.css.map */
