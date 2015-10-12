@@ -26,10 +26,11 @@
 
 // 5. Components
 @import
-  'components/page-top';
+  'components/logo';
 
 // 6. Page
 @import
+  'pages/default',
   'pages/index';
 
 // 7. QuickFix

@@ -1,124 +1,196 @@
+// #Hero
+// ---------------------------------------
+.hero {
+    position: relative;
+    background-color: transparentize($jet, 0.1);
+    text-align: center;
+
+    &.index {
+    }
+}
+
+.hero--logo {
+    position: absolute;
+    top: 7px; // header height - logo title - adj
+    left: 0;
+}
+
+.hero--heading {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 170px 10px 10px;
+    border-bottom: 1px solid $white;
+    @include font-size(48);
+    color: $white;
+}
+
+.hero--text {
+    max-width: 700px;
+    margin: 0 auto;
+    @include font-size(18);
+    color: $white;
+    text-align: center;
+    line-height: 2;
+}
+
+.hero--button {
+    display: inline-block;
+    margin: 80px 0 60px;
+    padding: 16px 24px;
+    background-color: $blue;
+    border: 3px solid $blue;
+    @include font-size(28);
+    font-weight: 700;
+    @include link-colors($white, $blue);
+    
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+.hero--image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+
 // #Services
 // ---------------------------------------
-.services_list {
-    position: absolute;
-    right: 0;
-    bottom: $h-pageBar + 40px;
-    left: 0;
+.services_section {
+    text-align: center;
+}
+
+
+.services_section--heading {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 40px 10px 10px;
+    border-bottom: 1px solid $stone;
+    @include font-size(36);
+    color: $raven;
+}
+
+.services_section--list {
+    @include clearfix;
     margin: 0;
-    padding: 0 5%;
+    padding: 40px 0 60px;
     list-style: none;
 }
 
-.services_list--item {
+.services_section--list--item {
+    position: relative;
     float: left;
-    height: 180px;
+    height: 320px;
     width: 22%;
-    
-    
-    &.first {
-        margin-right: 4%;
-    }
-    &.second {
-        margin-right: 4%;
-    }
-    &.last {
-        margin-left: 4%;
-    }
-}
-
-.services_list--link {
-    display: block;
-    height: 100%;
-    padding: 10px 16px;
-    font-size: 24px;
-    border-top-left-radius: 18px;
-    line-height: 1.25;
-    
-    span {
-        display: block;
-    }
-    
-    &:link,
-    &:visited {
-        color: $white;
-    }
+    padding: 10px 10px 50px;
+    color: $white;
     
     &.brand {
+        margin-right: 4%;
         background-color: $yellow;
     }
     &.marketing {
+        margin-right: 4%;
         background-color: $purple;
     }
     &.web {
         background-color: $green;
     }
     &.ux {
+        margin-left: 4%;
         background-color: $red;
     }
+}
+
+.services_section--list--heading {
+    @include font-size(20);
+    color: inherit;
+    line-height: 1;
+    text-align: right;
+}
+
+.services_section--list--subheading {
+    padding: 20px 0 10px;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.services_section--list--text {
+    color: $white;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.services_section--list--note {
+    padding: 10px 0;
+    font-size: 14px;
+    color: $white;
+}
+
+.services_section--list--link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 8px 6px;
+    border-top: 3px solid $white;
+    font-weight: 700;
+    @include link-colors(inherit, $white);
 }
 
 
 // #Quotes
 // ---------------------------------------
-.home_quotes {
-    position: relative;
-    padding: 40px 5%;
-}
-
-.home_quotes--prev,
-.home_quotes--next {
-    position: absolute;
-    top: 40px;
-    bottom: 40px;
-    
-    i {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        margin-top: -24px;
-        font-size: 48px;
-        color: $blue;
-        text-align: center;
-    }
-}
-.home_quotes--prev {
-    left: 5%;
-}
-.home_quotes--next {
-    right: 5%;
-}
-
-.home_quotes--item {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.home_quotes--text {
-    
-}
-.home_quotes--author {
-    font-size: 14px;
-    text-align: right;
-}
-.home_quotes--company {
-    font-size: 12px;
-    text-align: right;
-}
-
-
-// #Customers
-// ---------------------------------------
-.home_customers {
-    @include clearfix;
-    margin: 0;
-    padding: 10px 5%;
-    background-color: $pearl;
-    list-style: none;    
-}
-
-.home_customers--item {
-    float: left;
-    width: 8.3%;
-    text-align: center;
-}
+//.home_quotes {
+//    position: relative;
+//    padding: 40px 5%;
+//}
+//
+//.home_quotes--prev,
+//.home_quotes--next {
+//    position: absolute;
+//    top: 40px;
+//    bottom: 40px;
+//    
+//    i {
+//        position: absolute;
+//        top: 50%;
+//        width: 100%;
+//        margin-top: -24px;
+//        font-size: 48px;
+//        color: $blue;
+//        text-align: center;
+//    }
+//}
+//.home_quotes--prev {
+//    left: 5%;
+//}
+//.home_quotes--next {
+//    right: 5%;
+//}
+//
+//.home_quotes--item {
+//    width: 80%;
+//    margin: 0 auto;
+//}
+//
+//.home_quotes--text {
+//    
+//}
+//.home_quotes--author {
+//    font-size: 14px;
+//    text-align: right;
+//}
+//.home_quotes--company {
+//    font-size: 12px;
+//    text-align: right;
+//}

@@ -1,15 +1,16 @@
 @extends('pages')
 @section('page_tag', 'work')
+<?php $page_type = 'inside' ?>
 
 @section('content')
+   
+<!-- Header -->
+@include('pages._partials.header')
+	
 	
 <!-- Page Top -->
-<div class="page_top">
-    @include('pages._partials.header')
-    
-    <h1 class="page_top--heading">Some Short, Catchy Headline</h1>
-    
-    @include('pages._partials.page-bar')
+<div class="page_top"> 
+    <h1 class="page_top--heading">Some Our Past Work</h1>
 </div>
 
 

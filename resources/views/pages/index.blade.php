@@ -1,70 +1,70 @@
 @extends('pages')
 @section('page_tag', 'home')
+<?php $page_type = 'landing' ?>
 
 @section('content')
 	
 <!-- Page Top -->
-<div class="page_top index">
-    @include('pages._partials.header')
-    
-    <h1 class="page_top--heading">Some Short, Catchy Headline</h1>
-    
-    <!-- Services -->
-    <ul class="services_list">
-        <li class="services_list--item first">
-            <a href="{{ route('brand-page') }}" class="services_list--link brand">BRAND</a>
-        </li>
-        <li class="services_list--item second">
-            <a href="{{ route('marketing-page') }}" class="services_list--link marketing">DIGITAL <span>MARKETING</span></a>
-        </li>
-        <li class="services_list--item">
-            <a href="{{ route('web-page') }}" class="services_list--link web">WEB</a>
-        </li>
-        <li class="services_list--item last">
-            <a href="{{ route('ux-page') }}" class="services_list--link ux">UI/UX</a>
-        </li>
-    </ul>
-    
-    @include('pages._partials.page-bar')
+<div class="hero index">
+    <div class="section_inner">
+        <div class="hero--logo">@include('pages._partials.logo')</div>
+
+        <h1 class="hero--heading">The Honest Agency</h1>
+
+        <p class="hero--text">We know that's easier said than done. However, honesty is truly something we feel must be the foundation of any project. Of course we still pride ourselves on our craftsmanship and ability to get you results.</p>
+
+        <a href="{{ route('hire-page') }}" class="hero--button">LET'S GET STARTED</a>
+    </div>
+
+    <div class="hero--image"></div>
 </div>
+	
+	
+<!-- Header -->
+@include('pages._partials.header')
 
 
 <!-- Page Body -->
-<div class="page_body">
+<div class="services_section">
+    <div class="section_inner">
+
+        <h2 class="services_section--heading">Where We Specialize</h2>
     
-    <!-- Quotes -->
-    <div class="home_quotes">
-       
-        <div class="home_quotes--item">
-            <p class="home_quotes--text">"PIXRITE has the unique ability to work with customers of any size, quickly sum up their unique need, pour into it their creativity and pop out an astoundingly elegant, yet simple, solution that also has the benefit of being cost effective. Their work is easily on par with the New York firms we typically deal with, while being much more flexible and much faster."</p>
-
-            <p class="home_quotes--author">Billy Nerenberg</p>
-            <p class="home_quotes--company">Group Sales &amp; Marketing Manager | Microsoft</p>
-        </div>
-        
-        <div class="home_quotes--prev"><i class="fa fa-angle-left"></i></div>
-        <div class="home_quotes--next"><i class="fa fa-angle-right"></i></div>
+        <!-- Services List -->
+        <ul class="services_section--list">
+            <li class="services_section--list--item brand">
+                <h3 class="services_section--list--heading">Brand</h3>
+                <h5 class="services_section--list--subheading">Expose Yourself</h5>
+                <p class="services_section--list--text">We give your customers that A-HA moment, and make sure they know how to share it over, and over, and over...</p>
+                <p class="services_section--list--note">(in a good way...)</p>
+                <a class="services_section--list--link" href="{{ route('brand-page') }}">LEARN MORE</a>
+            </li>
+            
+            <li class="services_section--list--item marketing">
+                <h3 class="services_section--list--heading">Digital <span>Marketing</span></h3>
+                <h5 class="services_section--list--subheading">Expose Yourself</h5>
+                <p class="services_section--list--text">We give your customers that A-HA moment, and make sure they know how to share it over, and over, and over...</p>
+                <p class="services_section--list--note">(in a good way...)</p>
+                <a class="services_section--list--link" href="{{ route('marketing-page') }}">LEARN MORE</a>
+            </li>
+            
+            <li class="services_section--list--item web">
+                <h3 class="services_section--list--heading">Web &amp; SEO</h3>
+                <h5 class="services_section--list--subheading">Spiders Hang on Broken Webs</h5>
+                <p class="services_section--list--text">Fact is, these crawlers are the superheros of getting seen on the web. Let us design, build and market your online presence.</p>
+                <p class="services_section--list--note">(say it, spidey is our friend)</p>
+                <a class="services_section--list--link" href="{{ route('web-page') }}">LEARN MORE</a>
+            </li>
+            
+            <li class="services_section--list--item ux">
+                <h3 class="services_section--list--heading">UI/UX</h3>
+                <h5 class="services_section--list--subheading">Usability With Flair</h5>
+                <p class="services_section--list--text"><strong>WARNING:</strong> Following implementation, your competition may mimic your look and feel.</p>
+                <p class="services_section--list--note">(it's okay, we have more good ideas)</p>
+                <a class="services_section--list--link" href="{{ route('ux-page') }}">LEARN MORE</a>
+            </li>
+        </ul>
     </div>
-</div>
-
-
-<!-- Page Bar -->
-<div class="page_bar">  
-    <!-- Customers -->
-    <ul class="home_customers">
-        <li class="home_customers--item"><img src="img/customer_logos/american_express_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/apple_rock_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/best_woods_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/db_healthcare_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/intel_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/ips_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/monitronics_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/platinum_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/safeguard_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/security_one_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/software_unlimited_sm.png" alt=""></li>
-        <li class="home_customers--item"><img src="img/customer_logos/streamcast_sm.png" alt=""></li>
-    </ul>
 </div>
 
 @endsection

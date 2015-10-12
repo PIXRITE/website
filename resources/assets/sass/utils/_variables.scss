@@ -3,11 +3,13 @@ $f-sans: "Roboto", Arial, Helvetica, sans-serif;
 $f-serif: "PT Serif", "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
 
 
-// Height
-$h-pageBar: 48px;
-
 // Width
-$w-logo: 60px;
+$w-logo: 36px;
+
+
+// Height
+$h-header: $w-logo + 30px;
+
 
 // Speed
 $t-fast: 0.2s;

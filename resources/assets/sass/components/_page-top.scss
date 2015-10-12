@@ -1,15 +1,29 @@
 .page_top {
     position: relative;
-    padding-top: 90px;
+    padding: 20px 0;
     background-color: transparentize($darkblueOverlay, 0.1);
+    text-align: center;
 
     &.index {
-        height: 85%;
-        
-        .page_top--heading {
-            margin-top: 7%;
-        }
     }
+}
+
+.page_top--image {
+    
+}
+
+.page_top--heading {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 70px 10px 10px;
+    border-bottom: 1px solid $white;
+    @include font-size(48);
+    color: $white;
+    text-align: center;
+}
+
+.page_top--image {
+    
 }
 
 .page_top--image {
@@ -24,53 +38,42 @@
     background-position: center center;
 }
 
-.page_top--heading {
-    padding: 60px 0 (60px + $h-pageBar);
-    color: $white;
-    text-align: center;
-}
-
 
 // #Bar
 // ---------------------------------------
-.page_top--bar {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: $h-pageBar;
-    padding: 0 5%;
-    background-color: $blue;
-}
+//.page_top--bar {
+//    position: absolute;
+//    right: 0;
+//    bottom: 0;
+//    left: 0;
+//    height: $h-pageBar;
+//    background-color: $pearl;
+//}
+//
+//.page_top--bar--inside {
+//	width: 90%;
+//	max-width: 1200px;
+//	margin-right: auto;
+//	margin-left: auto;
+//}
 
-.page_top--social {
-    float: left;
-    margin: 0;
-    list-style: none;
-}
-.page_top--social--item {
-    display: inline-block;
-    width: 40px;
-    margin-right: 4px;
-    font-size: 32px;
-    color: $white;
-    line-height: $h-pageBar;
-}
 
-.page_top--cta {
-    float: right;
-    display: inline-block;
-    height: 30px;
-    margin: (($h-pageBar - 30px) / 2) 0;
-    padding: 0 12px;
-    background-color: $white;
-    border-radius: 4px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    
-    &:link,
-    &:visited {
-        color: $blue;
-    }
-}
+// #Customers
+// ---------------------------------------
+//.customers {
+//    @include clearfix;
+//    margin: 0;
+//    padding: 10px ;
+//    list-style: none;    
+//}
+//
+//.customers--item {
+//    float: left;
+//    height: 60px;
+//    width: 8.3%;
+//    text-align: center;
+//    
+//    img {
+//        height: 60px;
+//    }
+//}

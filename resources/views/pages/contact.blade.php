@@ -1,15 +1,16 @@
 @extends('pages')
 @section('page_tag', 'contact')
+<?php $page_type = 'inside' ?>
 
 @section('content')
+   
+<!-- Header -->
+@include('pages._partials.header')
+	
 	
 <!-- Page Top -->
-<div class="page_top">
-    @include('pages._partials.header')
-    
-    <h1 class="page_top--heading">Some Short, Catchy Headline</h1>
-    
-    @include('pages._partials.page-bar')
+<div class="page_top"> 
+    <h1 class="page_top--heading">How We Can Help?</h1>
 </div>
 
 

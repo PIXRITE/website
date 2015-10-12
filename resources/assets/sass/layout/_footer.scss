@@ -1,14 +1,126 @@
 .site_footer {
-    height: 90px;
-    background-color: $darkblue;
+    padding: 20px 0;
+    background-color: $raven;
+    
+    .section_inner {
+        min-height: 160px;
+        padding-left: 260px + 60px;
+    }
+}
+
+
+// #Menu
+// ---------------------------------------
+.site_footer--menu {
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.site_footer--item {
+    display: inline-block;
+}
+
+.site_footer--link {
+    display: block;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    @include link-colors($heather, $white);
+    
+    &.selected {
+        border-color: $stone;
+        
+        &:hover {
+            border-color: $white;
+        }
+    }
+}
+
+
+// #Menu
+// ---------------------------------------
+.site_footer--contact {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.site_footer--contact--text {
+    color: $sterling;
+}
+
+
+// #About
+// ---------------------------------------
+.site_footer--about {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    padding: 10px 20px 10px 0;
+    border-right: 1px solid $stone;
+}
+
+.site_footer--about--logo {
+    margin-bottom: 14px;
+    
+
+    .logo--icon {
+        height: $w-logo - 10px;
+        width: $w-logo - 10px;
+    }
+
+    .logo--title {
+        font-size: $w-logo;
+    }
+}
+
+.site_footer--about--text {
+    font-size: 15px;
+    color: $heather;
+    line-height: 1.25;
+}
+
+
+// #Social
+// ---------------------------------------
+.site_footer--social {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 260px;
+    width: 80px;
+    margin: 0;
+    padding: 5px 15px;
+    list-style: none;
+}
+
+.site_footer--social--item {
+    margin-bottom: 10px;
+    font-size: 30px;
+    
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    a {
+        @include link-colors($stone, $blue);
+    }
 }
 
 
 // #Copyright
 // ---------------------------------------
-.site_copyright {
-    padding: 8px 0;
+.site_footer--copyright {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     font-size: 14px;
-    color: $grey;
+    color: $stone;
     text-align: center;
+    
+    a {
+        @include link-colors(inherit, $blue);
+    }
 }
