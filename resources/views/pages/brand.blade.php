@@ -1,5 +1,5 @@
 @extends('pages')
-@section('page_tag', 'services')
+@section('page_tag', 'brand')
 <?php $page_type = 'inside' ?>
 
 @section('content')

@@ -212,6 +212,8 @@ td, th {
   left: 0;
   top: 0;
   padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -245,6 +247,7 @@ td, th {
 }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
@@ -252,6 +255,7 @@ td, th {
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
 
@@ -262,7 +266,6 @@ td, th {
 .mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -312,6 +315,7 @@ button.mfp-close, button.mfp-arrow {
   outline: none;
   padding: 0;
   z-index: 1046;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -482,6 +486,8 @@ img.mfp-img {
   height: auto;
   display: block;
   line-height: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto;
@@ -565,6 +571,8 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .mfp-img-mobile .mfp-bottom-bar:empty {
@@ -590,17 +598,14 @@ img.mfp-img {
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
     transform: scale(0.75);
   }
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
-    -ms-transform-origin: 0;
     transform-origin: 0;
   }
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
-    -ms-transform-origin: 100%;
     transform-origin: 100%;
   }
   .mfp-container {
@@ -731,8 +736,6 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   max-width: 400px;
   padding: 30px 40px 20px;
@@ -763,8 +766,6 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 60px;
   color: #00B6FF;
@@ -797,7 +798,6 @@ img {
 .popup_link {
   display: block;
   position: relative;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 
@@ -931,8 +931,13 @@ body {
 }
 
 .site_nav--item {
+  position: relative;
   display: inline-block;
   padding: 14px 4px;
+}
+
+.site_nav--item:hover .site_nav--submenu {
+  display: block;
 }
 
 .site_nav--link {
@@ -962,20 +967,54 @@ body {
   border-color: #fff;
 }
 
-#home .home, #work .work, #services .services, #about .about, #contact .contact, #hire .hire {
+.site_nav--submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin: 0;
+  padding-bottom: 8px;
+  background-color: #373537;
+  list-style: none;
+}
+
+.site_nav--submenu--item {
+  padding: 0 8px;
+}
+
+.site_nav--submenu--link {
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+
+.site_nav--submenu--link:link, .site_nav--submenu--link:visited {
+  color: #C7C7C9;
+}
+
+.site_nav--submenu--link:active, .site_nav--submenu--link.active {
+  color: inherit;
+}
+
+.site_nav--submenu--link:hover {
+  color: #fff;
+}
+
+#home .home, #work .work, #services .services, #brand .brand, #marketing .marketing, #web .web, #ux .ux, #about .about, #contact .contact, #hire .hire {
   background-color: #00B6FF;
   border-color: #00B6FF;
 }
 
-#home .home:link, #home .home:visited, #work .work:link, #work .work:visited, #services .services:link, #services .services:visited, #about .about:link, #about .about:visited, #contact .contact:link, #contact .contact:visited, #hire .hire:link, #hire .hire:visited {
+#home .home:link, #home .home:visited, #work .work:link, #work .work:visited, #services .services:link, #services .services:visited, #brand .brand:link, #brand .brand:visited, #marketing .marketing:link, #marketing .marketing:visited, #web .web:link, #web .web:visited, #ux .ux:link, #ux .ux:visited, #about .about:link, #about .about:visited, #contact .contact:link, #contact .contact:visited, #hire .hire:link, #hire .hire:visited {
   color: #fff;
 }
 
-#home .home:active, #home .home.active, #work .work:active, #work .work.active, #services .services:active, #services .services.active, #about .about:active, #about .about.active, #contact .contact:active, #contact .contact.active, #hire .hire:active, #hire .hire.active {
+#home .home:active, #home .home.active, #work .work:active, #work .work.active, #services .services:active, #services .services.active, #brand .brand:active, #brand .brand.active, #marketing .marketing:active, #marketing .marketing.active, #web .web:active, #web .web.active, #ux .ux:active, #ux .ux.active, #about .about:active, #about .about.active, #contact .contact:active, #contact .contact.active, #hire .hire:active, #hire .hire.active {
   color: inherit;
 }
 
-#home .home:hover, #work .work:hover, #services .services:hover, #about .about:hover, #contact .contact:hover, #hire .hire:hover {
+#home .home:hover, #work .work:hover, #services .services:hover, #brand .brand:hover, #marketing .marketing:hover, #web .web:hover, #ux .ux:hover, #about .about:hover, #contact .contact:hover, #hire .hire:hover {
   color: #fff;
 }
 
@@ -1140,7 +1179,6 @@ body {
   height: 23%;
   width: 23%;
   background-color: #131516;
-  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 

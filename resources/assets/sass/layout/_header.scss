@@ -20,6 +20,7 @@
 .site_nav {
 }
 
+// Main Menu
 .site_nav--menu {
     margin: 0;
     list-style: none;
@@ -27,8 +28,15 @@
 }
 
 .site_nav--item {
+    position: relative;
     display: inline-block;
     padding: (($h-header - 38px) / 2) 4px;
+    
+    &:hover {
+        .site_nav--submenu {
+            display: block;
+        }
+    }
 }
 
 .site_nav--link {
@@ -47,10 +55,42 @@
     }
 }
 
+
+// Submenu
+.site_nav--submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin: 0;
+    padding-bottom: 8px;
+    background-color: $raven;
+    list-style: none;
+}
+
+.site_nav--submenu--item {
+    padding: 0 8px;
+}
+
+.site_nav--submenu--link {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    @include link-colors($heather, $white);
+}
+
+
+
+
 // Set active page
 #home .home,
 #work .work,
 #services .services,
+#brand .brand,
+#marketing .marketing,
+#web .web,
+#ux .ux,
 #about .about,
 #contact .contact,
 #hire .hire {

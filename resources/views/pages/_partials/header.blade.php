@@ -20,6 +20,26 @@
 
                <li class="site_nav--item">
                    <a class="site_nav--link services" href="{{ route('services-page') }}">SERVICES</a>
+                   
+                   @if( $page_type != 'landing' )
+                       <ul class="site_nav--submenu">
+                           <li class="site_nav--submenu--item">
+                               <a class="site_nav--submenu--link brand" href="{{ route('brand-page') }}">BRAND</a>
+                           </li>
+                           
+                           <li class="site_nav--submenu--item">
+                               <a class="site_nav--submenu--link marketing" href="{{ route('marketing-page') }}">DIGITAL MARKETING</a>
+                           </li>
+                           
+                           <li class="site_nav--submenu--item">
+                               <a class="site_nav--submenu--link web" href="{{ route('web-page') }}">WEB &amp; SEO</a>
+                           </li>
+                           
+                           <li class="site_nav--submenu--item">
+                               <a class="site_nav--submenu--link ux" href="{{ route('ux-page') }}">UI/UX</a>
+                           </li>
+                       </ul>
+                   @endif
                </li>
 
                <li class="site_nav--item">
