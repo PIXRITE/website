@@ -7,7 +7,7 @@
 <div class="page_top">
     @include('pages._partials.header')
     
-    <h1 class="page_top--heading">Some Short, Catchy Headline</h1>
+    <h1 class="page_top--heading">WEB DESIGN & BUILD</h1>
     
     @include('pages._partials.page-bar')
 </div>
@@ -31,29 +31,29 @@
             <h2>Site launch is just the beginning.</h2>
                 <p>Many local Utah businesses are intimidated by the work involved in keeping a site fresh. We offer several site maintenance and optimization packages including services like: refreshing content, email newsletters and subscription management, email campaigns built off your site analytics and more!</p>
         </div>
-    </div>
+ 
     
     <div class="page_body--right">
          <div class="columns3"> 
             <div class="floater3">
                <h5>New Site Design</h5>
                <p>Our Web design experts work from your existing brand to deliver a rich online presence that speaks to each of your target audiences. We'll design, build and launch the site for you while providing domain and hosting services as needed.</p>
-               <a class="grey_button">get started</a>               
+               <a class="grey_button" href="/contact">get started</a>               
             </div>
             
             <div class="floater3">
                <h5>Web Redesign</h5>
-               <p>Time to get that content management system (CMS) you've always wanted? Maybe you just rebranded and you want a fresh look online? We're happy to incorporate your new direction with your existing site.</p>
-               <a class="grey_button">get started</a>               
+               <p>Time to get that content management system (CMS) you've always wanted? Maybe you just rebranded and you want a fresh look online? We're happy to incorporate your new direction with your existing site.<br><br></p>
+               <a class="grey_button" href="/contact">get started</a>               
             </div>
             
             <div class="floater3">
                <h5>Maintenance</h5>
                <p>We all know the value of having fresh content and frequent updates. PIXRITE specializes in traffic website analysis and optimization. We'll keep track of the data, report it to you, kindly suggest improvements and implement them!</p>
-               <a class="grey_button">get started</a>               
+               <a class="grey_button" href="/contact">get started</a>               
             </div>
         </div>    
-        <img class="lefthalf" src="img/web_full_01.png"> 
+        <img class="promoimage" src="../img/web_full_01.png"> 
         <div class="columns2">
            <h5>Utah Web Design Services</h5>
            <div class="floater2">
@@ -85,6 +85,6 @@
            </div>
             
         </div>   
-</div>
-
+    </div>
+</div> 
 @endsection
