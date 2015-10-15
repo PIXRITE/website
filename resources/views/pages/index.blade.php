@@ -2,6 +2,10 @@
 @section('page_tag', 'home')
 <?php $page_type = 'landing' ?>
 
+@section('seo')
+    <title>PIXRITE</title>
+@endsection
+
 @section('content')
 	
 <!-- Page Top -->

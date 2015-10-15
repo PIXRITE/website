@@ -2,6 +2,10 @@
 @section('page_tag', 'hire')
 <?php $page_type = 'inside' ?>
 
+@section('seo')
+    <title>PIXRITE</title>
+@endsection
+
 @section('content')
    
 <!-- Header -->
