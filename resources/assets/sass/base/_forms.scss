@@ -25,7 +25,6 @@ input,
 textarea,
 select {
 	width: 100%;
-	margin-bottom: 14px;
 	padding: 6px;
 	border: 1px solid $heather;
 }
@@ -42,7 +41,8 @@ label {
 }
 
 button[type="submit"] {
-	float: right;
+    display: block;
+    width: 100%;
 	padding: 8px 24px;
 	background-color: $blue;
 	border-radius: 2px;
@@ -63,59 +63,22 @@ button[type="submit"] {
 }
 
 
-form {
-	position: relative;
-}
-
-.form_overlay {
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 8000;
-	outline: 1px solid $blue;
-	outline-offset: 16px;
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-.form_modal {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	max-width: 400px;
-	padding: 30px 40px 20px;
-	background-color: $blue;
-	box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3);
-	color: $white;
-}
-
-.form_modal--close {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 4px;
-
-	&:hover {
-		background-color: $asher;
-	}
-}
-
-.form_modal--heading {
-	margin-bottom: 10px;
-	color: $white;
-	text-align: center;
-}
-
-.form_progress {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 60px;
-	color: $blue;
+// Form Block
+.form_block {
+    clear: both;
+	margin-bottom: 20px;
+    
+    &.right,
+    &.left {
+        clear: none;
+        width: 48%;
+    }
+    
+    &.right {
+        float: right;
+    }
+    
+    &.left {
+        float: left;
+    }
 }
