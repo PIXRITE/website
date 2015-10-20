@@ -755,6 +755,10 @@ input, textarea, select {
   border: 1px solid #C7C7C9;
 }
 
+select {
+  padding: 5px 6px;
+}
+
 textarea {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2027,17 +2031,72 @@ body {
 }
 
 .hire_text {
-  max-width: 600px;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .hire_form {
-  max-width: 700px;
+  max-width: 800px;
   margin: 30px auto 0;
+}
+
+.hire_form .form_group {
+  content: "";
+  display: table;
+  width: 100%;
+  padding: 20px 20px 0;
+  border: 1px solid #C7C7C9;
+}
+
+.hire_form .form_group:after {
+  clear: both;
+}
+
+.hire_form .form_block {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.hire_form--label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #97979a;
+  line-height: 34px;
+  transition: all 0.2s;
+}
+
+.hire_form--label.focused {
+  top: -24px;
+  padding: 0;
+  line-height: 24px;
+}
+
+.hire_form--input, .hire_form--textarea {
+  padding: 6px 8px;
+  background-color: transparent;
+  border: 1px solid #B0B0B2;
+}
+
+.hire_form--input:focus, .hire_form--textarea:focus {
+  outline: none;
+  border-color: #00B6FF;
 }
 
 .hire_form--textarea {
   min-height: 90px;
+  line-height: 1.25;
+}
+
+.hire_form--heading {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #707070;
+  text-align: center;
 }
 
 .hire_form--button {

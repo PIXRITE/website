@@ -1019,17 +1019,21 @@ select {
   border: 1px solid #C7C7C9; }
 
 /* line 32, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+select {
+  padding: 5px 6px; }
+
+/* line 36, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 textarea {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 37, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 41, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 label {
   display: block;
   padding-bottom: 6px;
   color: #707070; }
 
-/* line 43, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 47, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 button[type="submit"] {
   display: block;
   width: 100%;
@@ -1039,30 +1043,30 @@ button[type="submit"] {
   font-size: 20px;
   font-weight: 600;
   color: #FFFFFF; }
-  /* line 54, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 58, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   button[type="submit"]:focus,
   button[type="submit"]:hover {
     background-color: #373537;
     color: #FFFFFF; }
 
-/* line 60, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 64, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .error_message {
   margin: -14px 0 14px;
   color: red; }
 
-/* line 67, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 71, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_block {
   clear: both;
   margin-bottom: 20px; }
-  /* line 72, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 76, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right,
   .form_block.left {
     clear: none;
     width: 48%; }
-  /* line 77, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 81, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right {
     float: right; }
-  /* line 81, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 85, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.left {
     float: left; }
 
@@ -2289,19 +2293,71 @@ body {
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_text {
-  max-width: 600px;
-  margin: 0 auto; }
+  margin-bottom: 20px; }
 
-/* line 6, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+/* line 5, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_form {
-  max-width: 700px;
+  max-width: 800px;
   margin: 30px auto 0; }
+  /* line 9, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+  .hire_form .form_group {
+    content: "";
+    display: table;
+    width: 100%;
+    padding: 20px 20px 0;
+    border: 1px solid #C7C7C9; }
+    /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
+    .hire_form .form_group:after {
+      clear: both; }
+  /* line 15, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+  .hire_form .form_block {
+    position: relative;
+    margin-bottom: 40px; }
 
-/* line 19, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+/* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+.hire_form--label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #97979a;
+  line-height: 34px;
+  transition: all 0.2s; }
+  /* line 33, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+  .hire_form--label.focused {
+    top: -24px;
+    padding: 0;
+    line-height: 24px; }
+
+/* line 41, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+.hire_form--input,
 .hire_form--textarea {
-  min-height: 90px; }
+  padding: 6px 8px;
+  background-color: transparent;
+  border: 1px solid #B0B0B2; }
+  /* line 46, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+  .hire_form--input:focus,
+  .hire_form--textarea:focus {
+    outline: none;
+    border-color: #00B6FF; }
 
-/* line 23, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+/* line 52, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+.hire_form--textarea {
+  min-height: 90px;
+  line-height: 1.25; }
+
+/* line 57, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+.hire_form--heading {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #707070;
+  text-align: center; }
+
+/* line 64, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_form--button {
   width: 80%;
   margin: 30px auto 0;

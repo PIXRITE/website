@@ -25,45 +25,76 @@
 <!-- Page Body -->
 <div class="page_body">
     <div class="section_inner">
-        <p class="hire_text">After we get some informtion from you, we'll setup a time to discuss your project in further detail. It won't be more than a day or so.</p>
+        <p class="hire_text">After we get some informtion about what you need, we'll setup a time to discuss your project in further detail. It won't be more than a day or so. While, the fields in the top section are required, the information you provide in the optional fields will help us make sure we're the right fit for your project.</p>
         
-        <form class="hire_form" action="/foo/bar" method="POST">
+        <form class="hire_form js-slidingForm" action="/foo/bar" method="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             
             <!-- Name -->
             <div class="form_block left">
                 <label class="hire_form--label" for="name">Name</label>
-                <input class="hire_form--input" type="text" name="name" id="name">
+                <input class="hire_form--input" type="text" name="name" id="name" placeholder="Name">
             </div>
-            
-            <!-- Email -->
-            <div class="form_block right">
-                <label class="hire_form--label" for="email">Email Address</label>
-                <input class="hire_form--input" type="text" name="email" id="email">
-            </div>
-            
+
             <!-- Phone Number -->
-            <div class="form_block left">
-                <label class="hire_form--label" for="phone">Phone Number</label>
-                <input class="hire_form--input" type="text" name="phone" id="phone">
-            </div>
-            
-            <!-- Website -->
             <div class="form_block right">
-                <label class="hire_form--label" for="website">Website</label>
-                <input class="hire_form--input" type="text" name="website" id="website">
+                <label class="hire_form--label" for="phone">Phone Number</label>
+                <input class="hire_form--input" type="text" name="phone" id="phone" placeholder="Phone Number">
             </div>
-            
+
+            <!-- Email -->
+            <div class="form_block">
+                <label class="hire_form--label" for="email">Email Address</label>
+                <input class="hire_form--input" type="text" name="email" id="email" placeholder="Email Address">
+            </div>
+
             <!-- Details -->
             <div class="form_block">
                 <label class="hire_form--label" for="details">Project Details</label>
-                <textarea class="hire_form--textarea" name="details" id="details"></textarea>
+                <textarea class="hire_form--textarea" name="details" id="details" placeholder="Project Details"></textarea>
             </div>
             
-            <!-- Hear About Us -->
-            <div class="form_block">
-                <label class="hire_form--label" for="hearAbout">How Did You Hear About Us?</label>
-                <input class="hire_form--input" type="text" name="hearAbout" id="hearAbout">
+            
+            <div class="form_group">
+            
+                <h3 class="hire_form--heading">Optional Details</h3>
+               
+                <!-- Budget -->
+                <div class="form_block left">
+                    <label class="hire_form--label" for="budget">Budget</label>
+                    <select class="hire_form--input" type="text" name="budget" id="budget">
+                        <option value="">Budget</option>
+                        <option value="low">&lt; $2,000</option>
+                        <option value="mid_low">$2,000 to $4,000</option>
+                        <option value="mid_high">$4,000 to $8,000</option>
+                        <option value="high">&gt; $8,000</option>
+                    </select>
+                </div>
+
+                <!-- Deadline -->
+                <div class="form_block right">
+                    <label class="hire_form--label" for="deadline">Deadline</label>
+                    <select class="hire_form--input" type="text" name="deadline" id="deadline">
+                        <option value="">Deadline</option>
+                        <option value="now">Yesterday</option>
+                        <option value="low">1-2 Weeks</option>
+                        <option value="mid-low">3-4 Weeks</option>
+                        <option value="mid-high">1-2 Months</option>
+                        <option value="high">3-4 Months</option>
+                    </select>
+                </div>
+
+                <!-- Website -->
+                <div class="form_block left">
+                    <label class="hire_form--label" for="website">Website</label>
+                    <input class="hire_form--input" type="text" name="website" id="website" placeholder="Website">
+                </div>
+
+                <!-- Hear About Us -->
+                <div class="form_block right">
+                    <label class="hire_form--label" for="hearAbout">How Did You Hear About Us?</label>
+                    <input class="hire_form--input" type="text" name="hearAbout" id="hearAbout" placeholder="How Did You Hear About Us?">
+                </div>
             </div>
             
             <!-- Buttons -->
