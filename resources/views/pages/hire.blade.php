@@ -14,7 +14,11 @@
 	
 <!-- Page Top -->
 <div class="page_top"> 
-    <h1 class="page_top--heading">Hire Us For Your Next Project</h1>
+    <div class="section_inner">
+        <h1 class="page_top--heading">Hire Us</h1>
+    
+        <div class="page_top--years">@include('pages._partials.years')</div>
+    </div>
 </div>
 
 
@@ -64,7 +68,7 @@
             
             <!-- Buttons -->
             <div class="form_block">
-                <button class="hire_form--button" type="submit">SUBMIT YOUR PROJECT</button>
+                <button class="hire_form--button" type="submit">SUBMIT YOUR REQUEST</button>
             </div>
         </form>
     </div>

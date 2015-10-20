@@ -14,7 +14,11 @@
 	
 <!-- Page Top -->
 <div class="page_top"> 
-    <h1 class="page_top--heading">Some Our Past Work</h1>
+    <div class="section_inner">
+        <h1 class="page_top--heading">Our Past Work</h1>
+    
+        <div class="page_top--years">@include('pages._partials.years')</div>
+    </div>
 </div>
 
 

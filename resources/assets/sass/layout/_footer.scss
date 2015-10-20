@@ -3,8 +3,8 @@
     background-color: $raven;
     
     .section_inner {
-        min-height: 160px;
-        padding-left: 260px + 60px;
+        min-height: 130px;
+        padding-left: 300px + 60px;
     }
 }
 
@@ -41,12 +41,13 @@
 // #Menu
 // ---------------------------------------
 .site_footer--contact {
-    padding-top: 20px;
+    padding-top: 15px;
     text-align: right;
 }
 
 .site_footer--contact--text {
     color: $sterling;
+    line-height: 1.25;
 }
 
 
@@ -57,13 +58,13 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 260px;
-    padding: 10px 20px 10px 0;
+    width: 300px;
+    padding-right: 20px;
     border-right: 1px solid $stone;
 }
 
 .site_footer--about--logo {
-    margin-bottom: 14px;
+    margin-bottom: 6px;
     
 
     .logo--icon {
@@ -77,7 +78,7 @@
 }
 
 .site_footer--about--text {
-    font-size: 15px;
+    font-size: 14px;
     color: $heather;
     line-height: 1.25;
 }
@@ -89,15 +90,15 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 260px;
+    left: 300px;
     width: 80px;
     margin: 0;
-    padding: 5px 15px;
+    padding: 0 15px;
     list-style: none;
 }
 
 .site_footer--social--item {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     font-size: 30px;
     
     &:last-of-type {
@@ -115,7 +116,7 @@
 .site_footer--copyright {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
     font-size: 14px;
     color: $stone;
     text-align: center;

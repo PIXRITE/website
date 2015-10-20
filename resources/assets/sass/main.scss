@@ -1,5 +1,6 @@
 // 1. Vendors
 @import
+  'vendor/font-brandon',
   'vendor/normalize',
   'vendor/magnific-popup';
 
@@ -26,7 +27,8 @@
 
 // 5. Components
 @import
-  'components/logo';
+  'components/logo',
+  'components/years';
 
 // 6. Page
 @import

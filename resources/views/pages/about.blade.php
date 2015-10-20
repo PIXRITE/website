@@ -13,8 +13,12 @@
 	
 	
 <!-- Page Top -->
-<div class="page_top"> 
-    <h1 class="page_top--heading">About Us</h1>
+<div class="page_top">
+    <div class="section_inner">
+        <h1 class="page_top--heading">About Us</h1>
+    
+        <div class="page_top--years">@include('pages._partials.years')</div>
+    </div>
 </div>
 
 

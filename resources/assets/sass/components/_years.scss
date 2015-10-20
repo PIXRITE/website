@@ -1,0 +1,61 @@
+.years {
+    height: 60px;
+    width: 180px;
+    font-family: 'Brandon-Bold';
+    color: $asher;
+    line-height: 1;
+}
+
+.years--top {
+    margin-bottom: 2px;
+}
+.years--bottom {
+    position: relative;
+    text-align: right;
+}
+
+.years--top--main {
+    font-size: 20px;
+}
+.years--top--sub {
+    display: block;
+    font-size: 14px;
+}
+.years--top--mid {
+    margin: 0 -3px;
+    font-size: 18px;
+    color: $stone;
+    vertical-align: baseline;
+}
+.years--top--line {
+    width: 51px;
+    margin: 0;
+    border: none;
+    border-bottom: 4px solid $blue;
+}
+
+.years--bottom--main {
+    font-size: 16px;
+    vertical-align: top; 
+}
+.years--bottom--sub {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 10px;
+}
+.years--bottom--mid {
+    margin: 0 -3px;
+    font-size: 24px;
+    line-height: 21px;
+    vertical-align: top;
+    letter-spacing: -2px;
+}
+.years--bottom--line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 51px;
+    margin: 0;
+    border: none;
+    border-bottom: 4px solid $blue;
+}

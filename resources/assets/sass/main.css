@@ -1,3 +1,119 @@
+@charset "UTF-8";
+/**
+ * @license
+ * MyFonts Webfont Build ID 3014664, 2015-04-23T18:22:16-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BrandonText-BoldItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/bold-italic/
+ * 
+ * Webfont: BrandonText-Bold by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/bold/
+ * 
+ * Webfont: BrandonText-BlackItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/black-italic/
+ * 
+ * Webfont: BrandonText-Black by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/black/
+ * 
+ * Webfont: BrandonText-LightItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/light-italic/
+ * 
+ * Webfont: BrandonText-Light by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/light/
+ * 
+ * Webfont: BrandonText-RegularItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/italic/
+ * 
+ * Webfont: BrandonText-Regular by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/regular/
+ * 
+ * Webfont: BrandonText-Medium by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/medium/
+ * 
+ * Webfont: BrandonText-ThinItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/thin-italic/
+ * 
+ * Webfont: BrandonText-Thin by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/thin/
+ * 
+ * Webfont: BrandonText-MediumItalic by HVD Fonts
+ * URL: http://www.myfonts.com/fonts/hvdfonts/brandon-text/medium-italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3014664
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2012 by Hannes von Doehren. All rights reserved.
+ * 
+ * © 2015 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2e0008");
+@font-face {
+  font-family: 'Brandon-BoldItalic';
+  src: url("../fonts/brandon/2E0008_0_0.eot");
+  src: url("../fonts/brandon/2E0008_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_0_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_0_0.woff") format("woff"), url("../fonts/brandon/2E0008_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Bold';
+  src: url("../fonts/brandon/2E0008_1_0.eot");
+  src: url("../fonts/brandon/2E0008_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_1_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_1_0.woff") format("woff"), url("../fonts/brandon/2E0008_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-BlackItalic';
+  src: url("../fonts/brandon/2E0008_2_0.eot");
+  src: url("../fonts/brandon/2E0008_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_2_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_2_0.woff") format("woff"), url("../fonts/brandon/2E0008_2_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Black';
+  src: url("../fonts/brandon/2E0008_3_0.eot");
+  src: url("../fonts/brandon/2E0008_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_3_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_3_0.woff") format("woff"), url("../fonts/brandon/2E0008_3_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-LightItalic';
+  src: url("../fonts/brandon/2E0008_4_0.eot");
+  src: url("../fonts/brandon/2E0008_4_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_4_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_4_0.woff") format("woff"), url("../fonts/brandon/2E0008_4_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Light';
+  src: url("../fonts/brandon/2E0008_5_0.eot");
+  src: url("../fonts/brandon/2E0008_5_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_5_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_5_0.woff") format("woff"), url("../fonts/brandon/2E0008_5_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-RegularItalic';
+  src: url("../fonts/brandon/2E0008_6_0.eot");
+  src: url("../fonts/brandon/2E0008_6_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_6_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_6_0.woff") format("woff"), url("../fonts/brandon/2E0008_6_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Regular';
+  src: url("../fonts/brandon/2E0008_7_0.eot");
+  src: url("../fonts/brandon/2E0008_7_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_7_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_7_0.woff") format("woff"), url("../fonts/brandon/2E0008_7_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Medium';
+  src: url("../fonts/brandon/2E0008_8_0.eot");
+  src: url("../fonts/brandon/2E0008_8_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_8_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_8_0.woff") format("woff"), url("../fonts/brandon/2E0008_8_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-ThinItalic';
+  src: url("../fonts/brandon/2E0008_9_0.eot");
+  src: url("../fonts/brandon/2E0008_9_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_9_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_9_0.woff") format("woff"), url("../fonts/brandon/2E0008_9_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-Thin';
+  src: url("../fonts/brandon/2E0008_A_0.eot");
+  src: url("../fonts/brandon/2E0008_A_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_A_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_A_0.woff") format("woff"), url("../fonts/brandon/2E0008_A_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Brandon-MediumItalic';
+  src: url("../fonts/brandon/2E0008_B_0.eot");
+  src: url("../fonts/brandon/2E0008_B_0.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/2E0008_B_0.woff2") format("woff2"), url("../fonts/brandon/2E0008_B_0.woff") format("woff"), url("../fonts/brandon/2E0008_B_0.ttf") format("truetype"); }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -1069,7 +1185,7 @@ body {
 
 /* line 6, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
 body {
-  min-width: 360px; }
+  min-width: 1200px; }
 
 /* line 10, C:/wamp/www/pixrite/resources/assets/sass/layout/_structure.scss */
 .section_inner {
@@ -1144,16 +1260,17 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
+  z-index: 999;
   margin: 0;
   padding-bottom: 8px;
   background-color: #373537;
   list-style: none; }
 
-/* line 71, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 72, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--submenu--item {
   padding: 0 8px; }
 
-/* line 75, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 76, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--submenu--link {
   display: block;
   padding: 5px 10px;
@@ -1171,7 +1288,7 @@ body {
   .site_nav--submenu--link:hover {
     color: #FFFFFF; }
 
-/* line 96, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 97, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 #home .home,
 #work .work,
 #services .services,
@@ -1247,8 +1364,8 @@ body {
   background-color: #373537; }
   /* line 5, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
   .site_footer .section_inner {
-    min-height: 160px;
-    padding-left: 320px; }
+    min-height: 130px;
+    padding-left: 360px; }
 
 /* line 14, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--menu {
@@ -1286,56 +1403,57 @@ body {
 
 /* line 43, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--contact {
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: right; }
 
 /* line 48, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--contact--text {
-  color: #B0B0B2; }
+  color: #B0B0B2;
+  line-height: 1.25; }
 
-/* line 55, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 56, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--about {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 260px;
-  padding: 10px 20px 10px 0;
+  width: 300px;
+  padding-right: 20px;
   border-right: 1px solid #707070; }
 
-/* line 65, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 66, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--about--logo {
-  margin-bottom: 14px; }
-  /* line 69, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+  margin-bottom: 6px; }
+  /* line 70, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
   .site_footer--about--logo .logo--icon {
     height: 26px;
     width: 26px; }
-  /* line 74, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+  /* line 75, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
   .site_footer--about--logo .logo--title {
     font-size: 36px; }
 
-/* line 79, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 80, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--about--text {
-  font-size: 15px;
+  font-size: 14px;
   color: #C7C7C9;
   line-height: 1.25; }
 
-/* line 88, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 89, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--social {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 260px;
+  left: 300px;
   width: 80px;
   margin: 0;
-  padding: 5px 15px;
+  padding: 0 15px;
   list-style: none; }
 
-/* line 99, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 100, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--social--item {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-size: 30px; }
-  /* line 103, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+  /* line 104, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
   .site_footer--social--item:last-of-type {
     margin-bottom: 0; }
   /* line 23, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
@@ -1350,11 +1468,11 @@ body {
   .site_footer--social--item a:hover {
     color: #00B6FF; }
 
-/* line 115, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
+/* line 116, C:/wamp/www/pixrite/resources/assets/sass/layout/_footer.scss */
 .site_footer--copyright {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -10px;
   font-size: 14px;
   color: #707070;
   text-align: center; }
@@ -1411,25 +1529,105 @@ body {
   display: inline-block;
   margin-left: 4px;
   font-size: 50px;
+  font-family: 'Brandon-Regular';
   color: #00B6FF;
   letter-spacing: 2px;
   line-height: 1; }
 
+/* line 1, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years {
+  height: 60px;
+  width: 180px;
+  font-family: 'Brandon-Bold';
+  color: #555151;
+  line-height: 1; }
+
+/* line 9, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--top {
+  margin-bottom: 2px; }
+
+/* line 12, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--bottom {
+  position: relative;
+  text-align: right; }
+
+/* line 17, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--top--main {
+  font-size: 20px; }
+
+/* line 20, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--top--sub {
+  display: block;
+  font-size: 14px; }
+
+/* line 24, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--top--mid {
+  margin: 0 -3px;
+  font-size: 18px;
+  color: #707070;
+  vertical-align: baseline; }
+
+/* line 30, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--top--line {
+  width: 51px;
+  margin: 0;
+  border: none;
+  border-bottom: 4px solid #00B6FF; }
+
+/* line 37, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--bottom--main {
+  font-size: 16px;
+  vertical-align: top; }
+
+/* line 41, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--bottom--sub {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 10px; }
+
+/* line 46, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--bottom--mid {
+  margin: 0 -3px;
+  font-size: 24px;
+  line-height: 21px;
+  vertical-align: top;
+  letter-spacing: -2px; }
+
+/* line 53, C:/wamp/www/pixrite/resources/assets/sass/components/_years.scss */
+.years--bottom--line {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 51px;
+  margin: 0;
+  border: none;
+  border-bottom: 4px solid #00B6FF; }
+
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_top {
-  padding: 30px 0;
-  text-align: center; }
+  padding: 20px 0;
+  background-color: #B0B0B2; }
+  /* line 7, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+  .page_top .section_inner {
+    padding-right: 200px; }
 
-/* line 8, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_top--heading {
   display: inline-block;
-  padding: 10px;
-  border-bottom: 1px solid #707070;
-  font-size: 48px;
-  font-size: 3rem;
-  color: #373537; }
+  font-size: 80px;
+  font-size: 5rem;
+  font-family: 'Brandon-Bold';
+  color: #555151;
+  letter-spacing: -3px;
+  text-transform: uppercase; }
 
-/* line 19, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+.page_top--years {
+  position: absolute;
+  top: 10px;
+  right: 0; }
+
+/* line 30, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body {
   content: "";
   display: table;
@@ -1439,12 +1637,12 @@ body {
   .page_body:after {
     clear: both; }
 
-/* line 24, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 35, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body--right {
   float: right;
   width: 48%; }
 
-/* line 29, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 40, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body--left {
   float: left;
   width: 48%; }
@@ -1464,14 +1662,15 @@ body {
 /* line 18, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero--heading {
   display: inline-block;
-  margin-bottom: 20px;
-  padding: 170px 10px 10px;
-  border-bottom: 1px solid #FFFFFF;
-  font-size: 48px;
-  font-size: 3rem;
-  color: #FFFFFF; }
+  margin-bottom: 10px;
+  padding-top: 170px;
+  font-size: 70px;
+  font-size: 4.375rem;
+  font-family: 'Brandon-Bold';
+  color: #FFFFFF;
+  letter-spacing: -1px; }
 
-/* line 27, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 28, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero--text {
   max-width: 700px;
   margin: 0 auto;
@@ -1479,9 +1678,9 @@ body {
   font-size: 1.125rem;
   color: #FFFFFF;
   text-align: center;
-  line-height: 2; }
+  line-height: 1.75; }
 
-/* line 36, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 37, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero--button {
   display: inline-block;
   margin: 80px 0 60px;
@@ -1502,11 +1701,11 @@ body {
   /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
   .hero--button:hover {
     color: #00B6FF; }
-  /* line 46, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  /* line 47, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .hero--button:hover {
     background-color: transparent; }
 
-/* line 51, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 52, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero--image {
   position: absolute;
   top: 0;
@@ -1518,104 +1717,117 @@ body {
   background-size: cover;
   background-position: center center; }
 
-/* line 66, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+.index_header {
+  padding: 30px 0;
+  background-color: #B0B0B2;
+  text-align: center; }
+
+/* line 73, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+.index_header--heading {
+  display: inline-block;
+  font-size: 48px;
+  font-size: 3rem;
+  font-family: 'Brandon-Bold';
+  color: #555151;
+  letter-spacing: -2px;
+  text-transform: uppercase; }
+
+/* line 85, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section {
   text-align: center; }
 
-/* line 71, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-.services_section--heading {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 40px 10px 10px;
-  border-bottom: 1px solid #707070;
-  font-size: 36px;
-  font-size: 2.25rem;
-  color: #373537; }
-
-/* line 80, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 89, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list {
   content: "";
   display: table;
   width: 100%;
   margin: 0;
-  padding: 40px 0 60px;
+  padding: 50px 0;
   list-style: none; }
   /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
   .services_section--list:after {
     clear: both; }
 
-/* line 87, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 96, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--item {
   position: relative;
   float: left;
-  height: 320px;
+  height: 270px;
   width: 22%;
-  padding: 10px 10px 50px;
-  color: #FFFFFF; }
-  /* line 95, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-  .services_section--list--item.brand {
-    margin-right: 4%;
-    background-color: #D9B346; }
-  /* line 99, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-  .services_section--list--item.marketing {
-    margin-right: 4%;
-    background-color: #6C477A; }
+  background-color: #00B6FF !important; }
   /* line 103, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-  .services_section--list--item.web {
-    background-color: #6F9942; }
+  .services_section--list--item.brand {
+    margin-right: 4%; }
   /* line 106, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.marketing {
+    margin-right: 4%; }
+  /* line 109, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.ux {
-    margin-left: 4%;
+    margin-left: 4%; }
+  /* line 114, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.brand,
+  .services_section--list--item.brand .services_section--list--heading {
+    background-color: #D9B346; }
+  /* line 118, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.marketing,
+  .services_section--list--item.marketing .services_section--list--heading {
+    background-color: #6C477A; }
+  /* line 122, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.web,
+  .services_section--list--item.web .services_section--list--heading {
+    background-color: #6F9942; }
+  /* line 126, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.ux,
+  .services_section--list--item.ux .services_section--list--heading {
     background-color: #CB5944; }
 
-/* line 112, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-.services_section--list--heading {
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: inherit;
-  line-height: 1;
-  text-align: right; }
+/* line 131, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+.services_section--list--link {
+  display: block;
+  padding: 20px; }
+  /* line 137, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--link:hover .services_section--list--heading {
+    opacity: 0; }
 
-/* line 119, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 143, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+.services_section--list--heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  padding: 20px;
+  font-size: 36px;
+  font-size: 2.25rem;
+  color: #FFFFFF;
+  line-height: 1.2;
+  text-align: right;
+  transition: opacity 0.4s; }
+  /* line 157, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--heading span {
+    display: block; }
+
+/* line 162, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--subheading {
-  padding: 20px 0 10px;
+  padding-bottom: 10px;
   font-weight: 600;
-  color: inherit;
+  color: #FFFFFF;
   line-height: 1.25;
   text-align: left; }
 
-/* line 127, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 170, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--text {
   color: #FFFFFF;
   line-height: 1.25;
   text-align: left; }
 
-/* line 133, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 176, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--note {
-  padding: 10px 0;
+  padding-top: 10px;
   font-size: 14px;
   color: #FFFFFF; }
-
-/* line 139, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-.services_section--list--link {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 8px 6px;
-  border-top: 3px solid #FFFFFF;
-  font-weight: 700; }
-  /* line 23, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
-  .services_section--list--link:link,
-  .services_section--list--link:visited {
-    color: inherit; }
-  /* line 27, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
-  .services_section--list--link:active,
-  .services_section--list--link.active {
-    color: inherit; }
-  /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
-  .services_section--list--link:hover {
-    color: #FFFFFF; }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .quote {
