@@ -39,7 +39,7 @@
     margin: 80px 0 60px;
     padding: 16px 24px;
     background-color: $blue;
-    border: 3px solid $blue;
+    border: 5px solid $blue;
     @include font-size(28);
     font-weight: 700;
     @include link-colors($white, $blue);
@@ -98,7 +98,7 @@
     float: left;
     height: 270px;
     width: 22%;
-    background-color: $blue!important;
+    border: 15px solid $blue;
     
     &.brand {
         margin-right: 4%;
@@ -110,19 +110,32 @@
         margin-left: 4%;
     }
     
-    &.brand,
+    &.brand {
+        border-color: $yellow;
+        color: $yellow;
+    }
+    &.marketing  {
+        border-color: $purple;
+        color: $purple;
+    }
+    &.web {
+        border-color: $green;
+        color: $green;
+    }
+    &.ux {
+        border-color: $red;
+        color: $red;
+    }
+    
     &.brand .services_section--list--heading {
         background-color: $yellow;
     }
-    &.marketing,
     &.marketing .services_section--list--heading  {
         background-color: $purple;
     }
-    &.web,
     &.web .services_section--list--heading {
         background-color: $green;
     }
-    &.ux,
     &.ux .services_section--list--heading {
         background-color: $red;
     }
@@ -131,6 +144,7 @@
 .services_section--list--link {
     display: block;
     padding: 20px;
+    @include link-colors(inherit, inherit);
     
     &:hover {
         
@@ -147,7 +161,7 @@
     bottom: 0;
     left: 0;
     z-index: 99;
-    padding: 20px;
+    padding: 10px;
     @include font-size(36);
     color: $white;
     line-height: 1.2;
@@ -162,13 +176,13 @@
 .services_section--list--subheading {
     padding-bottom: 10px;
     font-weight: 600;
-    color: $white;
+    color: inherit;
     line-height: 1.25;
     text-align: left;
 }
 
 .services_section--list--text {
-    color: $white;
+    color: inherit;
     line-height: 1.25;
     text-align: left;
 }
@@ -176,5 +190,5 @@
 .services_section--list--note {
     padding-top: 10px;
     font-size: 14px;
-    color: $white;
+    color: inherit;
 }

@@ -15,7 +15,7 @@
 
         <h1 class="hero--heading">We're the Straight Shooters</h1>
 
-        <p class="hero--text">We know that's easier said than done. However, honesty is truly something we feel must be the foundation of any project. Of course we still pride ourselves on our craftsmanship and ability to get you results.</p>
+        <p class="hero--text">We like to keep things simple and honest. This way we can focus on providing you quality services.</p>
 
         <a href="{{ route('hire-page') }}" class="hero--button">LET'S GET STARTED</a>
     </div>

@@ -1390,7 +1390,7 @@ body {
   margin: 80px 0 60px;
   padding: 16px 24px;
   background-color: #00B6FF;
-  border: 3px solid #00B6FF;
+  border: 5px solid #00B6FF;
   font-size: 28px;
   font-size: 1.75rem;
   font-weight: 700;
@@ -1462,7 +1462,7 @@ body {
   float: left;
   height: 270px;
   width: 22%;
-  background-color: #00B6FF !important;
+  border: 15px solid #00B6FF;
 }
 
 .services_section--list--item.brand {
@@ -1477,25 +1477,57 @@ body {
   margin-left: 4%;
 }
 
-.services_section--list--item.brand, .services_section--list--item.brand .services_section--list--heading {
+.services_section--list--item.brand {
+  border-color: #D9B346;
+  color: #D9B346;
+}
+
+.services_section--list--item.marketing {
+  border-color: #6C477A;
+  color: #6C477A;
+}
+
+.services_section--list--item.web {
+  border-color: #6F9942;
+  color: #6F9942;
+}
+
+.services_section--list--item.ux {
+  border-color: #CB5944;
+  color: #CB5944;
+}
+
+.services_section--list--item.brand .services_section--list--heading {
   background-color: #D9B346;
 }
 
-.services_section--list--item.marketing, .services_section--list--item.marketing .services_section--list--heading {
+.services_section--list--item.marketing .services_section--list--heading {
   background-color: #6C477A;
 }
 
-.services_section--list--item.web, .services_section--list--item.web .services_section--list--heading {
+.services_section--list--item.web .services_section--list--heading {
   background-color: #6F9942;
 }
 
-.services_section--list--item.ux, .services_section--list--item.ux .services_section--list--heading {
+.services_section--list--item.ux .services_section--list--heading {
   background-color: #CB5944;
 }
 
 .services_section--list--link {
   display: block;
   padding: 20px;
+}
+
+.services_section--list--link:link, .services_section--list--link:visited {
+  color: inherit;
+}
+
+.services_section--list--link:active, .services_section--list--link.active {
+  color: inherit;
+}
+
+.services_section--list--link:hover {
+  color: inherit;
 }
 
 .services_section--list--link:hover .services_section--list--heading {
@@ -1509,7 +1541,7 @@ body {
   bottom: 0;
   left: 0;
   z-index: 99;
-  padding: 20px;
+  padding: 10px;
   font-size: 36px;
   font-size: 2.25rem;
   color: #fff;
@@ -1525,13 +1557,13 @@ body {
 .services_section--list--subheading {
   padding-bottom: 10px;
   font-weight: 600;
-  color: #fff;
+  color: inherit;
   line-height: 1.25;
   text-align: left;
 }
 
 .services_section--list--text {
-  color: #fff;
+  color: inherit;
   line-height: 1.25;
   text-align: left;
 }
@@ -1539,7 +1571,7 @@ body {
 .services_section--list--note {
   padding-top: 10px;
   font-size: 14px;
-  color: #fff;
+  color: inherit;
 }
 
 .quote {
