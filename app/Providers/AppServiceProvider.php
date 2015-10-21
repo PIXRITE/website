@@ -19,7 +19,8 @@ class AppServiceProvider extends ServiceProvider
         view()->share('google', '//plus.google.com/115736100762343067873/about');
         
         view()->share('email', 'hello@pixrite.com');
-        view()->share('address', '123 S Main, Portland, OR 12345');
+        view()->share('address1', '123 S Main');
+        view()->share('address2', 'Portland, OR 12345');
         view()->share('phone', '(360) 524-2610');
     }
 

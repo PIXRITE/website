@@ -1056,19 +1056,78 @@ button[type="submit"] {
 
 /* line 71, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_block {
+  position: relative;
   clear: both;
-  margin-bottom: 20px; }
-  /* line 76, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  margin-bottom: 40px; }
+  /* line 77, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right,
   .form_block.left {
     clear: none;
     width: 48%; }
-  /* line 81, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 82, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right {
     float: right; }
-  /* line 85, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 86, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.left {
     float: left; }
+
+/* line 91, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form_group {
+  content: "";
+  display: table;
+  width: 100%; }
+  /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
+  .form_group:after {
+    clear: both; }
+
+/* line 95, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form--label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #97979a;
+  line-height: 34px;
+  transition: all 0.2s; }
+  /* line 107, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  .form--label.focused {
+    top: -24px;
+    padding: 0;
+    line-height: 24px; }
+
+/* line 115, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form--input,
+.form--textarea {
+  padding: 6px 8px;
+  background-color: transparent;
+  border: 1px solid #B0B0B2; }
+  /* line 120, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  .form--input:focus,
+  .form--textarea:focus {
+    outline: none;
+    border-color: #00B6FF; }
+
+/* line 126, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form--textarea {
+  min-height: 90px;
+  line-height: 1.25; }
+
+/* line 131, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form--heading {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #707070;
+  text-align: center; }
+
+/* line 138, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form--button {
+  width: 80%;
+  margin: 30px auto 0;
+  padding: 12px 0; }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/base/_links.scss */
 a {
@@ -1859,12 +1918,12 @@ p.about_header--text {
     margin-left: 4%; }
   /* line 113, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.brand {
-    border-color: #D9B346;
-    color: #D9B346; }
-  /* line 117, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-  .services_section--list--item.marketing {
     border-color: #6C477A;
     color: #6C477A; }
+  /* line 117, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+  .services_section--list--item.marketing {
+    border-color: #D9B346;
+    color: #D9B346; }
   /* line 121, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.web {
     border-color: #6F9942;
@@ -1875,10 +1934,10 @@ p.about_header--text {
     color: #CB5944; }
   /* line 130, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.brand .services_section--list--heading {
-    background-color: #D9B346; }
+    background-color: #6C477A; }
   /* line 133, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.marketing .services_section--list--heading {
-    background-color: #6C477A; }
+    background-color: #D9B346; }
   /* line 136, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
   .services_section--list--item.web .services_section--list--heading {
     background-color: #6F9942; }
@@ -1920,11 +1979,8 @@ p.about_header--text {
   line-height: 1.2;
   text-align: right;
   transition: opacity 0.4s; }
-  /* line 171, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
-  .services_section--list--heading span {
-    display: block; }
 
-/* line 176, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 172, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--subheading {
   padding-bottom: 10px;
   font-weight: 600;
@@ -1932,13 +1988,13 @@ p.about_header--text {
   line-height: 1.25;
   text-align: left; }
 
-/* line 184, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 180, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--text {
   color: inherit;
   line-height: 1.25;
   text-align: left; }
 
-/* line 190, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
+/* line 186, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .services_section--list--note {
   padding-top: 10px;
   font-size: 14px;
@@ -1953,8 +2009,8 @@ p.about_header--text {
   border: 10px solid #00B6FF; }
   /* line 10, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .services_links.brand {
-    background-color: #D9B346;
-    border-color: #D9B346; }
+    background-color: #6C477A;
+    border-color: #6C477A; }
     /* line 23, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
     .services_links.brand:link,
     .services_links.brand:visited {
@@ -1965,14 +2021,14 @@ p.about_header--text {
       color: inherit; }
     /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
     .services_links.brand:hover {
-      color: #D9B346; }
+      color: #6C477A; }
     /* line 15, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
     .services_links.brand .services_links--arrow {
-      background-color: #D9B346; }
+      background-color: #6C477A; }
   /* line 20, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .services_links.marketing {
-    background-color: #6C477A;
-    border-color: #6C477A; }
+    background-color: #D9B346;
+    border-color: #D9B346; }
     /* line 23, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
     .services_links.marketing:link,
     .services_links.marketing:visited {
@@ -1983,10 +2039,10 @@ p.about_header--text {
       color: inherit; }
     /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
     .services_links.marketing:hover {
-      color: #6C477A; }
+      color: #D9B346; }
     /* line 25, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
     .services_links.marketing .services_links--arrow {
-      background-color: #6C477A; }
+      background-color: #D9B346; }
   /* line 30, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .services_links.web {
     background-color: #6F9942;
@@ -2120,31 +2176,31 @@ p.about_header--text {
 
 /* line 134, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box {
-  border-color: #D9B346;
-  color: #D9B346; }
+  border-color: #6C477A;
+  color: #6C477A; }
 
 /* line 140, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box--heading,
 #brand .service_box--link {
-  background-color: #D9B346; }
+  background-color: #6C477A; }
 
 /* line 143, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box--link {
-  border-color: #D9B346; }
+  border-color: #6C477A; }
   /* line 146, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   #brand .service_box--link:hover {
     background-color: white; }
 
 /* line 153, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #marketing .service_box {
-  border-color: #6C477A;
-  color: #6C477A; }
+  border-color: #D9B346;
+  color: #D9B346; }
 
 /* line 159, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #marketing .service_box--heading,
 #marketing .service_box--link {
-  background-color: #6C477A;
-  border-color: #6C477A; }
+  background-color: #D9B346;
+  border-color: #D9B346; }
 
 /* line 166, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #web .service_box {
@@ -2201,66 +2257,7 @@ p.about_header--text {
   margin: 30px auto 0; }
   /* line 15, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
   .hire_form .form_group {
-    content: "";
-    display: table;
-    width: 100%;
     padding: 20px 20px 0;
     border: 1px solid #C7C7C9; }
-    /* line 7, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
-    .hire_form .form_group:after {
-      clear: both; }
-  /* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-  .hire_form .form_block {
-    position: relative;
-    margin-bottom: 40px; }
-
-/* line 27, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-.hire_form--label {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -9;
-  padding: 0 8px;
-  font-size: 16px;
-  color: #97979a;
-  line-height: 34px;
-  transition: all 0.2s; }
-  /* line 39, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-  .hire_form--label.focused {
-    top: -24px;
-    padding: 0;
-    line-height: 24px; }
-
-/* line 47, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-.hire_form--input,
-.hire_form--textarea {
-  padding: 6px 8px;
-  background-color: transparent;
-  border: 1px solid #B0B0B2; }
-  /* line 52, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-  .hire_form--input:focus,
-  .hire_form--textarea:focus {
-    outline: none;
-    border-color: #00B6FF; }
-
-/* line 58, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-.hire_form--textarea {
-  min-height: 90px;
-  line-height: 1.25; }
-
-/* line 63, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-.hire_form--heading {
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: #707070;
-  text-align: center; }
-
-/* line 70, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
-.hire_form--button {
-  width: 80%;
-  margin: 30px auto 0;
-  padding: 12px 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -31,7 +31,7 @@
        <!-- Contact Info -->
        <div class="site_footer--contact">
            <p class="site_footer--contact--text">{{ $email }}</p>
-           <p class="site_footer--contact--text">{{ $address }}</p>
+           <p class="site_footer--contact--text">{{ $address1 }}, {{ $address2 }}</p>
            <p class="site_footer--contact--text">{{ $phone }}</p>
        </div>
    

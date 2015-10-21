@@ -15,7 +15,7 @@
 <!-- Page Top -->
 <div class="page_top"> 
     <div class="section_inner">
-        <h1 class="page_top--heading">Digital Marketing</h1>
+        <h1 class="page_top--heading">SEO/SEM</h1>
     
         <div class="page_top--years">@include('pages._partials.years')</div>
     </div>
@@ -78,7 +78,7 @@
 
             <img class="service--image" src="../img/seo_lrg_01.jpg">
 
-            <h5 class="service--heading">Digital Marketing Services</h5>
+            <h5 class="service--heading">SEO/SEM Services</h5>
 
             <ul class="service--list">
                 <li>Keyword analysis</li>

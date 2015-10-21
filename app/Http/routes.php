@@ -62,6 +62,11 @@ Route::get( '/hire', [
 ]);
 
 Route::post( '/hire', [
-    'as' => 'send-hire',
+    'as' => 'hire-form',
     'uses' => 'EmailController@send_hire'
+]);
+
+Route::post( '/contact', [
+    'as' => 'contact-form',
+    'uses' => 'EmailController@send_contact'
 ]);

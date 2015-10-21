@@ -58,7 +58,7 @@
             </a>
                     
             <a class="services_links marketing" href="{{ route('marketing-page') }}">
-                <h3 class="services_links--heading">Digital Marketing Services</h3>
+                <h3 class="services_links--heading">SEO/SEM Services</h3>
                 <h5 class="services_links--terms">audit<span>analyze</span>optimize<span>convert</span></h5>
                 
                 <p class="services_links--text">We understand search engine marketing, from PPC auditing to conversion rate optimization and everything in between.</p>

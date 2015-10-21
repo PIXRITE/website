@@ -13,62 +13,7 @@
     margin: 30px auto 0;
     
     .form_group {
-        @include clearfix;
         padding: 20px 20px 0;
         border: 1px solid $heather;
     }
-    
-    .form_block {
-        position: relative;
-        margin-bottom: 40px;
-    }
-}
-
-.hire_form--label {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -9;
-    padding: 0 8px;
-    font-size: 16px;
-    color: $grey;
-    line-height: 34px;
-    transition: all $t-fast;
-    
-    &.focused {
-        top: -24px;
-        padding: 0;
-        line-height: 24px;
-    }
-}
-
-.hire_form--input,
-.hire_form--textarea {
-    padding: 6px 8px;
-    background-color: transparent;
-    border: 1px solid $sterling;
-    
-    &:focus {
-        outline: none;
-        border-color: $blue;
-    }
-}
-
-.hire_form--textarea {
-    min-height: 90px;
-    line-height: 1.25;
-}
-
-.hire_form--heading {
-    margin-bottom: 40px;
-    @include font-size(20);
-    color: $stone;
-    text-align: center;
-}
-
-.hire_form--button {
-    width: 80%;
-    margin: 30px auto 0;
-    padding: 12px 0;
 }

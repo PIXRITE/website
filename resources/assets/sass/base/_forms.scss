@@ -69,8 +69,9 @@ button[type="submit"] {
 
 // Form Block
 .form_block {
+    position: relative;
     clear: both;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
     
     &.right,
     &.left {
@@ -85,4 +86,57 @@ button[type="submit"] {
     &.left {
         float: left;
     }
+}
+
+.form_group {
+    @include clearfix;
+}
+
+.form--label {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    padding: 0 8px;
+    font-size: 16px;
+    color: $grey;
+    line-height: 34px;
+    transition: all $t-fast;
+    
+    &.focused {
+        top: -24px;
+        padding: 0;
+        line-height: 24px;
+    }
+}
+
+.form--input,
+.form--textarea {
+    padding: 6px 8px;
+    background-color: transparent;
+    border: 1px solid $sterling;
+    
+    &:focus {
+        outline: none;
+        border-color: $blue;
+    }
+}
+
+.form--textarea {
+    min-height: 90px;
+    line-height: 1.25;
+}
+
+.form--heading {
+    margin-bottom: 40px;
+    @include font-size(20);
+    color: $stone;
+    text-align: center;
+}
+
+.form--button {
+    width: 80%;
+    margin: 30px auto 0;
+    padding: 12px 0;
 }

@@ -53,7 +53,7 @@
             
             <li class="services_section--list--item marketing">
                 <a class="services_section--list--link" href="{{ route('marketing-page') }}">
-                    <h3 class="services_section--list--heading">Digital <span>Marketing</span></h3>
+                    <h3 class="services_section--list--heading">SEO/SEM</h3>
                     
                     <h5 class="services_section--list--subheading">Expose Yourself</h5>
                     <p class="services_section--list--text">We give your customers that A-HA moment, and make sure they know how to share it over, and over, and over...</p>

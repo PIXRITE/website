@@ -792,8 +792,9 @@ button[type="submit"]:focus, button[type="submit"]:hover {
 }
 
 .form_block {
+  position: relative;
   clear: both;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .form_block.right, .form_block.left {
@@ -807,6 +808,65 @@ button[type="submit"]:focus, button[type="submit"]:hover {
 
 .form_block.left {
   float: left;
+}
+
+.form_group {
+  content: "";
+  display: table;
+  width: 100%;
+}
+
+.form_group:after {
+  clear: both;
+}
+
+.form--label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #97979a;
+  line-height: 34px;
+  transition: all 0.2s;
+}
+
+.form--label.focused {
+  top: -24px;
+  padding: 0;
+  line-height: 24px;
+}
+
+.form--input, .form--textarea {
+  padding: 6px 8px;
+  background-color: transparent;
+  border: 1px solid #B0B0B2;
+}
+
+.form--input:focus, .form--textarea:focus {
+  outline: none;
+  border-color: #00B6FF;
+}
+
+.form--textarea {
+  min-height: 90px;
+  line-height: 1.25;
+}
+
+.form--heading {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #707070;
+  text-align: center;
+}
+
+.form--button {
+  width: 80%;
+  margin: 30px auto 0;
+  padding: 12px 0;
 }
 
 a {
@@ -1449,6 +1509,24 @@ p.about_header--text {
   border: 4px solid #00B6FF;
 }
 
+p.contact--hours {
+  margin: 6px 0 14px;
+}
+
+p.contact--phone {
+  margin: 0;
+}
+
+p.contact--email {
+  margin: 0;
+}
+
+.contact--address {
+  margin: 14px 0;
+  font-style: normal;
+  line-height: 1.5;
+}
+
 .hero {
   position: relative;
   background-color: rgba(19, 21, 22, 0.9);
@@ -1575,13 +1653,13 @@ p.about_header--text {
 }
 
 .services_section--list--item.brand {
-  border-color: #D9B346;
-  color: #D9B346;
+  border-color: #6C477A;
+  color: #6C477A;
 }
 
 .services_section--list--item.marketing {
-  border-color: #6C477A;
-  color: #6C477A;
+  border-color: #D9B346;
+  color: #D9B346;
 }
 
 .services_section--list--item.web {
@@ -1595,11 +1673,11 @@ p.about_header--text {
 }
 
 .services_section--list--item.brand .services_section--list--heading {
-  background-color: #D9B346;
+  background-color: #6C477A;
 }
 
 .services_section--list--item.marketing .services_section--list--heading {
-  background-color: #6C477A;
+  background-color: #D9B346;
 }
 
 .services_section--list--item.web .services_section--list--heading {
@@ -1647,10 +1725,6 @@ p.about_header--text {
   transition: opacity 0.4s;
 }
 
-.services_section--list--heading span {
-  display: block;
-}
-
 .services_section--list--subheading {
   padding-bottom: 10px;
   font-weight: 600;
@@ -1680,8 +1754,8 @@ p.about_header--text {
 }
 
 .services_links.brand {
-  background-color: #D9B346;
-  border-color: #D9B346;
+  background-color: #6C477A;
+  border-color: #6C477A;
 }
 
 .services_links.brand:link, .services_links.brand:visited {
@@ -1693,16 +1767,16 @@ p.about_header--text {
 }
 
 .services_links.brand:hover {
-  color: #D9B346;
+  color: #6C477A;
 }
 
 .services_links.brand .services_links--arrow {
-  background-color: #D9B346;
+  background-color: #6C477A;
 }
 
 .services_links.marketing {
-  background-color: #6C477A;
-  border-color: #6C477A;
+  background-color: #D9B346;
+  border-color: #D9B346;
 }
 
 .services_links.marketing:link, .services_links.marketing:visited {
@@ -1714,11 +1788,11 @@ p.about_header--text {
 }
 
 .services_links.marketing:hover {
-  color: #6C477A;
+  color: #D9B346;
 }
 
 .services_links.marketing .services_links--arrow {
-  background-color: #6C477A;
+  background-color: #D9B346;
 }
 
 .services_links.web {
@@ -1864,16 +1938,16 @@ p.about_header--text {
 }
 
 #brand .service_box {
-  border-color: #D9B346;
-  color: #D9B346;
+  border-color: #6C477A;
+  color: #6C477A;
 }
 
 #brand .service_box--heading, #brand .service_box--link {
-  background-color: #D9B346;
+  background-color: #6C477A;
 }
 
 #brand .service_box--link {
-  border-color: #D9B346;
+  border-color: #6C477A;
 }
 
 #brand .service_box--link:hover {
@@ -1881,13 +1955,13 @@ p.about_header--text {
 }
 
 #marketing .service_box {
-  border-color: #6C477A;
-  color: #6C477A;
+  border-color: #D9B346;
+  color: #D9B346;
 }
 
 #marketing .service_box--heading, #marketing .service_box--link {
-  background-color: #6C477A;
-  border-color: #6C477A;
+  background-color: #D9B346;
+  border-color: #D9B346;
 }
 
 #web .service_box {
@@ -1943,67 +2017,6 @@ p.about_header--text {
 }
 
 .hire_form .form_group {
-  content: "";
-  display: table;
-  width: 100%;
   padding: 20px 20px 0;
   border: 1px solid #C7C7C9;
-}
-
-.hire_form .form_group:after {
-  clear: both;
-}
-
-.hire_form .form_block {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.hire_form--label {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -9;
-  padding: 0 8px;
-  font-size: 16px;
-  color: #97979a;
-  line-height: 34px;
-  transition: all 0.2s;
-}
-
-.hire_form--label.focused {
-  top: -24px;
-  padding: 0;
-  line-height: 24px;
-}
-
-.hire_form--input, .hire_form--textarea {
-  padding: 6px 8px;
-  background-color: transparent;
-  border: 1px solid #B0B0B2;
-}
-
-.hire_form--input:focus, .hire_form--textarea:focus {
-  outline: none;
-  border-color: #00B6FF;
-}
-
-.hire_form--textarea {
-  min-height: 90px;
-  line-height: 1.25;
-}
-
-.hire_form--heading {
-  margin-bottom: 40px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  color: #707070;
-  text-align: center;
-}
-
-.hire_form--button {
-  width: 80%;
-  margin: 30px auto 0;
-  padding: 12px 0;
 }

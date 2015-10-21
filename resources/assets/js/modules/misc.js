@@ -2,8 +2,8 @@
  * Sliding Form Labels
  */
 (function() {
-    var inputs = $('.hire_form--input, .hire_form--textarea');
-    var labels = $('.hire_form--label');
+    var inputs = $('.form--input, .form--textarea');
+    var labels = $('.form--label');
     
     // Clear Placeholders and unhide Labels
     inputs.attr('placeholder', '');

@@ -28,7 +28,7 @@
                            </li>
                            
                            <li class="site_nav--submenu--item">
-                               <a class="site_nav--submenu--link marketing" href="{{ route('marketing-page') }}">DIGITAL MARKETING</a>
+                               <a class="site_nav--submenu--link marketing" href="{{ route('marketing-page') }}">SEO/SEM</a>
                            </li>
                            
                            <li class="site_nav--submenu--item">
