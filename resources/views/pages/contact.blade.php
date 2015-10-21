@@ -71,7 +71,7 @@
                 </div>
 
                 <!-- Buttons -->
-                <div class="form_block">
+                <div class="form_block buttons">
                     <button class="form--button" type="submit">CONTACT PIXRITE</button>
                 </div>
             </form>

@@ -49,6 +49,7 @@ button[type="submit"] {
     width: 100%;
 	padding: 8px 24px;
 	background-color: $blue;
+    border: 3px solid $blue;
 	border-radius: 2px;
 	font-size: 20px;
 	font-weight: 600;
@@ -56,8 +57,8 @@ button[type="submit"] {
 
 	&:focus,
 	&:hover {
-		background-color: $raven;
-		color: $white;
+		background-color: transparent;
+		color: $blue;
 	}
 }
 
@@ -85,6 +86,10 @@ button[type="submit"] {
     
     &.left {
         float: left;
+    }
+    
+    &.buttons {
+        margin-bottom: 0;
     }
 }
 

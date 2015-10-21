@@ -100,7 +100,7 @@
             </div>
             
             <!-- Buttons -->
-            <div class="form_block">
+            <div class="form_block buttons">
                 <button class="form--button" type="submit">SUBMIT YOUR REQUEST</button>
             </div>
         </form>
