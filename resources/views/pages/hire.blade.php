@@ -25,6 +25,8 @@
 <!-- Page Body -->
 <div class="page_body">
     <div class="section_inner">
+        <h2 class="hire_heading">Let's Get Started</h2>
+       
         <p class="hire_text">After we get some informtion about what you need, we'll setup a time to discuss your project in further detail. It won't be more than a day or so. While, the fields in the top section are required, the information you provide in the optional fields will help us make sure we're the right fit for your project.</p>
         
         <form class="hire_form js-slidingForm" action="/foo/bar" method="POST">

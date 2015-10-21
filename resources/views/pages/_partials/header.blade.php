@@ -32,7 +32,7 @@
                            </li>
                            
                            <li class="site_nav--submenu--item">
-                               <a class="site_nav--submenu--link web" href="{{ route('web-page') }}">WEB &amp; SEO</a>
+                               <a class="site_nav--submenu--link web" href="{{ route('web-page') }}">WEB</a>
                            </li>
                            
                            <li class="site_nav--submenu--item">

@@ -111,33 +111,33 @@
     }
     
     &.brand {
-        border-color: $yellow;
-        color: $yellow;
+        border-color: $brand;
+        color: $brand;
     }
     &.marketing  {
-        border-color: $purple;
-        color: $purple;
+        border-color: $marketing;
+        color: $marketing;
     }
     &.web {
-        border-color: $green;
-        color: $green;
+        border-color: $web;
+        color: $web;
     }
     &.ux {
-        border-color: $red;
-        color: $red;
+        border-color: $ux;
+        color: $ux;
     }
     
     &.brand .services_section--list--heading {
-        background-color: $yellow;
+        background-color: $brand;
     }
     &.marketing .services_section--list--heading  {
-        background-color: $purple;
+        background-color: $marketing;
     }
     &.web .services_section--list--heading {
-        background-color: $green;
+        background-color: $web;
     }
     &.ux .services_section--list--heading {
-        background-color: $red;
+        background-color: $ux;
     }
 }
 

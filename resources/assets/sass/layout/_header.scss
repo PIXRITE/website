@@ -42,7 +42,7 @@
 .site_nav--link {
     display: block;
     padding: 10px 12px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     font-size: 18px;
     @include link-colors($heather, $white);
     

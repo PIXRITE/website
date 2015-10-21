@@ -63,7 +63,7 @@
             
             <li class="services_section--list--item web">
                 <a class="services_section--list--link" href="{{ route('web-page') }}">
-                    <h3 class="services_section--list--heading">Web &amp; SEO</h3>
+                    <h3 class="services_section--list--heading">Web</h3>
                     
                     <h5 class="services_section--list--subheading">Spiders Hang on Broken Webs</h5>
                     <p class="services_section--list--text">Fact is, these crawlers are the superheros of getting seen on the web. Let us design, build and market your online presence.</p>

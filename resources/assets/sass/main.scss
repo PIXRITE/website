@@ -25,22 +25,23 @@
   'layout/header',
   'layout/footer';
 
-// 5. Components
+// 5. Default Page
+@import
+  'pages/default';
+
+// 6. Components
 @import
   'components/logo',
+  'components/quote',
   'components/years';
 
-// 6. Page
+// 7. Page
 @import
-  'pages/default',
+  'pages/about',
   'pages/index',
   'pages/services',
-  'pages/web',
-  'pages/brand',
-  'pages/marketing',
-  'pages/ux',
   'pages/hire',
   'pages/work';
 
-// 7. QuickFix
+// 8. QuickFix
 @import 'quickfix';

@@ -1,0 +1,23 @@
+// #Quote
+// ---------------------------------------
+.quote {
+    float: right;
+    width: 200px;
+    margin: 0 0 10px 20px;
+    padding: 10px 0; 
+    border: 2px solid $heather;
+    border-right: none;
+    border-left: none;
+}
+
+p.quote--text {
+    margin-bottom: 10px;
+    line-height: 1.25;
+    color: $blue;
+}
+p.quote--credit {
+    float: right; 
+    margin: 0;
+    @include font-size(10); 
+    color: $blue;
+}

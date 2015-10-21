@@ -1,66 +1,207 @@
-.quote {
-    float:right;
-    margin: 10px;
-    margin-top: 0;
-    border-top: 1px solid #ccc; 
-    border-bottom: 1px solid #ccc; 
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    width:200px;
-    height:auto;
-}
-
-.quote--text {
-    @include font-size(12);
-    font-family: Georgia, "Times New Roman", Times, serif; 
-    line-height: 14pt;
-    color:orange;
-}
-.quote--credit {
-    float: right; 
-    font-size: 10px; 
-    margin-top: 10px;
-    color:grey;
-}
+// #ServicesPage
+// ---------------------------------------
+.services_links {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    border: 10px solid $blue;
     
-.allservices {
-    font-size:8pt;
-    clear:both;
-    h5 {
-        font-size: 10pt;
-        font-weight: 600; 
+    &.brand {
+        background-color: $brand;
+        border-color: $brand;
+        @include link-colors($white, $brand);
+        
+        .services_links--arrow {
+            background-color: $brand;
+        }
     }
-   
-}
-
-.lefthalf {   
-    float: left; 
-    margin-top: 5px; 
-    margin-bottom: 10px;
-    padding-right: 5px; 
-}
-
-.caption {
-    line-height: 1.0em; 
-    font-size: 10px;
-    padding-top:5px;
-}
-
-.servicelist {
-    h3 {
-        clear: both;
-        font-size: 2em;
+    
+    &.marketing {
+        background-color: $marketing;
+        border-color: $marketing;
+        @include link-colors($white, $marketing);
+        
+        .services_links--arrow {
+            background-color: $marketing;
+        }
     }
-    p {
-        font-size: 1rem;
+    
+    &.web {
+        background-color: $web;
+        border-color: $web;
+        @include link-colors($white, $web);
+        
+        .services_links--arrow {
+            background-color: $web;
+        }
+    }
+    
+    &.ux {
+        background-color: $ux;
+        border-color: $ux;
+        @include link-colors($white, $ux);
+        
+        .services_links--arrow {
+            background-color: $ux;
+        }
+    }
+        
+    &:hover {
+        background-color: transparent;
     }
 }
 
-.orange {
-    color: orange;
+.services_links--heading {
+    padding: 10px;
+    color: inherit;
+}
+.services_links--terms {
+    padding: 4px 10px;
+    @include font-size(18);
+    font-weight: 700;
+    color: inherit;
+    text-transform: uppercase;
+    
+    span {
+        margin: 0 6px;
+    }
+}
+.services_links--text {
+    margin: 0;
+    padding: 10px;
+    @include font-size(18);
+    color: inherit;
+    line-height: 1.25;
+}
+.services_links--arrow {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    bottom: 0;
+    width: 60px;
+    background-color: $blue;
+    color: $white;
+    
+    i {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        margin-top: -24px;
+        font-size: 48px;
+        text-align: center;
+    }
 }
 
-.floater {
-    float:left;
-    width:33%;
+
+// #SubServicesPages
+// ---------------------------------------
+.service_box {
+    float: left;
+    width: 32%;
+    border: 3px solid $blue;
+    
+    &.left {
+        margin-right: 2%;
+    }
+    &.right {
+        margin-left: 2%;
+    }
+}
+
+.service_box--heading {
+    padding: 10px;
+    @include font-size(18);
+    color: $white;
+    text-align: center;
+}
+.service_box--text {
+    padding: 10px;
+    @include font-size(14);
+    color: inherit;
+    line-height: 1.25;
+}
+.service_box--link {
+    display: block;
+    padding: 10px;
+    border-top: 3px solid $blue;
+    text-align: center;
+    @include link-colors($white, inherit);
+}
+
+#brand {
+    .service_box {
+        border-color: $brand;
+        color: $brand;
+    }
+
+    .service_box--heading,
+    .service_box--link {
+        background-color: $brand;
+    }
+    .service_box--link {
+        border-color: $brand;
+    
+        &:hover {
+            background-color: white;
+        }
+    }
+}
+
+#marketing {
+    .service_box {
+        border-color: $marketing;
+        color: $marketing;
+    }
+
+    .service_box--heading,
+    .service_box--link {
+        background-color: $marketing;
+        border-color: $marketing;
+    }
+}
+
+#web {
+    .service_box {
+        border-color: $web;
+        color: $web;
+    }
+
+    .service_box--heading,
+    .service_box--link {
+        background-color: $web;
+        border-color: $web;
+    }
+}
+
+#ux {
+    .service_box {
+        border-color: $ux;
+        color: $ux;
+    }
+
+    .service_box--heading,
+    .service_box--link {
+        background-color: $ux;
+        border-color: $ux;
+    }
+}
+
+.service--image {
+    width: 100%;
+    margin: 30px 0;
+}
+
+.service--heading {
+    padding-bottom: 10px;
+    @include font-size(24);
+}
+.service--list {
+    
+    li {
+        float: left;
+        width: 50%;
+        line-height: 1.5;
+    }
 }
