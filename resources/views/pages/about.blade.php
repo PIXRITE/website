@@ -46,7 +46,7 @@
                 <p class="about_header--text">from day one!</p>
             </div>
             
-            <p>There's a reason we've stayed busy with business for more than 10 years strictly through customer referrals--we keep our promises!</p>
+            <p>There's a reason we've stayed busy with business for more than 20 years strictly through customer referrals--we keep our promises!</p>
 
             <div class="about_header">
                 <p class="about_header--number">3</p>

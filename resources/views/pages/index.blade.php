@@ -15,7 +15,7 @@
 
         <h1 class="hero--heading">We're the Straight Shooters</h1>
 
-        <p class="hero--text">We like to keep things simple and honest. This way we can focus on providing you quality services.</p>
+        <p class="hero--text">Ready, fire, aim! We'll tell you what your company really needs and deliver accordingly. You can rely on PIXRITE for all of your digital marketing needs.</p>
 
         <a href="{{ route('hire-page') }}" class="hero--button">LET'S GET STARTED</a>
     </div>
@@ -45,9 +45,9 @@
                 <a class="services_section--list--link" href="{{ route('brand-page') }}">
                     <h3 class="services_section--list--heading">Brand</h3>
                        
-                    <h5 class="services_section--list--subheading">Expose Yourself</h5>
-                    <p class="services_section--list--text">We give your customers that A-HA moment, and make sure they know how to share it over, and over, and over...</p>
-                    <p class="services_section--list--note">(in a good way...)</p>
+                    <h5 class="services_section--list--subheading">Build Recognition</h5>
+                    <p class="services_section--list--text">Branding cattle is out. You need more than a logo to distinguish yourself from the competition. Its's time to establish your brand.</p>
+                    <p class="services_section--list--note">(and it won't hurt a bit...)</p>
                 </a>
             </li>
             

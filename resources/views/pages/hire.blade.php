@@ -27,7 +27,9 @@
     <div class="section_inner">
         <h2 class="hire_heading">Let's Get Started</h2>
        
-        <p class="hire_text">After we get some informtion about what you need, we'll setup a time to discuss your project in further detail. It won't be more than a day or so. While, the fields in the top section are required, the information you provide in the optional fields will help us make sure we're the right fit for your project.</p>
+        <p class="hire_text">Ready to discuss your project with us? You know the drill: please fill out the form below, and we'll get in touch with you shortly. 
+        Too impatient to wait for us to contact you? Give us a call right now at (123) 456-7890.
+        </p>
         
         <form class="hire_form js-slidingForm" action="{{ route('hire-form') }}" method="POST">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
