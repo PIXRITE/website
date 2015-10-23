@@ -50,7 +50,9 @@
     }
 }
 
-.page_body--full {
+.page_body--skinny {
     clear: both;
-    padding-top: 30px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }

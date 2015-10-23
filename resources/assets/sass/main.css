@@ -535,10 +535,11 @@ th {
 /* line 26, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
 .jcarousel li {
   width: 200px;
-  float: left; }
+  float: left;
+  padding: 0 80px; }
 
 /** Carousel Controls **/
-/* line 33, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+/* line 34, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
 .jcarousel-control-prev,
 .jcarousel-control-next {
   position: absolute;
@@ -548,12 +549,12 @@ th {
   width: 60px;
   color: #00B6FF;
   cursor: pointer; }
-  /* line 42, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+  /* line 43, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
   .jcarousel-control-prev:hover,
   .jcarousel-control-next:hover {
     background-color: #00B6FF;
     color: #FFFFFF; }
-  /* line 47, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+  /* line 48, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
   .jcarousel-control-prev i,
   .jcarousel-control-next i {
     position: absolute;
@@ -563,11 +564,11 @@ th {
     font-size: 48px;
     text-align: center; }
 
-/* line 57, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+/* line 58, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
 .jcarousel-control-prev {
   left: 0; }
 
-/* line 61, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+/* line 62, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
 .jcarousel-control-next {
   right: 0; }
 
@@ -1668,9 +1669,11 @@ body {
     margin-bottom: 14px; }
 
 /* line 53, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
-.page_body--full {
+.page_body--skinny {
   clear: both;
-  padding-top: 30px; }
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto; }
 
 /* line 7, C:/wamp/www/pixrite/resources/assets/sass/components/_logo.scss */
 .logo:hover .logo--icon--square {
@@ -1871,22 +1874,33 @@ p.about_header--text {
   border: 4px solid #00B6FF; }
 
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
-p.contact--hours {
-  margin: 6px 0 14px; }
+.contact--subheading {
+  margin: 30px 0 10px; }
 
-/* line 6, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
-p.contact--phone {
-  margin: 0; }
+/* line 7, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
+.contact--details {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px; }
+  /* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
+  .contact--details p {
+    line-height: 1.5; }
 
-/* line 9, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
-p.contact--email {
-  margin: 0; }
+/* line 17, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
+.contact--details--main {
+  margin-bottom: 14px; }
 
-/* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
+/* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
 .contact--address {
-  margin: 14px 0;
+  float: right;
+  width: 50%;
+  margin-bottom: 30px;
   font-style: normal;
   line-height: 1.5; }
+
+/* line 29, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
+.contact_form {
+  clear: both; }
 
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero {
@@ -2336,19 +2350,16 @@ p.contact--email {
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_heading {
-  max-width: 800px;
-  margin: 0 auto 10px; }
+  margin-bottom: 10px; }
 
-/* line 6, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+/* line 5, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_text {
-  max-width: 800px;
-  margin: 0 auto 20px; }
+  margin-bottom: 20px; }
 
-/* line 11, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+/* line 9, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_form {
-  max-width: 800px;
-  margin: 30px auto 0; }
-  /* line 15, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
+  margin-top: 30px; }
+  /* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
   .hire_form .form_group {
     padding: 20px 20px 0;
     border: 1px solid #C7C7C9; }

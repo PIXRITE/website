@@ -1,16 +1,31 @@
 // #Contact
 // ---------------------------------------
-p.contact--hours {
-    margin: 6px 0 14px;
+.contact--subheading {
+    margin: 30px 0 10px;
 }
-p.contact--phone {
-    margin: 0;
+
+.contact--details {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    
+    p {
+        line-height: 1.5;
+    }
 }
-p.contact--email {
-    margin: 0;
+
+.contact--details--main {
+    margin-bottom: 14px;
 }
+
 .contact--address {
-    margin: 14px 0;
+    float: right;
+    width: 50%;
+    margin-bottom: 30px;
     font-style: normal;
     line-height: 1.5;
+}
+
+.contact_form {
+    clear: both;
 }
