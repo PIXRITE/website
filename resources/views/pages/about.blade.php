@@ -61,22 +61,54 @@
        
        
         <div class="page_body--right">
-            <div class="about_founder">
-                <h3 class="about_founder--heading">Jared Rowe, PIXRITE Founder</h3>
+            <div class="about_person founder">
+                <h3 class="about_person--heading">Jared Rowe,<span> PIXRITE Founder</span></h3>
 
-                <img class="about_founder--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
 
-                <p>I'm truly fascinated by people. Creating visuals they can see and react to teaches me something new about myself every time, and those positive reactions ("You read my mind!") feed my passion for what PIXRITE does.</p>
+                <p class="about_person--text">I'm truly fascinated by people. Creating visuals they can see and react to teaches me something new about myself every time, and those positive reactions ("You read my mind!") feed my passion for what PIXRITE does.</p>
+            </div>
+            
+            <h2 class="about_people--heading">The People We Work With</h2>
+            
+            <div class="about_person">
+                <h3 class="about_person--heading">Adam Schaffner,<span> Information Technology Guy</span></h3>
 
-                <ul>
-                    <li>Provided website, marketing and/or rich media services for Intel, Sun Microsystems, American Express, StreamCast Networks and other companies coast to coast</li>
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
 
-                    <li>Completely branded and established a recognizable online presence for more than 5 successful startup companies within the last 4 years</li>
+                <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
+            </div>
+            
+            <div class="about_person">
+                <h3 class="about_person--heading">Josh Evensen,<span> Development Guy</span></h3>
 
-                    <li>Directed multiple online communication strategies, designs and applications for leaders within the scrapbooking, alarm sales and software industries</li>
-                </ul>
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
 
-                <p>Family is everything. I play piano by ear, still practice simple sleight of hand with my boys and try to seem creative to my amazing wife once in a while. Chips and Queso is my weakness and I've pushed every car I've owned past 100mph. I'm a rain maker at heart and will forever be proud of growing up in Oregon.</p>
+                <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
+            </div>
+            
+            <div class="about_person">
+                <h3 class="about_person--heading">Lark Meadows Mapes,<span> Content &amp; Strategy Gal</span></h3>
+
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
+
+                <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
+            </div>
+            
+            <div class="about_person">
+                <h3 class="about_person--heading">Randy Rawe,<span> Film &amp; Promotion Guy</span></h3>
+
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
+
+                <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
+            </div>
+            
+            <div class="about_person">
+                <h3 class="about_person--heading">Rich Agren,<span> Project Management Guy</span></h3>
+
+                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
+
+                <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
             </div>
         </div>
     </div>

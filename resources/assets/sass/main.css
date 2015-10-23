@@ -1339,7 +1339,7 @@ body {
 /* line 7, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_header--logo {
   float: left;
-  padding-top: 7px; }
+  padding-top: 10px; }
   /* line 12, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_header--logo .logo--icon--square,
   .site_header--logo .logo--icon--circle {
@@ -1845,33 +1845,54 @@ p.about_header--text {
   font-size: 1.125rem; }
 
 /* line 32, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-.about_founder {
-  padding: 30px 40px;
-  border: 3px solid #C7C7C9; }
-  /* line 36, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-  .about_founder p {
-    margin-bottom: 14px; }
-  /* line 40, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-  .about_founder ul {
-    clear: both;
-    margin-bottom: 14px; }
-  /* line 45, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-  .about_founder li {
-    margin-bottom: 10px;
-    line-height: 1.5; }
-
-/* line 51, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-.about_founder--heading {
-  margin-bottom: 30px;
-  color: #00B6FF;
+.about_people--heading {
+  margin: 30px 0;
   text-align: center; }
 
-/* line 56, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
-.about_founder--image {
-  float: left;
-  width: 150px;
-  margin: 0 20px 20px 0;
-  border: 4px solid #00B6FF; }
+/* line 37, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+.about_person {
+  position: relative;
+  min-height: 108px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-right: 100px;
+  border: 4px solid #707070; }
+  /* line 45, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+  .about_person.founder {
+    min-height: 186px;
+    padding-right: 178px;
+    border-color: #00B6FF; }
+    /* line 50, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+    .about_person.founder .about_person--heading {
+      font-size: 26px;
+      font-size: 1.625rem; }
+    /* line 53, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+    .about_person.founder .about_person--image {
+      top: 14px;
+      right: 14px;
+      width: 150px; }
+
+/* line 61, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+.about_person--heading {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-size: 1.375rem; }
+  /* line 65, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+  .about_person--heading span {
+    font-size: 80%;
+    font-style: italic; }
+
+/* line 70, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+.about_person--image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px; }
+
+/* line 76, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+.about_person--text {
+  font-size: 14px;
+  font-size: 0.875rem; }
 
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_contact.scss */
 .contact--subheading {
@@ -1911,7 +1932,7 @@ p.about_header--text {
 /* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero--logo {
   position: absolute;
-  top: 7px;
+  top: 10px;
   left: 0; }
 
 /* line 18, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
