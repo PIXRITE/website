@@ -508,6 +508,69 @@ td,
 th {
   padding: 0; }
 
+/* line 1, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative; }
+
+/** Carousel **/
+/* line 8, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  border: 5px solid #00B6FF;
+  border-right: none;
+  border-left: none; }
+
+/* line 18, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel ul {
+  width: 20000em;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 26, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel li {
+  width: 200px;
+  float: left; }
+
+/** Carousel Controls **/
+/* line 33, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel-control-prev,
+.jcarousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 900;
+  width: 60px;
+  color: #00B6FF;
+  cursor: pointer; }
+  /* line 42, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+  .jcarousel-control-prev:hover,
+  .jcarousel-control-next:hover {
+    background-color: #00B6FF;
+    color: #FFFFFF; }
+  /* line 47, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+  .jcarousel-control-prev i,
+  .jcarousel-control-next i {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -24px;
+    font-size: 48px;
+    text-align: center; }
+
+/* line 57, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel-control-prev {
+  left: 0; }
+
+/* line 61, C:/wamp/www/pixrite/resources/assets/sass/vendor/_jcarousel.scss */
+.jcarousel-control-next {
+  right: 0; }
+
 /* Magnific Popup CSS */
 /* line 2, C:/wamp/www/pixrite/resources/assets/sass/vendor/_magnific-popup.scss */
 .mfp-bg {
@@ -2341,83 +2404,25 @@ p.contact--email {
     border-color: #CB5944; }
 
 /* line 62, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel {
-  position: relative;
-  width: 100%;
-  margin: 20px 0;
-  padding: 20px 0;
-  border: 5px solid #00B6FF;
-  border-right: none;
-  border-left: none; }
-
-/* line 73, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel--prev,
-.work_carousel--next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 900;
-  width: 60px;
-  color: #00B6FF;
-  cursor: pointer; }
-  /* line 82, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-  .work_carousel--prev:hover,
-  .work_carousel--next:hover {
-    background-color: #00B6FF;
-    color: #FFFFFF; }
-  /* line 87, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-  .work_carousel--prev.disabled,
-  .work_carousel--next.disabled {
-    color: #E2E3E4; }
-  /* line 91, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-  .work_carousel--prev i,
-  .work_carousel--next i {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    margin-top: -24px;
-    font-size: 48px;
-    text-align: center; }
-
-/* line 101, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel--prev {
-  left: 0; }
-
-/* line 105, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel--next {
-  right: 0; }
-
-/* line 109, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel--list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-/* line 115, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
-.work_carousel--item {
-  width: 100%;
-  padding: 0 10%; }
-
-/* line 120, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--text {
   font-size: 18px;
   font-size: 1.125rem;
   color: #555151;
   line-height: 1.5; }
-  /* line 125, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work_quote--text i {
     font-size: 28px;
     color: #00B6FF;
     vertical-align: baseline; }
 
-/* line 132, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 74, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--author {
   margin-top: 10px;
   color: #555151;
   text-align: right;
   line-height: 1; }
 
-/* line 139, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 81, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--company {
   font-size: 14px;
   font-size: 0.875rem;

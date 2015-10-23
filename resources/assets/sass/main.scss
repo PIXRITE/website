@@ -1,14 +1,15 @@
-// 1. Vendors
-@import
-  'vendor/font-brandon',
-  'vendor/normalize',
-  'vendor/magnific-popup';
-
-// 2. Configuration and helpers
+// 1. Configuration and helpers
 @import
   'utils/variables',
   'utils/color',
   'utils/mixins';
+
+// 2. Vendors
+@import
+  'vendor/font-brandon',
+  'vendor/normalize',
+  'vendor/jcarousel',
+  'vendor/magnific-popup';
 
 // 3. Base stuff
 @import
