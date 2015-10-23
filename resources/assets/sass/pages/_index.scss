@@ -28,10 +28,14 @@
 .hero--text {
     max-width: 700px;
     margin: 0 auto;
-    @include font-size(18);
+    @include font-size(20);
     color: $white;
     text-align: center;
     line-height: 1.75;
+    
+    span {
+        display: block;
+    }
 }
 
 .hero--button {

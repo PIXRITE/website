@@ -13,9 +13,9 @@
     <div class="section_inner">
         <div class="hero--logo">@include('pages._partials.logo')</div>
 
-        <h1 class="hero--heading">We're the Shooters</h1>
+        <h1 class="hero--heading">What You See Is What You Get</h1>
 
-        <p class="hero--text">Ready, fire, aim! We'll tell you what your company really needs and deliver accordingly. You can rely on PIXRITE for all of your digital marketing needs.</p>
+        <p class="hero--text">We listen. We analyze. We discover. We propose. We deliver. <span>We’re digital marketing experts and we’re here to show you ROI.</span></p>
 
         <a href="{{ route('hire-page') }}" class="hero--button">LET'S GET STARTED</a>
     </div>
