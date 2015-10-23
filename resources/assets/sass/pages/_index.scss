@@ -69,16 +69,16 @@
 // #IndexHeader
 // ---------------------------------------
 .index_header {
-    padding: 30px 0;
-    background-color: $sterling;
+    padding: 24px 0;
+    background-color: lighten($raven, 20%);
     text-align: center;
 }
 
 .index_header--heading {
     display: inline-block;
-    @include font-size(48);
+    @include font-size(50);
     font-family: 'Brandon-Bold';
-    color: $asher;
+    color: $pearl;
     letter-spacing: -2px;
     text-transform: uppercase;
 }

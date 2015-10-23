@@ -3,8 +3,8 @@
     background-color: $raven;
     
     .section_inner {
-        min-height: 130px;
-        padding-left: 300px + 60px;
+        min-height: 110px;
+        padding-left: 340px + 60px;
     }
 }
 
@@ -58,9 +58,8 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 300px;
+    width: 340px;
     padding-right: 20px;
-    border-right: 2px solid $stone;
 }
 
 .site_footer--about--logo {
@@ -75,6 +74,11 @@
     .logo--title {
         font-size: $w-logo;
     }
+
+    .logo--icon--square,
+    .logo--icon--circle {
+        background-color: $raven;
+    }
 }
 
 .site_footer--about--text {
@@ -88,22 +92,16 @@
 // ---------------------------------------
 .site_footer--social {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 300px;
-    width: 80px;
+    top: 2px;
+    left: 190px;
     margin: 0;
-    padding: 0 15px;
     list-style: none;
 }
 
 .site_footer--social--item {
-    margin-bottom: 4px;
+    display: inline-block;
+    margin-right: 6px;
     font-size: 30px;
-    
-    &:last-of-type {
-        margin-bottom: 0;
-    }
     
     a {
         @include link-colors($stone, $blue);

@@ -1,8 +1,8 @@
 // #PageTop
 // ---------------------------------------
 .page_top {
-    padding: 20px 0;
-    background-color: $sterling;
+    padding: 16px 0;
+    background-color: lighten($raven, 10%);
     
     .section_inner {
         padding-right: 200px;
@@ -11,16 +11,16 @@
 
 .page_top--heading {
     display: inline-block;
-    @include font-size(80);
+    @include font-size(70);
     font-family: 'Brandon-Bold';
-    color: $asher;
+    color: $pearl;
     letter-spacing: -3px;
     text-transform: uppercase;
 }
 
 .page_top--years {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 0;
 }
 

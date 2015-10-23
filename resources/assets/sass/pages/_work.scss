@@ -60,14 +60,17 @@
 // #WorkQuote
 // --------------------------------------- 
 .work_quote--text {
-	@include font-size(18);
+    position: relative;
+    padding-left: 40px;
 	color: $asher;
 	line-height: 1.5;
 
 	i {
-		font-size: 28px;
+        position: absolute;
+        top: 4px;
+        left: 0;
+		font-size: 32px;
 		color: $blue;
-		vertical-align: baseline;
 	}
 }
 

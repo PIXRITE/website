@@ -62,6 +62,7 @@
     position: absolute;
     top: 100%;
     right: 0;
+    left: 0;
     z-index: 999;
     margin: 0;
     padding-bottom: 8px;
@@ -71,6 +72,7 @@
 
 .site_nav--submenu--item {
     padding: 0 8px;
+    text-align: center;
 }
 
 .site_nav--submenu--link {
