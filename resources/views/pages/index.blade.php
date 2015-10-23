@@ -13,7 +13,7 @@
     <div class="section_inner">
         <div class="hero--logo">@include('pages._partials.logo')</div>
 
-        <h1 class="hero--heading">We're the Straight Shooters</h1>
+        <h1 class="hero--heading">We're the Shooters</h1>
 
         <p class="hero--text">Ready, fire, aim! We'll tell you what your company really needs and deliver accordingly. You can rely on PIXRITE for all of your digital marketing needs.</p>
 
