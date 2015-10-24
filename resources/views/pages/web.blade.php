@@ -43,7 +43,7 @@
 
             <h2>Site launch is just the beginning.</h2>
 
-            <p>Many local Utah businesses are intimidated by the work involved in keeping a site fresh. We offer several site maintenance and optimization packages including services like: refreshing content, email newsletters and subscription management, email campaigns built off your site analytics and more!</p>
+            <p>Many local Washington businesses are intimidated by the work involved in keeping a site fresh. We offer several site maintenance and optimization packages including services like: refreshing content, email newsletters and subscription management, email campaigns built off your site analytics and more!</p>
         </div>
 
 
@@ -86,13 +86,13 @@
                 <li>Local search marketing</li>
                 <li>Local search optimization</li>
                 <li>Conversion rate optimization</li>
-                <li>Utah conversion rate consulting</li>
+                <li>Washington conversion rate consulting</li>
                 <li>Content and Article marketing</li>
                 <li>PPC auditing</li>
                 <li>Website build</li>
                 <li>Flash® animation</li>
                 <li>Website template manipulation</li>
-                <li>Utah website hosting</li>
+                <li>Washington website hosting</li>
                 <li>Domain acquisition</li>
                 <li>Domain monitoring</li>
                 <li>Domain managemen</li>

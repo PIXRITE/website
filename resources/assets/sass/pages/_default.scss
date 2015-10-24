@@ -12,7 +12,8 @@
 .page_top--heading {
     display: inline-block;
     @include font-size(70);
-    font-family: 'Brandon-Bold';
+    font-family: $f-brand-bold;
+    font-weight: normal;
     color: $pearl;
     letter-spacing: -3px;
     text-transform: uppercase;

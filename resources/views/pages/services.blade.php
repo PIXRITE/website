@@ -49,7 +49,7 @@
 
         <div class="page_body--right">
             <a class="services_links brand" href="{{ route('brand-page') }}">
-                <h3 class="services_links--heading">Brand Services</h3>
+                <h3 class="services_links--heading">BRAND</h3>
                 <h5 class="services_links--terms">investigate<span>imagine</span>ignite<span>influence</span></h5>
                 
                 <p class="services_links--text">Brand equity is a valuable asset and the keystone to building a successful website.</p>
@@ -58,7 +58,7 @@
             </a>
                     
             <a class="services_links marketing" href="{{ route('marketing-page') }}">
-                <h3 class="services_links--heading">SEO/SEM Services</h3>
+                <h3 class="services_links--heading">SEO/SEM</h3>
                 <h5 class="services_links--terms">audit<span>analyze</span>optimize<span>convert</span></h5>
                 
                 <p class="services_links--text">We understand search engine marketing, from PPC auditing to conversion rate optimization and everything in between.</p>
@@ -67,7 +67,7 @@
             </a>
                 
             <a class="services_links web" href="{{ route('web-page') }}">
-                <h3 class="services_links--heading">Web Services</h3>
+                <h3 class="services_links--heading">WEB</h3>
                 <h5 class="services_links--terms">discover<span>design</span>develop<span>deploy</span>deliver</h5>
                 
                 <p class="services_links--text">We build complete websites. They come with wireframes, storyboards, rich photography, connections to your business systems and audience</p>
@@ -76,7 +76,7 @@
             </a>
                     
             <a class="services_links ux" href="{{ route('ux-page') }}">
-                <h3 class="services_links--heading">UI/UX Services</h3>
+                <h3 class="services_links--heading">UI/UX</h3>
                 <h5 class="services_links--terms">look<span>feel</span>listen<span>construct</span>design<span>test</span>launch</h5>
                 
                 <p class="services_links--text">You know your customers. We know interface design. Let's create an amazing online experience together.</p>

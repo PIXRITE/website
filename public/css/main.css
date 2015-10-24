@@ -1016,8 +1016,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-weight: 400;
   color: #373537;
+  line-height: 1.2;
 }
 
 h1 {
@@ -1252,13 +1252,13 @@ body {
 }
 
 .site_footer--contact {
-  padding-top: 15px;
+  padding-top: 10px;
   text-align: right;
 }
 
 .site_footer--contact--text {
   color: #B0B0B2;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .site_footer--about {
@@ -1353,7 +1353,8 @@ body {
   display: inline-block;
   font-size: 70px;
   font-size: 4.375rem;
-  font-family: 'Brandon-Bold';
+  font-family: "Brandon-Bold","Roboto",Arial,Helvetica,sans-serif;
+  font-weight: normal;
   color: #E2E3E4;
   letter-spacing: -3px;
   text-transform: uppercase;
@@ -1401,6 +1402,54 @@ body {
   margin-left: auto;
 }
 
+.site_cta {
+  content: "";
+  display: table;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #514e51;
+}
+
+.site_cta:after {
+  clear: both;
+}
+
+.site_cta--text {
+  font-size: 26px;
+  font-size: 1.625rem;
+  color: #E2E3E4;
+  text-align: center;
+}
+
+.site_cta--button {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 4px 24px;
+  background-color: #00B6FF;
+  border: 3px solid #00B6FF;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.site_cta--button:link, .site_cta--button:visited {
+  color: #fff;
+}
+
+.site_cta--button:active, .site_cta--button.active {
+  color: inherit;
+}
+
+.site_cta--button:hover {
+  color: #00B6FF;
+}
+
+.site_cta--button:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .logo:hover .logo--icon--square {
   border-radius: 60%;
 }
@@ -1441,7 +1490,7 @@ body {
   display: inline-block;
   margin-left: 4px;
   font-size: 50px;
-  font-family: 'Brandon-Regular';
+  font-family: "Brandon-Regular","Roboto",Arial,Helvetica,sans-serif;
   color: #00B6FF;
   letter-spacing: 2px;
   line-height: 1;
@@ -1656,6 +1705,7 @@ p.about_header--text {
 
 .about_founder--heading span {
   font-size: 80%;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -1689,6 +1739,7 @@ p.about_header--text {
 
 .about_person--heading span {
   font-size: 80%;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -1759,7 +1810,8 @@ p.about_header--text {
   padding-top: 170px;
   font-size: 70px;
   font-size: 4.375rem;
-  font-family: 'Brandon-Bold';
+  font-family: "Brandon-Bold","Roboto",Arial,Helvetica,sans-serif;
+  font-weight: normal;
   color: #fff;
   letter-spacing: -1px;
 }
@@ -1827,7 +1879,8 @@ p.about_header--text {
   display: inline-block;
   font-size: 50px;
   font-size: 3.125rem;
-  font-family: 'Brandon-Bold';
+  font-family: "Brandon-Bold","Roboto",Arial,Helvetica,sans-serif;
+  font-weight: normal;
   color: #E2E3E4;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -1853,7 +1906,7 @@ p.about_header--text {
 .services_section--list--item {
   position: relative;
   float: left;
-  height: 270px;
+  height: 250px;
   width: 22%;
   border: 15px solid #00B6FF;
 }
@@ -1923,7 +1976,7 @@ p.about_header--text {
   color: inherit;
 }
 
-.services_section--list--link:hover .services_section--list--heading {
+.services_section--list--link:hover .services_section--list--heading, .services_section--list--link:hover .services_section--list--subheading {
   opacity: 0;
 }
 
@@ -1945,11 +1998,18 @@ p.about_header--text {
 }
 
 .services_section--list--subheading {
-  padding-bottom: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  padding: 10px;
   font-weight: 600;
-  color: inherit;
+  color: #fff;
   line-height: 1.25;
   text-align: left;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .services_section--list--text {
@@ -2062,7 +2122,10 @@ p.about_header--text {
 
 .services_links--heading {
   padding: 10px;
+  font-family: "Brandon-Bold","Roboto",Arial,Helvetica,sans-serif;
+  font-weight: normal;
   color: inherit;
+  text-align: right;
 }
 
 .services_links--terms {

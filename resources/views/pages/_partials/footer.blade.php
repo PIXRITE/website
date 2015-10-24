@@ -1,3 +1,11 @@
+<!-- Call To Action -->
+@if( $page_type != 'landing')
+    @if( $page_type != 'hire')
+        @include('pages._partials.call-to-action')
+    @endif
+@endif
+  
+
 <div class="site_footer">
    <div class="section_inner">
        
@@ -38,7 +46,7 @@
        <div class="site_footer--about">
            <div class="site_footer--about--logo">@include('pages._partials.logo')</div>
 
-           <p class="site_footer--about--text">PIXRITE, LLC is a full-service Web design company in Oregon with clients from coast to coast. Let us introduce your Web presence to results and you'll never look back.</p>
+           <p class="site_footer--about--text">PIXRITE, LLC is a full-service Web design company in Washington with clients from coast to coast. Let us introduce your Web presence to results and you'll never look back.</p>
        </div>
    
        <!-- Social Media -->

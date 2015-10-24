@@ -83,7 +83,7 @@
             <ul class="service--list">
                 <li>Keyword analysis</li>
                 <li>Local search optimization</li>
-                <li>Utah internet marketing</li>
+                <li>Washington internet marketing</li>
                 <li>Organic seo</li>
                 <li>Sponsored seo</li>
                 <li>Google Analytics consulting</li>

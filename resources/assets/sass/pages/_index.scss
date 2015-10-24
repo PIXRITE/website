@@ -20,7 +20,8 @@
     margin-bottom: 10px;
     padding-top: 170px;
     @include font-size(70);
-    font-family: 'Brandon-Bold';
+    font-family: $f-brand-bold;
+    font-weight: normal;
     color: $white;
     letter-spacing: -1px;
 }
@@ -77,7 +78,8 @@
 .index_header--heading {
     display: inline-block;
     @include font-size(50);
-    font-family: 'Brandon-Bold';
+    font-family: $f-brand-bold;
+    font-weight: normal;
     color: $pearl;
     letter-spacing: -2px;
     text-transform: uppercase;
@@ -100,7 +102,7 @@
 .services_section--list--item {
     position: relative;
     float: left;
-    height: 270px;
+    height: 250px;
     width: 22%;
     border: 15px solid $blue;
     
@@ -152,7 +154,8 @@
     
     &:hover {
         
-        .services_section--list--heading {
+        .services_section--list--heading,
+        .services_section--list--subheading {
             opacity: 0;
         }
     }
@@ -174,11 +177,17 @@
 }
 
 .services_section--list--subheading {
-    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    padding: 10px;
     font-weight: 600;
-    color: inherit;
+    color: $white;
     line-height: 1.25;
     text-align: left;
+    transition: opacity $t-default;
 }
 
 .services_section--list--text {

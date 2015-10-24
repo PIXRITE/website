@@ -1,0 +1,27 @@
+.site_cta {
+    @include clearfix;
+    padding: 16px 0;
+    background-color: lighten($raven, 10%);
+}
+
+.site_cta--text {
+    @include font-size(26);
+    color: $pearl;
+    text-align: center;
+}
+.site_cta--button {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 4px 24px;
+    background-color: $blue;
+    border: 3px solid $blue;
+    @include font-size(20);
+    font-weight: 700;
+    @include link-colors($white, $blue);
+    vertical-align: middle;
+    
+    &:hover {
+        background-color: transparent;
+        text-decoration: none;
+    }
+}

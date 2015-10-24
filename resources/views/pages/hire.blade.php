@@ -1,6 +1,6 @@
 @extends('pages')
 @section('page_tag', 'hire')
-<?php $page_type = 'inside' ?>
+<?php $page_type = 'hire' ?>
 
 @section('seo')
     <title>PIXRITE</title>
@@ -28,8 +28,7 @@
         <div class="page_body--skinny">
             <h2 class="hire_heading">Let's Get Started</h2>
 
-            <p class="hire_text">Ready to discuss your project with us? You know the drill: please fill out the form below, and we'll get in touch with you shortly. 
-            Too impatient to wait for us to contact you? Give us a call right now at (123) 456-7890.
+            <p class="hire_text">Ready to discuss your project with us? You know the drill: please fill out the form below, and we'll get in touch with you shortly. Or give us a call right now at {{ $phone }}.
             </p>
 
             @if (count($errors) > 0)
