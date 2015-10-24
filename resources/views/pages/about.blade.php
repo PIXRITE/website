@@ -61,15 +61,15 @@
        
        
         <div class="page_body--right">
-            <div class="about_person founder">
-                <h3 class="about_person--heading">Jared Rowe,<span> PIXRITE Founder</span></h3>
+            <div class="about_founder">
+                <h3 class="about_founder--heading">Jared Rowe,<span> PIXRITE Founder</span></h3>
 
-                <img class="about_person--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
+                <img class="about_founder--image" src="img/jared_rowe.jpg" alt="Jared Rowe, Founder of PIXRITE">
 
-                <p class="about_person--text">I'm truly fascinated by people. Creating visuals they can see and react to teaches me something new about myself every time, and those positive reactions ("You read my mind!") feed my passion for what PIXRITE does.</p>
+                <p class="about_founder--text">I'm truly fascinated by people. Creating visuals they can see and react to teaches me something new about myself every time, and those positive reactions ("You read my mind!") feed my passion for what PIXRITE does.</p>
             </div>
             
-            <h2 class="about_people--heading">The People We Work With</h2>
+            <h2 class="about_people--heading">Our Team</h2>
             
             <div class="about_person">
                 <h3 class="about_person--heading">Adam Schaffner,<span> Information Technology Guy</span></h3>

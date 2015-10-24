@@ -14,9 +14,9 @@
 					<p>So someone wants to contact us. Here are their details:</p>
 					
 					<ul>
-					    <li>{{ $name }}</li>
-					    <li>{{ $email }}</li>
-					    <li>{{ $phone }}</li>
+					    <li>Name: {{ $name }}</li>
+					    <li>Email: {{ $email }}</li>
+					    <li>Phone: {{ $phone }}</li>
 					</ul>
 					
 					<p>And here is what they have to say:</p>

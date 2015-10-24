@@ -14,9 +14,9 @@
 					<p>So someone wants to hire us. Here are their details:</p>
 					
 					<ul>
-					    <li>{{ $name }}</li>
-					    <li>{{ $email }}</li>
-					    <li>{{ $phone }}</li>
+					    <li>Name: {{ $name }}</li>
+					    <li>Email: {{ $email }}</li>
+					    <li>Phone: {{ $phone }}</li>
 					</ul>
 					
 					<p>And here are the details for the project:</p>
@@ -26,10 +26,10 @@
 					<p>Here are some additional details they may have entered:</p>
 					
 					<ul>
-					    <li>{{ $budget }}</li>
-					    <li>{{ $deadline }}</li>
-					    <li>{{ $website }}</li>
-					    <li>{{ $hearAbout }}</li>
+					    <li>Budget: {{ $budget }}</li>
+					    <li>Deadline: {{ $deadline }}</li>
+					    <li>Website: {{ $website }}</li>
+					    <li>How They Heard About Us: {{ $hearAbout }}</li>
 					</ul>
 
 					<p>Sincerely,<br/>

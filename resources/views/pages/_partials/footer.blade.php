@@ -60,6 +60,6 @@
            </li>
        </ul>
    
-        <p class="site_footer--copyright">&copy; 1994 - <?php echo date("Y"); ?> PIXRITE, LLC. All Rights Reserved. | <a href="/">WEBMAIL</a></p>
+        <p class="site_footer--copyright">&copy; 1994 - <?php echo date("Y"); ?> PIXRITE, LLC. All Rights Reserved. | <a href="//mail.pixrite.com/Login.aspx" target="_blank">WEBMAIL</a></p>
    </div>
 </div>

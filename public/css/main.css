@@ -1639,30 +1639,46 @@ p.about_header--text {
   text-align: center;
 }
 
-.about_person {
+.about_founder {
   position: relative;
-  min-height: 108px;
+  min-height: 184px;
   margin-bottom: 20px;
   padding: 10px;
-  padding-right: 100px;
-  border: 4px solid #707070;
-}
-
-.about_person.founder {
-  min-height: 186px;
   padding-right: 178px;
-  border-color: #00B6FF;
+  border: 3px solid #00B6FF;
 }
 
-.about_person.founder .about_person--heading {
+.about_founder--heading {
+  margin-bottom: 10px;
   font-size: 26px;
   font-size: 1.625rem;
 }
 
-.about_person.founder .about_person--image {
+.about_founder--heading span {
+  font-size: 80%;
+  font-style: italic;
+}
+
+.about_founder--image {
+  position: absolute;
   top: 14px;
   right: 14px;
   width: 150px;
+}
+
+.about_founder--text {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.about_person {
+  position: relative;
+  min-height: 102px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-right: 100px;
+  background-color: #F2F3F4;
+  border: 1px solid #C7C7C9;
 }
 
 .about_person--heading {
