@@ -32,31 +32,41 @@
             Too impatient to wait for us to contact you? Give us a call right now at (123) 456-7890.
             </p>
 
+            @if (count($errors) > 0)
+                <div class="form_errors">
+                    <ul class="form_errors--list">
+                        @foreach ($errors->all() as $error)
+                            <li class="form_errors--item">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
             <form class="hire_form js-slidingForm" action="{{ route('hire-form') }}" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <!-- Name -->
                 <div class="form_block left">
-                    <label class="form--label" for="name">Name</label>
-                    <input class="form--input" type="text" name="name" id="name" placeholder="Name">
+                    <label class="form--label" for="name">Name <span>(required)</span></label>
+                    <input class="form--input" type="text" name="name" id="name" placeholder="Name" value="{{ old('name') }}" required>
                 </div>
 
                 <!-- Phone Number -->
                 <div class="form_block right">
-                    <label class="form--label" for="phone">Phone Number</label>
-                    <input class="form--input" type="text" name="phone" id="phone" placeholder="Phone Number">
+                    <label class="form--label" for="phone">Phone Number <span>(required)</span></label>
+                    <input class="form--input" type="text" name="phone" id="phone" placeholder="Phone Number" value="{{ old('phone') }}" required>
                 </div>
 
                 <!-- Email -->
                 <div class="form_block">
-                    <label class="form--label" for="email">Email Address</label>
-                    <input class="form--input" type="text" name="email" id="email" placeholder="Email Address">
+                    <label class="form--label" for="email">Email Address <span>(required)</span></label>
+                    <input class="form--input" type="email" name="email" id="email" placeholder="Email Address" value="{{ old('email') }}" required>
                 </div>
 
                 <!-- Details -->
                 <div class="form_block">
-                    <label class="form--label" for="details">Project Details</label>
-                    <textarea class="form--textarea" name="details" id="details" placeholder="Project Details"></textarea>
+                    <label class="form--label" for="details">Project Details <span>(required)</span></label>
+                    <textarea class="form--textarea" name="details" id="details" placeholder="Project Details" required>{{ old('details') }}</textarea>
                 </div>
 
 
@@ -92,13 +102,13 @@
                     <!-- Website -->
                     <div class="form_block left">
                         <label class="form--label" for="website">Website</label>
-                        <input class="form--input" type="text" name="website" id="website" placeholder="Website">
+                        <input class="form--input" type="text" name="website" id="website" placeholder="Website" value="{{ old('website') }}">
                     </div>
 
                     <!-- Hear About Us -->
                     <div class="form_block right">
                         <label class="form--label" for="hearAbout">How Did You Hear About Us?</label>
-                        <input class="form--input" type="text" name="hearAbout" id="hearAbout" placeholder="How Did You Hear About Us?">
+                        <input class="form--input" type="text" name="hearAbout" id="hearAbout" placeholder="How Did You Hear About Us?" value="{{ old('hearAbout') }}">
                     </div>
                 </div>
 

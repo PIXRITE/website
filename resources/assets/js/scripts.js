@@ -3,5 +3,6 @@
 
 //@prepros-append modules/view-port.js
 //@prepros-append modules/smooth-scroll.js
+//@prepros-append modules/messages.js
 
 //@prepros-append modules/misc.js

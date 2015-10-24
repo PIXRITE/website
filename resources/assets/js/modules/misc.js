@@ -8,6 +8,11 @@
     // Clear Placeholders and unhide Labels
     inputs.attr('placeholder', '');
     labels.show();
+    inputs.each(function() {
+        if( $(this).val() != '' ){
+            $(this).parent().children().addClass('focused');
+        }
+    });
     
     // Remove text for first select option
     $('select').each(function() {
@@ -19,7 +24,7 @@
         $(this).parent().children().addClass('focused');
     });
     
-    // Add placeholder class when input unfocused and empty
+    // Remove focused class when input unfocused and empty
     inputs.focusout(function() {
         if( $(this).val() == '' ){
             $(this).parent().children().removeClass('focused');

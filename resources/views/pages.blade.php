@@ -31,5 +31,8 @@
 	<!-- Scripts -->
 	<script src="{{ asset('/js/scripts.js?ver=0.1') }}"></script>
 	@yield('foot_script')
+    
+    <!-- Messages -->
+    @include('_partials.messages')
 </body>
 </html>

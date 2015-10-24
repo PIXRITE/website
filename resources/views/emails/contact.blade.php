@@ -11,7 +11,7 @@
 		<tbody>
 			<tr>
 				<td>
-					<p>So someone wants to hire us. Here are their details:</p>
+					<p>So someone wants to contact us. Here are their details:</p>
 					
 					<ul>
 					    <li>{{ $name }}</li>
@@ -19,21 +19,12 @@
 					    <li>{{ $phone }}</li>
 					</ul>
 					
-					<p>And here are the details for the project:</p>
+					<p>And here is what they have to say:</p>
 
 					<div>{!! $body !!}</div>
-					
-					<p>Here are some additional details they may have entered:</p>
-					
-					<ul>
-					    <li>{{ $budget }}</li>
-					    <li>{{ $deadline }}</li>
-					    <li>{{ $website }}</li>
-					    <li>{{ $hearAbout }}</li>
-					</ul>
 
 					<p>Sincerely,<br/>
-						Your Friendly Hire Form</p>
+						Your Friendly Contact Form</p>
 				</td>
 			</tr>
 		</tbody>

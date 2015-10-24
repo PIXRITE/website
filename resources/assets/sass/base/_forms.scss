@@ -57,14 +57,10 @@ button[type="submit"] {
 
 	&:focus,
 	&:hover {
+        outline: none;
 		background-color: transparent;
 		color: $blue;
 	}
-}
-
-.error_message {
-	margin: -14px 0 14px;
-	color: red;
 }
 
 
@@ -89,18 +85,21 @@ button[type="submit"] {
     }
     
     &.buttons {
+        margin-top: -20px;
         margin-bottom: 0;
     }
 }
 
 .form_group {
     @include clearfix;
+	margin-bottom: 40px;
 }
 
 .form--label {
     display: none;
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
     z-index: -9;
     padding: 0 8px;
@@ -108,6 +107,12 @@ button[type="submit"] {
     color: $grey;
     line-height: 34px;
     transition: all $t-fast;
+    
+    span {
+        font-size: 70%;
+        float: right;
+        color: $heather;
+    }
     
     &.focused {
         top: -24px;
@@ -144,4 +149,24 @@ button[type="submit"] {
     width: 80%;
     margin: 30px auto 0;
     padding: 12px 0;
+}
+
+
+// Form Errors
+.form_errors {
+    clear: both;
+    margin: 20px 0;
+    padding: 10px 20px;
+	background-color: $ruby;
+}
+
+.form_errors--list {
+	margin: 0;
+    list-style: none;
+}
+
+.form_errors--item {
+    margin: 4px;
+	color: $white;
+	line-height: 1.4;
 }

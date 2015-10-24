@@ -1,0 +1,63 @@
+.flash_message {
+	position: fixed;
+	top: -360px;
+	right: 0;
+	z-index: 999999;
+	width: 100%;
+    max-width: 480px;
+	padding: 20px 30px 20px 20px;
+	transition: top $t-slow;
+
+	&.open {
+		top: 0;
+	}
+
+	&.info {
+		background-color: $sky;
+	}
+
+	&.success {
+		background-color: $forest;
+	}
+
+	&.warning {
+		background-color: $amber;
+	}
+
+	&.danger {
+		background-color: $ruby;
+	}
+}
+
+.flash_message--text {
+	color: $white;
+	line-height: 1.4;
+}
+
+.flash_message--list {
+	margin: 0;
+    list-style: none;
+}
+
+.flash_message--item {
+	color: $white;
+	line-height: 1.4;
+}
+
+
+.flash_message--close_button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 6px;
+
+	i {
+		font-size: 16px;
+		font-weight: 400;
+		color: $white;
+	}
+
+	&:hover {
+		background-color: transparentize($jet, 0.9);
+	}
+}

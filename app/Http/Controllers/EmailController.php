@@ -6,65 +6,105 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Request;
+use Mail;
+use Validator;
 
 class EmailController extends Controller
-{
-    /**
-     * Send hire email.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function send_hire()
-    {
-        $email = $user->email;
-        $name = $user->first_name . ' ' . $user->last_name;
-        $subject = 'New Project Request';
-
-
-        $data =
-        [
-            'body' => $input['body'],
-            'firstName' => $user->first_name,
-        ];
-
-        Mail::send('emails.mass', $data, function($message) use ($email, $name, $subject)
-        {
-            $message
-                ->from('josh@getnovelize.com', 'Novelize Writing App')
-                ->to($email, $name)
-                ->subject($subject);
-        });
-        
-        return redirect()->back()->with('alert-success', 'The request has been sent!');
-    }
+{ 
 
     /**
      * Send contact email.
      *
      * @return \Illuminate\Http\Response
      */
-    public function send_contact()
+    public function send_contact(Request $request)
     {
-        $email = $user->email;
-        $name = $user->first_name . ' ' . $user->last_name;
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+        
+        $name = $request->input('name');
+        $toEmail = 'hello@pixrite.com';
+        $fromEmail = $request->input('email');
+        $subject = 'New Contact Message';
+
+
+        $data =
+        [
+            'name' => $name,
+            'email' => $fromEmail,
+            'phone' => $request->input('phone'),
+            'body' => $request->input('message'),
+        ];
+
+        Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        {
+            $message
+                ->from($fromEmail, $name)
+                ->to($toEmail, 'PIXRITE')
+                ->subject($subject);
+        });
+        
+        return back()->with('flash-success', 'Your message has been sent!');
+    }
+    
+    /**
+     * Send hire email.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function send_hire(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'details' => 'required',
+            'website' => 'url'
+        ]);
+
+        if ($validator->fails()) {
+            
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+        
+        $name = $request->input('name');
+        $toEmail = 'hello@pixrite.com';
+        $fromEmail = $request->input('email');
         $subject = 'New Project Request';
 
 
         $data =
         [
-            'body' => $input['body'],
-            'firstName' => $user->first_name,
+            'name' => $name,
+            'email' => $fromEmail,
+            'phone' => $request->input('phone'),
+            'body' => $request->input('details'),
+            'budget' => $request->input('budget', 'none given'),
+            'deadline' => $request->input('deadline', 'none given'),
+            'website' => $request->input('website', 'none given'),
+            'hearAbout' => $request->input('hearAbout', 'none given'),
         ];
 
-        Mail::send('emails.mass', $data, function($message) use ($email, $name, $subject)
+        Mail::send('emails.hire', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
         {
             $message
-                ->from('josh@getnovelize.com', 'Novelize Writing App')
-                ->to($email, $name)
+                ->from($fromEmail, $name)
+                ->to($toEmail, 'PIXRITE')
                 ->subject($subject);
         });
         
-        return redirect()->back()->with('alert-success', 'The request has been sent!');
+        return redirect()->back()->with('flash-success', 'The request has been sent!');
     }
 }

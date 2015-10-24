@@ -158,7 +158,13 @@
     .service_box--heading,
     .service_box--link {
         background-color: $marketing;
+    }
+    .service_box--link {
         border-color: $marketing;
+    
+        &:hover {
+            background-color: white;
+        }
     }
 }
 
@@ -171,7 +177,13 @@
     .service_box--heading,
     .service_box--link {
         background-color: $web;
+    }
+    .service_box--link {
         border-color: $web;
+    
+        &:hover {
+            background-color: white;
+        }
     }
 }
 
@@ -184,7 +196,13 @@
     .service_box--heading,
     .service_box--link {
         background-color: $ux;
+    }
+    .service_box--link {
         border-color: $ux;
+    
+        &:hover {
+            background-color: white;
+        }
     }
 }
 

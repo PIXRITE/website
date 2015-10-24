@@ -839,13 +839,9 @@ button[type="submit"] {
 }
 
 button[type="submit"]:focus, button[type="submit"]:hover {
+  outline: none;
   background-color: transparent;
   color: #00B6FF;
-}
-
-.error_message {
-  margin: -14px 0 14px;
-  color: red;
 }
 
 .form_block {
@@ -868,6 +864,7 @@ button[type="submit"]:focus, button[type="submit"]:hover {
 }
 
 .form_block.buttons {
+  margin-top: -20px;
   margin-bottom: 0;
 }
 
@@ -875,6 +872,7 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   content: "";
   display: table;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .form_group:after {
@@ -885,6 +883,7 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   display: none;
   position: absolute;
   top: 0;
+  right: 0;
   left: 0;
   z-index: -9;
   padding: 0 8px;
@@ -893,6 +892,12 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   line-height: 34px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.form--label span {
+  font-size: 70%;
+  float: right;
+  color: #C7C7C9;
 }
 
 .form--label.focused {
@@ -929,6 +934,24 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   width: 80%;
   margin: 30px auto 0;
   padding: 12px 0;
+}
+
+.form_errors {
+  clear: both;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #C02F1D;
+}
+
+.form_errors--list {
+  margin: 0;
+  list-style: none;
+}
+
+.form_errors--item {
+  margin: 4px;
+  color: #fff;
+  line-height: 1.4;
 }
 
 a {
@@ -1424,6 +1447,70 @@ body {
   line-height: 1;
 }
 
+.flash_message {
+  position: fixed;
+  top: -360px;
+  right: 0;
+  z-index: 999999;
+  width: 100%;
+  max-width: 480px;
+  padding: 20px 30px 20px 20px;
+  -webkit-transition: top 0.8s;
+  transition: top 0.8s;
+}
+
+.flash_message.open {
+  top: 0;
+}
+
+.flash_message.info {
+  background-color: #00A8FF;
+}
+
+.flash_message.success {
+  background-color: #228B22;
+}
+
+.flash_message.warning {
+  background-color: #F08C2D;
+}
+
+.flash_message.danger {
+  background-color: #C02F1D;
+}
+
+.flash_message--text {
+  color: #fff;
+  line-height: 1.4;
+}
+
+.flash_message--list {
+  margin: 0;
+  list-style: none;
+}
+
+.flash_message--item {
+  color: #fff;
+  line-height: 1.4;
+}
+
+.flash_message--close_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px;
+}
+
+.flash_message--close_button i {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.flash_message--close_button:hover {
+  background-color: rgba(19, 21, 22, 0.1);
+}
+
 .quote {
   float: right;
   width: 200px;
@@ -1601,14 +1688,26 @@ p.about_header--text {
   font-size: 0.875rem;
 }
 
+.contact--box {
+  content: "";
+  display: table;
+  width: 100%;
+  margin: 30px 0 50px;
+  padding: 20px;
+  border: 1px solid #C7C7C9;
+}
+
+.contact--box:after {
+  clear: both;
+}
+
 .contact--subheading {
-  margin: 30px 0 10px;
+  margin-bottom: 12px;
 }
 
 .contact--details {
   float: left;
   width: 50%;
-  margin-bottom: 30px;
 }
 
 .contact--details p {
@@ -1616,19 +1715,14 @@ p.about_header--text {
 }
 
 .contact--details--main {
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
 .contact--address {
   float: right;
   width: 50%;
-  margin-bottom: 30px;
   font-style: normal;
   line-height: 1.5;
-}
-
-.contact_form {
-  clear: both;
 }
 
 .hero {
@@ -2070,7 +2164,14 @@ p.about_header--text {
 
 #marketing .service_box--heading, #marketing .service_box--link {
   background-color: #D9B346;
+}
+
+#marketing .service_box--link {
   border-color: #D9B346;
+}
+
+#marketing .service_box--link:hover {
+  background-color: white;
 }
 
 #web .service_box {
@@ -2080,7 +2181,14 @@ p.about_header--text {
 
 #web .service_box--heading, #web .service_box--link {
   background-color: #6F9942;
+}
+
+#web .service_box--link {
   border-color: #6F9942;
+}
+
+#web .service_box--link:hover {
+  background-color: white;
 }
 
 #ux .service_box {
@@ -2090,7 +2198,14 @@ p.about_header--text {
 
 #ux .service_box--heading, #ux .service_box--link {
   background-color: #CB5944;
+}
+
+#ux .service_box--link {
   border-color: #CB5944;
+}
+
+#ux .service_box--link:hover {
+  background-color: white;
 }
 
 .service--image {
