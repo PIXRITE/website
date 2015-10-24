@@ -31,9 +31,9 @@ Route::get( '/services/brand', [
     'uses' => 'PagesController@brand'
 ]);
 
-Route::get( '/services/digital-marketing', [
-    'as' => 'marketing-page',
-    'uses' => 'PagesController@marketing'
+Route::get( '/services/seo-sem', [
+    'as' => 'seo-page',
+    'uses' => 'PagesController@seo'
 ]);
 
 Route::get( '/services/web', [

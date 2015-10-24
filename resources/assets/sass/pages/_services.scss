@@ -53,14 +53,14 @@
 }
 
 .services_links--heading {
-    padding: 10px;
+    padding: 10px 14px 0;
     font-family: $f-brand-bold;
     font-weight: normal;
     color: inherit;
     text-align: right;
 }
 .services_links--terms {
-    padding: 4px 10px;
+    padding: 4px 14px 0;
     @include font-size(18);
     font-weight: 700;
     color: inherit;
@@ -72,8 +72,8 @@
 }
 .services_links--text {
     margin: 0;
-    padding: 10px;
-    @include font-size(18);
+    padding: 10px 14px;
+    @include font-size(17);
     color: inherit;
     line-height: 1.25;
 }

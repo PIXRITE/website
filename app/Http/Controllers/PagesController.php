@@ -53,9 +53,9 @@ class PagesController extends Controller
      *
      * @return view
      */
-    public function marketing()
+    public function seo()
     {
-		return view('pages.marketing');
+		return view('pages.seo');
     }
     
     /**

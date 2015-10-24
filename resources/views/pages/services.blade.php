@@ -3,7 +3,8 @@
 <?php $page_type = 'inside' ?>
 
 @section('seo')
-    <title>PIXRITE</title>
+    <title>PIXRITE Services</title>
+    <meta name="description" content="PIXRITE, a Washington Web Design Studio, providing Brand, SEO/SEM, Web, and UX/UI Design." />
 @endsection
 
 @section('content')
@@ -57,7 +58,7 @@
                 <span class="services_links--arrow"><i class="fa fa-angle-right"></i></span>
             </a>
                     
-            <a class="services_links marketing" href="{{ route('marketing-page') }}">
+            <a class="services_links marketing" href="{{ route('seo-page') }}">
                 <h3 class="services_links--heading">SEO/SEM</h3>
                 <h5 class="services_links--terms">audit<span>analyze</span>optimize<span>convert</span></h5>
                 

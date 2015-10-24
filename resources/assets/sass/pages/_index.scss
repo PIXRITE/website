@@ -170,6 +170,8 @@
     z-index: 99;
     padding: 10px;
     @include font-size(36);
+    font-family: $f-brand-bold;
+    font-weight: normal;
     color: $white;
     line-height: 1.2;
     text-align: right;

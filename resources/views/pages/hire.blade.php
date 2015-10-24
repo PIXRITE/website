@@ -3,7 +3,8 @@
 <?php $page_type = 'hire' ?>
 
 @section('seo')
-    <title>PIXRITE</title>
+    <title>Hire PIXRITE</title>
+    <meta name="description" content="PIXRITE, a Washington Web Design Studio, providing Brand, SEO/SEM, Web, and UX/UI Design." />
 @endsection
 
 @section('content')

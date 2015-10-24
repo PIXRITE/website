@@ -4,6 +4,7 @@
 
 @section('seo')
     <title>PIXRITE</title>
+    <meta name="description" content="PIXRITE, a Washington Web Design Studio, providing Brand, SEO/SEM, Web, and UX/UI Design." />
 @endsection
 
 @section('content')
@@ -43,7 +44,7 @@
         <ul class="services_section--list">
             <li class="services_section--list--item brand">
                 <a class="services_section--list--link" href="{{ route('brand-page') }}">
-                    <h3 class="services_section--list--heading">Brand</h3>
+                    <h3 class="services_section--list--heading">BRAND</h3>
                        
                     <h5 class="services_section--list--subheading">Build Recognition</h5>
                     <p class="services_section--list--text">Branding cattle is out. You need more than a logo to distinguish yourself from the competition. Its's time to establish your brand.</p>
@@ -52,7 +53,7 @@
             </li>
             
             <li class="services_section--list--item marketing">
-                <a class="services_section--list--link" href="{{ route('marketing-page') }}">
+                <a class="services_section--list--link" href="{{ route('seo-page') }}">
                     <h3 class="services_section--list--heading">SEO/SEM</h3>
                     
                     <h5 class="services_section--list--subheading">Expose Yourself</h5>
@@ -63,7 +64,7 @@
             
             <li class="services_section--list--item web">
                 <a class="services_section--list--link" href="{{ route('web-page') }}">
-                    <h3 class="services_section--list--heading">Web</h3>
+                    <h3 class="services_section--list--heading">WEB</h3>
                     
                     <h5 class="services_section--list--subheading">Spiders Hang on Broken Webs</h5>
                     <p class="services_section--list--text">Fact is, these crawlers are the superheros of getting seen on the web. Let us design, build and market your online presence.</p>
