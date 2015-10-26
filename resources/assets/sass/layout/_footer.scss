@@ -1,6 +1,6 @@
 .site_footer {
     padding: 20px 0;
-    background-color: $raven;
+    background-color: $jet;
     
     .section_inner {
         min-height: 110px;
@@ -26,7 +26,7 @@
     padding: 6px 10px;
     border: 2px solid transparent;
     font-size: 16px;
-    @include link-colors($heather, $white);
+    @include link-colors($sterling, $white);
     
     &.selected {
         border-color: $stone;
@@ -57,7 +57,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 40px;
     width: 340px;
     padding-right: 20px;
 }
@@ -77,13 +77,13 @@
 
     .logo--icon--square,
     .logo--icon--circle {
-        background-color: $raven;
+        background-color: $jet;
     }
 }
 
 .site_footer--about--text {
     font-size: 14px;
-    color: $heather;
+    color: $sterling;
     line-height: 1.25;
 }
 
@@ -93,7 +93,7 @@
 .site_footer--social {
     position: absolute;
     top: 2px;
-    left: 190px;
+    left: 230px;
     margin: 0;
     list-style: none;
 }
@@ -113,10 +113,10 @@
 // ---------------------------------------
 .site_footer--copyright {
     position: absolute;
-    right: 0;
+    right: 40px;
     bottom: -10px;
     font-size: 14px;
-    color: $stone;
+    color: $asher;
     text-align: center;
     
     a {

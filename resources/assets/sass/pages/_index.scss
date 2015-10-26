@@ -2,6 +2,7 @@
 // ---------------------------------------
 .hero {
     position: relative;
+    margin-top: -$h-header;
     background-color: transparentize($jet, 0.2);
     text-align: center;
 
@@ -67,11 +68,34 @@
 }
 
 
+// #Client Logos
+// ---------------------------------------
+.client_logos {
+    padding: 10px 0;
+    background-color: $asher;
+}
+
+.client_logos--list {
+    margin: 0;
+    list-style: none;
+}
+
+.client_logos--item {
+    float: left;
+    width: (100% / 12);
+    text-align: center;
+}
+
+.client_logos--image {
+    height: 60px;
+}
+
+
 // #IndexHeader
 // ---------------------------------------
 .index_header {
     padding: 24px 0;
-    background-color: lighten($raven, 20%);
+    background-color: $raven;
     text-align: center;
 }
 
@@ -101,9 +125,11 @@
 
 .services_section--list--item {
     position: relative;
+    overflow: hidden;
     float: left;
     height: 250px;
     width: 22%;
+    background-color: $white;
     border: 15px solid $blue;
     
     &.brand {
@@ -154,7 +180,9 @@
     
     &:hover {
         
-        .services_section--list--heading,
+        .services_section--list--heading {
+            top: -300px;
+        }
         .services_section--list--subheading {
             opacity: 0;
         }
@@ -165,9 +193,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
     left: 0;
     z-index: 99;
+    height: 100%;
     padding: 10px;
     @include font-size(36);
     font-family: $f-brand-bold;
@@ -175,7 +203,7 @@
     color: $white;
     line-height: 1.2;
     text-align: right;
-    transition: opacity $t-default;
+    transition: all $t-slow;
 }
 
 .services_section--list--subheading {

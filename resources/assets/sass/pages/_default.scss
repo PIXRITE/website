@@ -2,7 +2,7 @@
 // ---------------------------------------
 .page_top {
     padding: 16px 0;
-    background-color: lighten($raven, 10%);
+    background-color: darken($raven, 3%);
     
     .section_inner {
         padding-right: 200px;
@@ -21,16 +21,21 @@
 
 .page_top--years {
     position: absolute;
-    top: 5px;
-    right: 0;
+    top: 50%;
+    right: 40px;
+    margin-top: -30px;
 }
 
 
 // #PageBody
 // ---------------------------------------
 .page_body {
-	@include clearfix();
-    padding: 40px 0;
+    
+    .section_inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: $white;
+    }
 }
 
 .page_body--right {

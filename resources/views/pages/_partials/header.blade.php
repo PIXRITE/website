@@ -1,9 +1,7 @@
 <header class="site_header">
     <div class="section_inner">
-        @if( $page_type != 'landing' )
         <!-- Logo -->
         <div class="site_header--logo">@include('pages._partials.logo')</div>
-        @endif
 
         <!-- Nav -->
         <nav class="site_nav">

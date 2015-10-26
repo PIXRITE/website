@@ -36,6 +36,10 @@
 </head>
 
 <body id="@yield('page_tag')">
+    <!-- Header -->
+    @include('pages._partials.header')
+
+    <!-- Body -->
 	@yield('content')
 
     <!-- Footer -->

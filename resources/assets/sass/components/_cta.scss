@@ -1,7 +1,7 @@
 .site_cta {
     @include clearfix;
     padding: 16px 0;
-    background-color: lighten($raven, 10%);
+    background-color: darken($raven, 3%);
 }
 
 .site_cta--text {

@@ -8,10 +8,6 @@
 @endsection
 
 @section('content')
-   
-<!-- Header -->
-@include('pages._partials.header')
-	
 	
 <!-- Page Top -->
 <div class="page_top"> 
@@ -25,7 +21,7 @@
 
 <!-- Page Body -->
 <div class="page_body">
-    <div class="section_inner">
+    <div class="section_inner clearfix">
         <div class="page_body--left">  
             <h2>Help your customers see the brand beyond your logo.</h2>
             

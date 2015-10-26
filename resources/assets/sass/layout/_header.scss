@@ -1,7 +1,14 @@
 .site_header {
     @include clearfix;
+    position: relative;
+    z-index: 9999;
     height: $h-header;
-    background-color: $raven;
+    background-color: $jet;
+}
+
+// Home Page
+#home .site_header {
+    background-color: transparent;
 }
 
 .site_header--logo {
@@ -10,7 +17,7 @@
 
     .logo--icon--square,
     .logo--icon--circle {
-        background-color: $raven;
+        background-color: $jet;
     }
 }
 
@@ -30,7 +37,7 @@
 .site_nav--item {
     position: relative;
     display: inline-block;
-    padding: (($h-header - 38px) / 2) 4px;
+    padding: (($h-header - 44px) / 2) 4px;
     
     &:hover {
         .site_nav--submenu {
@@ -44,7 +51,7 @@
     padding: 10px 12px;
     border: 2px solid transparent;
     font-size: 18px;
-    @include link-colors($heather, $white);
+    @include link-colors($sterling, $white);
     
     &.selected {
         border-color: $stone;

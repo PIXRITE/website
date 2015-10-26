@@ -12,21 +12,35 @@
 <!-- Page Top -->
 <div class="hero index">
     <div class="section_inner">
-        <div class="hero--logo">@include('pages._partials.logo')</div>
-
         <h1 class="hero--heading">What You See Is What You Get</h1>
 
         <p class="hero--text">We listen. We analyze. We discover. We propose. We deliver. <span>We’re digital marketing experts and we’re here to show you ROI.</span></p>
 
-        <a href="{{ route('hire-page') }}" class="hero--button">LET'S GET STARTED</a>
+        <a href="{{ route('hire-page') }}" class="hero--button">LET'S KICK IT OFF</a>
     </div>
 
     <div class="hero--image"></div>
 </div>
-	
-	
-<!-- Header -->
-@include('pages._partials.header')
+
+
+<div class="client_logos">
+    <div class="section_inner clearfix">
+        <ul class="client_logos--list">
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/american_express_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/apple_rock_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/best_woods_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/db_healthcare_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/intel_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/ips_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/monitronics_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/platinum_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/safeguard_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/security_one_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/software_unlimited_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/streamcast_sm.png" alt="Client Logo"></li>
+        </ul>
+    </div>
+</div>
 
 
 <div class="index_header">

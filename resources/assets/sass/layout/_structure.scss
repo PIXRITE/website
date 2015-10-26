@@ -5,6 +5,7 @@ body {
 
 body {
 	min-width: 1200px;
+    background-color: $grey;
 }
 
 .section_inner {
@@ -13,4 +14,10 @@ body {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    
+    &.clearfix {
+        @include clearfix;
+    }
 }
