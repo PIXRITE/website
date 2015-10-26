@@ -26,7 +26,7 @@
 <!-- Page Body -->
 <div class="page_body">
     <div class="section_inner">
-        <div class="page_body--left">
+        <div class="page_body--skinny">
             <h2>Amazing web starts here.</h2>
             
             <p>PIXRITE is a Washington Internet marketing company. We specialize in Web design that builds your brand using the latest Web technologies and search optimization practices.</p>
@@ -61,6 +61,7 @@
 
        
        
+<!--
         <div class="page_body--right">
             <div class="about_founder">
                 <h3 class="about_founder--heading">Jared Rowe,<span> PIXRITE Founder</span></h3>
@@ -112,6 +113,7 @@
                 <p class="about_person--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed animi, modi officiis quis velit atque placeat.</p>
             </div>
         </div>
+-->
     </div>
 </div>
 

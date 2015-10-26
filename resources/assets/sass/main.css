@@ -2076,7 +2076,7 @@ p.about_header--text {
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .hero {
   position: relative;
-  background-color: rgba(19, 21, 22, 0.9);
+  background-color: rgba(19, 21, 22, 0.8);
   text-align: center; }
 
 /* line 12, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
@@ -2145,7 +2145,7 @@ p.about_header--text {
   z-index: -99;
   background-image: url(../img/background.jpg);
   background-size: cover;
-  background-position: center center; }
+  background-position: bottom center; }
 
 /* line 72, C:/wamp/www/pixrite/resources/assets/sass/pages/_index.scss */
 .index_header {
