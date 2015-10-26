@@ -3,64 +3,83 @@
 .services_links {
     display: block;
     position: relative;
+    overflow: hidden;
     margin-bottom: 20px;
     padding-right: 50px;
     border: 10px solid $blue;
     
     &.brand {
-        background-color: $brand;
         border-color: $brand;
         @include link-colors($white, $brand);
         
+        .services_links--door,
         .services_links--arrow {
             background-color: $brand;
         }
     }
     
     &.marketing {
-        background-color: $marketing;
         border-color: $marketing;
         @include link-colors($white, $marketing);
         
+        .services_links--door,
         .services_links--arrow {
             background-color: $marketing;
         }
     }
     
     &.web {
-        background-color: $web;
         border-color: $web;
         @include link-colors($white, $web);
         
+        .services_links--door,
         .services_links--arrow {
             background-color: $web;
         }
     }
     
     &.ux {
-        background-color: $ux;
         border-color: $ux;
         @include link-colors($white, $ux);
         
+        .services_links--door,
         .services_links--arrow {
             background-color: $ux;
         }
     }
         
     &:hover {
-        background-color: transparent;
+        
+        .services_links--door {
+            left: 120%;
+        }
     }
 }
 
+.services_links--door {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 90;
+    width: 100%;
+    transition: all $t-slow;
+}
+
 .services_links--heading {
-    padding: 10px 14px 0;
+    position: relative;
+    z-index: 100;
+    padding: 10px 20px 0;
     font-family: $f-brand-bold;
     font-weight: normal;
     color: inherit;
     text-align: right;
 }
 .services_links--terms {
-    padding: 4px 14px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 14px;
     @include font-size(18);
     font-weight: 700;
     color: inherit;
@@ -72,8 +91,9 @@
 }
 .services_links--text {
     margin: 0;
-    padding: 10px 14px;
+    padding: 10px 20px;
     @include font-size(17);
+    font-weight: 600;
     color: inherit;
     line-height: 1.25;
 }
@@ -82,6 +102,7 @@
     top: 0;
     right: -10px;
     bottom: 0;
+    z-index: 100;
     width: 60px;
     background-color: $blue;
     color: $white;
