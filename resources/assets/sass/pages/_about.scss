@@ -27,6 +27,17 @@ p.about_header--text {
 }
 
 
+// #AboutLink
+// ---------------------------------------
+.about_link {
+    display: block;
+    width: 300px;
+    margin: 30px auto 0;
+    @include font-size(20);
+    text-align: center;
+}
+
+
 // #AboutPeople
 // ---------------------------------------
 .about_people--heading {

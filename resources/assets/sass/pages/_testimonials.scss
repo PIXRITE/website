@@ -1,0 +1,39 @@
+.testimonial_quote {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 120px;
+}
+
+.testimonial_quote--text {
+    position: relative;
+	@include font-size(14);
+	color: $asher;
+	line-height: 1.5;
+
+	i {
+        float: left;
+        margin-right: 4px;
+		font-size: 20px;
+		color: $blue;
+        line-height: 1;
+	}
+}
+
+.testimonial_quote--author {
+	margin-top: 10px;
+	@include font-size(14);
+	color: $asher;
+    line-height: 1;
+}
+
+.testimonial_quote--company {
+	@include font-size(12);
+	color: $asher;
+}
+
+.testimonial_quote--logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+}

@@ -29,6 +29,16 @@ class PagesController extends Controller
     }
     
     /**
+     * Display the testimonials page.
+     *
+     * @return view
+     */
+    public function testimonials()
+    {
+		return view('pages.testimonials');
+    }
+    
+    /**
      * Display the services page.
      *
      * @return view

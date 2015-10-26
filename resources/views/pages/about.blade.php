@@ -53,6 +53,8 @@
             </div>
             
             <p>We offer in-house design, development, online marketing and auditing services. In-house means you always enjoy direct access to the PIXRITE team.</p>
+            
+            <a class="about_link" href="{{route('testimonials-page') }}">Listen to a few of our customers</a>
         </div>
 
        

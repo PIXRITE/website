@@ -26,18 +26,18 @@
 <div class="client_logos">
     <div class="section_inner clearfix">
         <ul class="client_logos--list">
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/american_express_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/apple_rock_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/best_woods_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/db_healthcare_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/intel_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/ips_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/monitronics_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/platinum_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/safeguard_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/security_one_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/software_unlimited_sm.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/streamcast_sm.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_01.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_02.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_03.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_04.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_05.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_06.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_07.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_08.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_09.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_10.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_11.png" alt="Client Logo"></li>
+            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_12.png" alt="Client Logo"></li>
         </ul>
     </div>
 </div>
@@ -63,7 +63,7 @@
                         <h5 class="services_section--list--subheading">Build Recognition</h5>
                     </span>
                     
-                    <p class="services_section--list--text">Branding cattle is out. You need more than a logo to distinguish yourself from the competition. Its's time to establish your brand.</p>
+                    <p class="services_section--list--text">Branding cattle is out. You need more than a logo to distinguish yourself from the competition. It's time to establish your brand.</p>
                     <p class="services_section--list--note">(and it won't hurt a bit...)</p>
                 </a>
             </li>

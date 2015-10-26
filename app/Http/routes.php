@@ -21,6 +21,11 @@ Route::get( '/work', [
     'uses' => 'PagesController@work'
 ]);
 
+Route::get( '/testimonials', [
+    'as' => 'testimonials-page',
+    'uses' => 'PagesController@testimonials'
+]);
+
 Route::get( '/services', [
     'as' => 'services-page',
     'uses' => 'PagesController@services'

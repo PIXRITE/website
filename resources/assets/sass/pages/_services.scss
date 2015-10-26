@@ -69,7 +69,7 @@
 .services_links--heading {
     position: relative;
     z-index: 100;
-    padding: 10px 20px 0;
+    padding: 16px 16px 0;
     font-family: $f-brand-bold;
     font-weight: normal;
     color: inherit;
@@ -91,9 +91,8 @@
 }
 .services_links--text {
     margin: 0;
-    padding: 10px 20px;
-    @include font-size(17);
-    font-weight: 600;
+    padding: 16px;
+    @include font-size(18);
     color: inherit;
     line-height: 1.25;
 }
