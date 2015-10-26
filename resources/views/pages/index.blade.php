@@ -58,9 +58,11 @@
         <ul class="services_section--list">
             <li class="services_section--list--item brand">
                 <a class="services_section--list--link" href="{{ route('brand-page') }}">
-                    <h3 class="services_section--list--heading">BRAND</h3>
-                       
-                    <h5 class="services_section--list--subheading">Build Recognition</h5>
+                    <span class="services_section--list--door">
+                        <h3 class="services_section--list--heading">BRAND</h3>
+                        <h5 class="services_section--list--subheading">Build Recognition</h5>
+                    </span>
+                    
                     <p class="services_section--list--text">Branding cattle is out. You need more than a logo to distinguish yourself from the competition. Its's time to establish your brand.</p>
                     <p class="services_section--list--note">(and it won't hurt a bit...)</p>
                 </a>
@@ -68,9 +70,11 @@
             
             <li class="services_section--list--item marketing">
                 <a class="services_section--list--link" href="{{ route('seo-page') }}">
-                    <h3 class="services_section--list--heading">SEO/SEM</h3>
+                    <span class="services_section--list--door">
+                        <h3 class="services_section--list--heading">SEO/SEM</h3>
+                        <h5 class="services_section--list--subheading">Expose Yourself</h5>
+                    </span>
                     
-                    <h5 class="services_section--list--subheading">Expose Yourself</h5>
                     <p class="services_section--list--text">We give your customers that A-HA moment, and make sure they know how to share it over, and over, and over...</p>
                     <p class="services_section--list--note">(in a good way...)</p>
                 </a>
@@ -78,9 +82,11 @@
             
             <li class="services_section--list--item web">
                 <a class="services_section--list--link" href="{{ route('web-page') }}">
-                    <h3 class="services_section--list--heading">WEB</h3>
-                    
-                    <h5 class="services_section--list--subheading">Spiders Hang on Broken Webs</h5>
+                    <span class="services_section--list--door">
+                        <h3 class="services_section--list--heading">WEB</h3>
+                        <h5 class="services_section--list--subheading">Spiders Hang on Broken Webs</h5>
+                    </span>
+                        
                     <p class="services_section--list--text">Fact is, these crawlers are the superheros of getting seen on the web. Let us design, build and market your online presence.</p>
                     <p class="services_section--list--note">(say it, spidey is our friend)</p>
                 </a>
@@ -88,9 +94,11 @@
             
             <li class="services_section--list--item ux">
                 <a class="services_section--list--link" href="{{ route('ux-page') }}">
-                    <h3 class="services_section--list--heading">UI/UX</h3>
+                    <span class="services_section--list--door">
+                        <h3 class="services_section--list--heading">UI/UX</h3>
+                        <h5 class="services_section--list--subheading">Usability With Flair</h5>
+                    </span>
                     
-                    <h5 class="services_section--list--subheading">Usability With Flair</h5>
                     <p class="services_section--list--text"><strong>WARNING:</strong> Following implementation, your competition may mimic your look and feel.</p>
                     <p class="services_section--list--note">(it's okay, we have more good ideas)</p>
                 </a>

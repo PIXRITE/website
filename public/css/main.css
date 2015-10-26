@@ -893,7 +893,7 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   top: 0;
   right: 0;
   left: 0;
-  z-index: -9;
+  z-index: 0;
   padding: 0 8px;
   font-size: 16px;
   color: #97979a;
@@ -1093,14 +1093,13 @@ body {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 .section_inner.clearfix {
   content: "";
   display: table;
   width: 100%;
+  width: 90%;
 }
 
 .section_inner.clearfix:after {
@@ -1180,13 +1179,13 @@ body {
 .site_nav--submenu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 101%;
   right: 0;
   left: 0;
   z-index: 999;
   margin: 0;
   padding-bottom: 8px;
-  background-color: #373737;
+  background-color: #131516;
   list-style: none;
 }
 
@@ -1292,7 +1291,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 40px;
+  left: 0;
   width: 340px;
   padding-right: 20px;
 }
@@ -1323,7 +1322,7 @@ body {
 .site_footer--social {
   position: absolute;
   top: 2px;
-  left: 230px;
+  left: 190px;
   margin: 0;
   list-style: none;
 }
@@ -1348,7 +1347,7 @@ body {
 
 .site_footer--copyright {
   position: absolute;
-  right: 40px;
+  right: 0;
   bottom: -10px;
   font-size: 14px;
   color: #555;
@@ -1390,13 +1389,12 @@ body {
 .page_top--years {
   position: absolute;
   top: 50%;
-  right: 40px;
+  right: 0;
   margin-top: -30px;
 }
 
 .page_body .section_inner {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
   background-color: #FEFEFE;
 }
 
@@ -1954,7 +1952,6 @@ p.about_header--text {
   height: 250px;
   width: 22%;
   background-color: #FEFEFE;
-  border: 15px solid #00B6FF;
 }
 
 .services_section--list--item.brand {
@@ -1970,38 +1967,34 @@ p.about_header--text {
 }
 
 .services_section--list--item.brand {
-  border-color: #6C477A;
   color: #6C477A;
 }
 
 .services_section--list--item.marketing {
-  border-color: #D9B346;
   color: #D9B346;
 }
 
 .services_section--list--item.web {
-  border-color: #6F9942;
   color: #6F9942;
 }
 
 .services_section--list--item.ux {
-  border-color: #CB5944;
   color: #CB5944;
 }
 
-.services_section--list--item.brand .services_section--list--heading {
+.services_section--list--item.brand .services_section--list--door {
   background-color: #6C477A;
 }
 
-.services_section--list--item.marketing .services_section--list--heading {
+.services_section--list--item.marketing .services_section--list--door {
   background-color: #D9B346;
 }
 
-.services_section--list--item.web .services_section--list--heading {
+.services_section--list--item.web .services_section--list--door {
   background-color: #6F9942;
 }
 
-.services_section--list--item.ux .services_section--list--heading {
+.services_section--list--item.ux .services_section--list--door {
   background-color: #CB5944;
 }
 
@@ -2022,22 +2015,23 @@ p.about_header--text {
   color: inherit;
 }
 
-.services_section--list--link:hover .services_section--list--heading {
+.services_section--list--link:hover .services_section--list--door {
   top: -300px;
 }
 
-.services_section--list--link:hover .services_section--list--subheading {
-  opacity: 0;
-}
-
-.services_section--list--heading {
+.services_section--list--door {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 99;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.services_section--list--heading {
   font-size: 36px;
   font-size: 2.25rem;
   font-family: "Brandon-Bold","Roboto",Arial,Helvetica,sans-serif;
@@ -2045,8 +2039,6 @@ p.about_header--text {
   color: #FEFEFE;
   line-height: 1.2;
   text-align: right;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .services_section--list--subheading {
@@ -2055,25 +2047,33 @@ p.about_header--text {
   bottom: 0;
   left: 0;
   z-index: 999;
-  padding: 10px;
+  padding: 20px;
   font-weight: 600;
   color: #FEFEFE;
   line-height: 1.25;
   text-align: left;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
 }
 
 .services_section--list--text {
+  font-weight: 600;
   color: inherit;
-  line-height: 1.25;
+  line-height: 1.5;
   text-align: left;
 }
 
 .services_section--list--note {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
   padding-top: 10px;
-  font-size: 14px;
-  color: inherit;
+  font-size: 16px;
+  font-family: "Indie Flower";
+  font-weight: bold;
+  color: #00B6FF;
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 
 .services_links {

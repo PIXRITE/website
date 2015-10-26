@@ -130,7 +130,6 @@
     height: 250px;
     width: 22%;
     background-color: $white;
-    border: 15px solid $blue;
     
     &.brand {
         margin-right: 4%;
@@ -143,32 +142,28 @@
     }
     
     &.brand {
-        border-color: $brand;
         color: $brand;
     }
     &.marketing  {
-        border-color: $marketing;
         color: $marketing;
     }
     &.web {
-        border-color: $web;
         color: $web;
     }
     &.ux {
-        border-color: $ux;
         color: $ux;
     }
     
-    &.brand .services_section--list--heading {
+    &.brand .services_section--list--door {
         background-color: $brand;
     }
-    &.marketing .services_section--list--heading  {
+    &.marketing .services_section--list--door  {
         background-color: $marketing;
     }
-    &.web .services_section--list--heading {
+    &.web .services_section--list--door {
         background-color: $web;
     }
-    &.ux .services_section--list--heading {
+    &.ux .services_section--list--door {
         background-color: $ux;
     }
 }
@@ -180,30 +175,30 @@
     
     &:hover {
         
-        .services_section--list--heading {
+        .services_section--list--door {
             top: -300px;
-        }
-        .services_section--list--subheading {
-            opacity: 0;
         }
     }
 }
 
-.services_section--list--heading {
+.services_section--list--door {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 99;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
+    transition: all $t-slow;
+}
+
+.services_section--list--heading {
     @include font-size(36);
     font-family: $f-brand-bold;
     font-weight: normal;
     color: $white;
     line-height: 1.2;
     text-align: right;
-    transition: all $t-slow;
 }
 
 .services_section--list--subheading {
@@ -212,22 +207,29 @@
     bottom: 0;
     left: 0;
     z-index: 999;
-    padding: 10px;
+    padding: 20px;
     font-weight: 600;
     color: $white;
     line-height: 1.25;
     text-align: left;
-    transition: opacity $t-default;
 }
 
 .services_section--list--text {
+    font-weight: 600;
     color: inherit;
-    line-height: 1.25;
+    line-height: 1.5;
     text-align: left;
 }
 
 .services_section--list--note {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
     padding-top: 10px;
-    font-size: 14px;
-    color: inherit;
+    font-size: 16px;
+    font-family: "Indie Flower";
+    font-weight: bold;
+    color: $blue;
+    transform: rotate(-3deg);
 }

@@ -26,22 +26,22 @@ Route::get( '/services', [
     'uses' => 'PagesController@services'
 ]);
 
-Route::get( '/services/brand', [
+Route::get( '/brand-design-services', [
     'as' => 'brand-page',
     'uses' => 'PagesController@brand'
 ]);
 
-Route::get( '/services/seo-sem', [
+Route::get( '/online-marketing-services', [
     'as' => 'seo-page',
     'uses' => 'PagesController@seo'
 ]);
 
-Route::get( '/services/web', [
+Route::get( '/web-design-services', [
     'as' => 'web-page',
     'uses' => 'PagesController@web'
 ]);
 
-Route::get( '/services/ui-ux', [
+Route::get( '/interface-design-services', [
     'as' => 'ux-page',
     'uses' => 'PagesController@ux'
 ]);
@@ -56,12 +56,12 @@ Route::get( '/contact', [
     'uses' => 'PagesController@contact'
 ]);
 
-Route::get( '/hire', [
+Route::get( '/request-quote', [
     'as' => 'hire-page',
     'uses' => 'PagesController@hire'
 ]);
 
-Route::post( '/hire', [
+Route::post( '/request-quote', [
     'as' => 'hire-form',
     'uses' => 'EmailController@send_hire'
 ]);

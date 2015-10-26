@@ -7,7 +7,7 @@
 
     @yield('seo')
 
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,600|Indie+Flower' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<link href="{{ asset('/css/main.css?ver=0.1') }}" rel="stylesheet">
