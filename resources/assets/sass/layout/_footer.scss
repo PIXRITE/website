@@ -65,19 +65,8 @@
 .site_footer--about--logo {
     margin-bottom: 6px;
     
-
-    .logo--icon {
-        height: $w-logo - 10px;
-        width: $w-logo - 10px;
-    }
-
-    .logo--title {
-        font-size: $w-logo;
-    }
-
-    .logo--icon--square,
-    .logo--icon--circle {
-        background-color: $jet;
+    .logo {
+        height: $h-logo - 10px;
     }
 }
 

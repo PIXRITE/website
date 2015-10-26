@@ -66,6 +66,9 @@ Route::get( '/request-quote', [
     'uses' => 'PagesController@hire'
 ]);
 
+
+
+
 Route::post( '/request-quote', [
     'as' => 'hire-form',
     'uses' => 'EmailController@send_hire'
@@ -74,4 +77,9 @@ Route::post( '/request-quote', [
 Route::post( '/contact', [
     'as' => 'contact-form',
     'uses' => 'EmailController@send_contact'
+]);
+
+Route::post( '/testimonials', [
+    'as' => 'testimonials-form',
+    'uses' => 'EmailController@send_testimonials'
 ]);

@@ -1129,11 +1129,11 @@ body {
 
 .site_header--logo {
   float: left;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
-.site_header--logo .logo--icon--square, .site_header--logo .logo--icon--circle {
-  background-color: #131516;
+.site_header--logo .logo {
+  height: 36px;
 }
 
 .site_nav--menu {
@@ -1303,17 +1303,8 @@ body {
   margin-bottom: 6px;
 }
 
-.site_footer--about--logo .logo--icon {
+.site_footer--about--logo .logo {
   height: 26px;
-  width: 26px;
-}
-
-.site_footer--about--logo .logo--title {
-  font-size: 36px;
-}
-
-.site_footer--about--logo .logo--icon--square, .site_footer--about--logo .logo--icon--circle {
-  background-color: #131516;
 }
 
 .site_footer--about--text {
@@ -1472,51 +1463,6 @@ body {
 .site_cta--button:hover {
   background-color: transparent;
   text-decoration: none;
-}
-
-.logo:hover .logo--icon--square {
-  border-radius: 60%;
-}
-
-.logo:hover .logo--icon--circle {
-  border-radius: 0;
-}
-
-.logo--icon {
-  position: relative;
-  display: inline-block;
-  height: 36px;
-  width: 36px;
-  background-color: #00B6FF;
-}
-
-.logo--icon--square, .logo--icon--circle {
-  display: block;
-  position: absolute;
-  left: 12%;
-  height: 23%;
-  width: 23%;
-  background-color: #131516;
-  transition: all 0.4s;
-}
-
-.logo--icon--square {
-  top: 33%;
-}
-
-.logo--icon--circle {
-  top: 66%;
-  border-radius: 60%;
-}
-
-.logo--title {
-  display: inline-block;
-  margin-left: 4px;
-  font-size: 50px;
-  font-family: "Mouse_Deco","Brandon-Regular","Roboto",Arial,Helvetica,sans-serif;
-  color: #00B6FF;
-  letter-spacing: -2px;
-  line-height: 1;
 }
 
 .flash_message {
@@ -2392,6 +2338,10 @@ p.about_header--text {
 .hire_form .form_group {
   padding: 20px 20px 0;
   border: 1px solid #C7C7C9;
+}
+
+.testimonials_form {
+  margin-top: 40px;
 }
 
 .testimonial_quote {

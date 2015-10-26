@@ -107,4 +107,53 @@ class EmailController extends Controller
         
         return redirect()->back()->with('flash-success', 'The request has been sent!');
     }
+    
+
+    /**
+     * Send testimonials email.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function send_testimonials(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'title' => 'required',
+            'company' => 'required',
+            'email' => 'required|email',
+            'experience' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+        
+        $name = $request->input('name');
+        $toEmail = 'hello@pixrite.com';
+        $fromEmail = $request->input('email');
+        $subject = 'New Testimonial';
+
+
+        $data =
+        [
+            'name' => $name,
+            'email' => $fromEmail,
+            'title' => $request->input('title'),
+            'company' => $request->input('company'),
+            'body' => $request->input('experience'),
+        ];
+
+        Mail::send('emails.testimonial', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        {
+            $message
+                ->from($fromEmail, $name)
+                ->to($toEmail, 'PIXRITE')
+                ->subject($subject);
+        });
+        
+        return back()->with('flash-success', 'Your testimonial has been sent!');
+    }
 }

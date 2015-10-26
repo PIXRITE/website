@@ -30,6 +30,56 @@
             <h2>Leave us your comments as well...</h2>
 
             <p>If you feel like giving us a piece of your mind, just fill in the information below and we'll check it out. If you've got nice things to say, chances are, it will end up on our site. If not, we will be in touch soon to see how we can make things right.</p>
+            
+            
+            @if (count($errors) > 0)
+                <div class="form_errors">
+                    <ul class="form_errors--list">
+                        @foreach ($errors->all() as $error)
+                            <li class="form_errors--item">{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+           
+            <form class="testimonials_form js-slidingForm" action="{{ route('testimonials-form') }}" method="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <!-- Name -->
+                <div class="form_block">
+                    <label class="form--label" for="name">Name <span>(required)</span></label>
+                    <input class="form--input" type="text" name="name" id="name" placeholder="Name" value="{{ old('name') }}" required>
+                </div>
+
+                <!-- Title -->
+                <div class="form_block left">
+                    <label class="form--label" for="title">Title <span>(required)</span></label>
+                    <input class="form--input" type="text" name="title" id="title" placeholder="Title" value="{{ old('title') }}" required>
+                </div>
+
+                <!-- Company -->
+                <div class="form_block right">
+                    <label class="form--label" for="company">Company <span>(required)</span></label>
+                    <input class="form--input" type="text" name="company" id="company" placeholder="Company" value="{{ old('company') }}" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form_block">
+                    <label class="form--label" for="email">Email Address <span>(required)</span></label>
+                    <input class="form--input" type="email" name="email" id="email" placeholder="Email Address" value="{{ old('email') }}" required>
+                </div>
+
+                <!-- Experience -->
+                <div class="form_block">
+                    <label class="form--label" for="experience">Experience <span>(required)</span></label>
+                    <textarea class="form--textarea" name="experience" id="experience" placeholder="Experience" required>{{ old('experience') }}</textarea>
+                </div>
+
+                <!-- Buttons -->
+                <div class="form_block buttons">
+                    <button class="form--button" type="submit">MAKE ME FAMOUS</button>
+                </div>
+            </form>
         </div>
 
 

@@ -28,6 +28,10 @@
            </li>
 
            <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('testimonials-page') }}">TESTIMONIALS</a>
+           </li>
+
+           <li class="site_footer--item">
                <a class="site_footer--link" href="{{ route('contact-page') }}">CONTACT</a>
            </li>
 
