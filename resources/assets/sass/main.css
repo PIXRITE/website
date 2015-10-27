@@ -1081,7 +1081,11 @@ button {
 :-ms-input-placeholder {
   color: #97979a; }
 
-/* line 26, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 24, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+form {
+  position: relative; }
+
+/* line 30, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 input,
 textarea,
 select {
@@ -1089,22 +1093,22 @@ select {
   padding: 6px;
   border: 1px solid #C7C7C9; }
 
-/* line 32, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 36, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 select {
   padding: 5px 6px; }
 
-/* line 36, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 40, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 textarea {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 41, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 45, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 label {
   display: block;
   padding-bottom: 6px;
   color: #707070; }
 
-/* line 47, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 51, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 button[type="submit"] {
   display: block;
   width: 100%;
@@ -1115,35 +1119,35 @@ button[type="submit"] {
   font-size: 20px;
   font-weight: 600;
   color: #FEFEFE; }
-  /* line 59, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 63, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   button[type="submit"]:focus,
   button[type="submit"]:hover {
     outline: none;
     background-color: transparent;
     color: #00B6FF; }
 
-/* line 68, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 73, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_block {
   position: relative;
   clear: both;
   margin-bottom: 40px; }
-  /* line 74, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 79, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right,
   .form_block.left {
     clear: none;
     width: 48%; }
-  /* line 79, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 84, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.right {
     float: right; }
-  /* line 83, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 88, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.left {
     float: left; }
-  /* line 87, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 92, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form_block.buttons {
     margin-top: -20px;
     margin-bottom: 0; }
 
-/* line 93, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 98, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_group {
   content: "";
   display: table;
@@ -1153,7 +1157,7 @@ button[type="submit"] {
   .form_group:after {
     clear: both; }
 
-/* line 98, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 103, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form--label {
   display: none;
   position: absolute;
@@ -1166,35 +1170,37 @@ button[type="submit"] {
   color: #97979a;
   line-height: 34px;
   transition: all 0.2s; }
-  /* line 111, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 116, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form--label span {
     font-size: 70%;
     float: right;
     color: #C7C7C9; }
-  /* line 117, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 122, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form--label.focused {
     top: -24px;
     padding: 0;
     line-height: 24px; }
 
-/* line 125, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 130, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form--input,
 .form--textarea {
+  position: relative;
+  z-index: 1;
   padding: 6px 8px;
   background-color: transparent;
   border: 1px solid #B0B0B2; }
-  /* line 130, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+  /* line 137, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
   .form--input:focus,
   .form--textarea:focus {
     outline: none;
     border-color: #00B6FF; }
 
-/* line 136, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 143, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form--textarea {
   min-height: 90px;
   line-height: 1.25; }
 
-/* line 141, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 148, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form--heading {
   margin-bottom: 40px;
   font-size: 20px;
@@ -1202,29 +1208,55 @@ button[type="submit"] {
   color: #707070;
   text-align: center; }
 
-/* line 148, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 155, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form--button {
   width: 80%;
   margin: 30px auto 0;
   padding: 12px 0; }
 
-/* line 156, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 164, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_errors {
   clear: both;
   margin: 20px 0;
   padding: 10px 20px;
   background-color: #C02F1D; }
 
-/* line 163, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 171, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_errors--list {
   margin: 0;
   list-style: none; }
 
-/* line 168, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+/* line 176, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
 .form_errors--item {
   margin: 4px;
   color: #FEFEFE;
   line-height: 1.4; }
+
+/* line 185, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form_thanks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  padding: 20px;
+  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254, 0.8); }
+
+/* line 197, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form_thanks--heading {
+  margin: 10px 0 20px;
+  font-size: 30px;
+  font-size: 1.875rem;
+  color: #00B6FF;
+  text-align: center; }
+
+/* line 204, C:/wamp/www/pixrite/resources/assets/sass/base/_forms.scss */
+.form_thanks--text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center; }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/base/_links.scss */
 a {

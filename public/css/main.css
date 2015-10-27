@@ -818,6 +818,10 @@ button {
   color: #97979a;
 }
 
+form {
+  position: relative;
+}
+
 input, textarea, select {
   width: 100%;
   padding: 6px;
@@ -919,6 +923,8 @@ button[type="submit"]:focus, button[type="submit"]:hover {
 }
 
 .form--input, .form--textarea {
+  position: relative;
+  z-index: 1;
   padding: 6px 8px;
   background-color: transparent;
   border: 1px solid #B0B0B2;
@@ -964,6 +970,32 @@ button[type="submit"]:focus, button[type="submit"]:hover {
   margin: 4px;
   color: #FEFEFE;
   line-height: 1.4;
+}
+
+.form_thanks {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  padding: 20px;
+  background-color: #FEFEFE;
+  background-color: rgba(254, 254, 254, 0.8);
+}
+
+.form_thanks--heading {
+  margin: 10px 0 20px;
+  font-size: 30px;
+  font-size: 1.875rem;
+  color: #00B6FF;
+  text-align: center;
+}
+
+.form_thanks--text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center;
 }
 
 a {

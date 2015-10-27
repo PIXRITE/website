@@ -50,7 +50,14 @@
                 </div>
             @endif
            
-            <form class="contact_form js-slidingForm" action="{{ route('contact-form') }}" method="POST">
+            <form id="form" class="contact_form js-slidingForm" action="{{ route('contact-form') }}" method="POST">
+               @if( Session::has('form-thanks') )
+                  <div class="form_thanks">
+                    <h3 class="form_thanks--heading">Form Submitted!</h3>
+                    <p class="form_thanks--text">{{ Session::get('form-thanks') }}</p>
+                  </div>
+                @endif
+               
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                 <!-- Name -->

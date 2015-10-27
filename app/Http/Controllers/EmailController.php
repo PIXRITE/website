@@ -24,10 +24,12 @@ class EmailController extends Controller
             'email' => 'required|email',
             'message' => 'required',
         ]);
+        
+        $url = route('contact-page') . '#form';
 
         if ($validator->fails()) {
             
-            return back()
+            return redirect($url)
                 ->withErrors($validator)
                 ->withInput();
         }
@@ -54,7 +56,7 @@ class EmailController extends Controller
                 ->subject($subject);
         });
         
-        return back()->with('flash-success', 'Your message has been sent!');
+        return redirect($url)->with('form-thanks', 'Thanks for sending us a message. We\'ll be in touch shortly.');
     }
     
     /**
@@ -71,10 +73,12 @@ class EmailController extends Controller
             'details' => 'required',
             'website' => 'url'
         ]);
+        
+        $url = route('hire-page') . '#form';
 
         if ($validator->fails()) {
             
-            return back()
+            return redirect($url)
                 ->withErrors($validator)
                 ->withInput();
         }
@@ -105,7 +109,7 @@ class EmailController extends Controller
                 ->subject($subject);
         });
         
-        return redirect()->back()->with('flash-success', 'The request has been sent!');
+        return redirect($url)->with('form-thanks', 'We appreciate your interest in letting us work for you. We\'ll be in touch shortly.');
     }
     
 
@@ -123,10 +127,12 @@ class EmailController extends Controller
             'email' => 'required|email',
             'experience' => 'required',
         ]);
+        
+        $url = route('testimonials-page') . '#form';
 
         if ($validator->fails()) {
             
-            return back()
+            return redirect($url)
                 ->withErrors($validator)
                 ->withInput();
         }
@@ -154,6 +160,6 @@ class EmailController extends Controller
                 ->subject($subject);
         });
         
-        return back()->with('flash-success', 'Your testimonial has been sent!');
+        return redirect($url)->with('form-thanks', 'Thanks for letting us know about your experience.');
     }
 }
