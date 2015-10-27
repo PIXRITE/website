@@ -70,8 +70,7 @@ class EmailController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'phone' => 'required',
-            'details' => 'required',
-            'website' => 'url'
+            'details' => 'required'
         ]);
         
         $url = route('hire-page') . '#form';
