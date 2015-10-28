@@ -25,6 +25,30 @@
     font-weight: normal;
     color: $white;
     letter-spacing: -1px;
+    
+    @include bp(1080) {
+        @include font-size(54);
+    }
+    
+    @include bp(920) {
+        padding-top: 120px;
+    }
+    
+    @include bp(800) {
+        
+        span {
+            display: block;
+        }
+    }
+    
+    @include bp(500) {
+        padding-bottom: 20px;
+        @include font-size(40);
+        
+        span {
+            display: inline;
+        }
+    }
 }
 
 .hero--text {
@@ -37,6 +61,18 @@
     
     span {
         display: block;
+    }
+    
+    @include bp(1080) {
+        @include font-size(18);
+    }
+    
+    @include bp(640) {
+        line-height: 1.375;
+        
+        span {
+            display: inline;
+        }
     }
 }
 
@@ -52,6 +88,12 @@
     
     &:hover {
         background-color: transparent;
+    }
+    
+    @include bp(920) {
+        margin: 40px 0 40px;
+        padding: 12px 24px;
+        @include font-size(22);
     }
 }
 
@@ -84,6 +126,51 @@
     float: left;
     width: (100% / 12);
     text-align: center;
+    
+    @include bp(1000) {
+        width: (100% / 10);
+        
+        &.four,
+        &.ten {
+            display: none;
+        }
+    }
+    
+    @include bp(800) {
+        width: (100% / 8);
+        
+        &.eleven,
+        &.twelve {
+            display: none;
+        }
+    }
+    
+    @include bp(600) {
+        width: (100% / 5);
+        
+        &.four,
+        &.ten {
+            display: block;
+        }
+    }
+    
+    @include bp(440) {
+        width: (100% / 4);
+        
+        &.four,
+        &.ten {
+            display: none;
+        }
+    }
+    
+    @include bp(340) {
+        width: (100% / 3);
+        
+        &.two,
+        &.three {
+            display: none;
+        }
+    }
 }
 
 .client_logos--image {
@@ -107,6 +194,10 @@
     color: $pearl;
     letter-spacing: -2px;
     text-transform: uppercase;
+    
+    @include bp(640) {
+        @include font-size(40);
+    }
 }
 
 
@@ -121,6 +212,10 @@
     margin: 0;
     padding: 50px 0;
     list-style: none;
+    
+    @include bp(640) {
+        padding: 20px 0;
+    }
 }
 
 .services_section--list--item {
@@ -139,6 +234,41 @@
     }
     &.ux {
         margin-left: 4%;
+    }
+    
+    @include bp(1060) {
+        height: 140px;
+        width: 46%;
+        
+        &.brand {
+            margin-bottom: 4%;
+        }
+        &.marketing {
+            margin-right: 0;
+            margin-bottom: 4%;
+            margin-left: 4%;
+        }
+        &.web {
+            margin-right: 4%;
+        }
+    }
+    
+    @include bp(850) {
+        height: 180px;
+    }
+    
+    @include bp(640) {
+        height: 210px;
+    }
+    
+    @include bp(570) {
+        height: 140px;
+        width: 100%;
+        margin: 0 0 20px!important;
+    }
+    
+    @include bp(400) {
+        height: 180px;
     }
     
     &.brand {
@@ -233,4 +363,9 @@
     font-weight: bold;
     color: $blue;
     transform: rotate(-3deg);
+    
+    @include bp(1060) {
+        bottom: 10px;
+        text-align: right;
+    }
 }

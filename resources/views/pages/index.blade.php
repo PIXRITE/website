@@ -12,7 +12,7 @@
 <!-- Page Top -->
 <div class="hero index">
     <div class="section_inner">
-        <h1 class="hero--heading">What You See Is What You Get</h1>
+        <h1 class="hero--heading">What You See Is <span>What You Get</span></h1>
 
         <p class="hero--text">We listen. We analyze. We discover. We propose. We deliver. <span>We’re digital marketing experts and we’re here to show you ROI.</span></p>
 
@@ -26,18 +26,18 @@
 <div class="client_logos">
     <div class="section_inner clearfix">
         <ul class="client_logos--list">
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_01.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_02.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_03.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_04.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_05.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_06.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_07.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_08.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_09.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_10.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_11.png" alt="Client Logo"></li>
-            <li class="client_logos--item"><img class="client_logos--image" src="img/client_logos/client_logo_12.png" alt="Client Logo"></li>
+            <li class="client_logos--item one"><img class="client_logos--image" src="img/client_logos/client_logo_01.png" alt="Client Logo"></li>
+            <li class="client_logos--item two"><img class="client_logos--image" src="img/client_logos/client_logo_02.png" alt="Client Logo"></li>
+            <li class="client_logos--item three"><img class="client_logos--image" src="img/client_logos/client_logo_03.png" alt="Client Logo"></li>
+            <li class="client_logos--item four"><img class="client_logos--image" src="img/client_logos/client_logo_04.png" alt="Client Logo"></li>
+            <li class="client_logos--item five"><img class="client_logos--image" src="img/client_logos/client_logo_05.png" alt="Client Logo"></li>
+            <li class="client_logos--item six"><img class="client_logos--image" src="img/client_logos/client_logo_06.png" alt="Client Logo"></li>
+            <li class="client_logos--item seven"><img class="client_logos--image" src="img/client_logos/client_logo_07.png" alt="Client Logo"></li>
+            <li class="client_logos--item eight"><img class="client_logos--image" src="img/client_logos/client_logo_08.png" alt="Client Logo"></li>
+            <li class="client_logos--item nine"><img class="client_logos--image" src="img/client_logos/client_logo_09.png" alt="Client Logo"></li>
+            <li class="client_logos--item ten"><img class="client_logos--image" src="img/client_logos/client_logo_10.png" alt="Client Logo"></li>
+            <li class="client_logos--item eleven"><img class="client_logos--image" src="img/client_logos/client_logo_11.png" alt="Client Logo"></li>
+            <li class="client_logos--item twelve"><img class="client_logos--image" src="img/client_logos/client_logo_12.png" alt="Client Logo"></li>
         </ul>
     </div>
 </div>
