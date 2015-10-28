@@ -6,3 +6,4 @@
 //@prepros-append modules/messages.js
 
 //@prepros-append modules/misc.js
+//@prepros-append modules/nav.js

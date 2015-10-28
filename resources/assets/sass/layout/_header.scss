@@ -4,6 +4,10 @@
     z-index: 9999;
     height: $h-header;
     background-color: $jet;
+        
+    @include bp(560) {
+        height: $h-header - 10px;
+    }
 }
 
 // Home Page
@@ -17,6 +21,10 @@
 
     .logo {
         height: $h-logo;
+        
+        @include bp(560) {
+            height: $h-logo - 10px;
+        }
     }
 }
 
@@ -24,6 +32,44 @@
 // #Nav
 // ---------------------------------------
 .site_nav {
+    position: relative;
+    height: $h-header;
+        
+    @include bp(560) {
+        height: $h-header - 10px;
+    }
+}
+
+// Button
+.site_nav--button {
+    display: none;
+    float: right;
+    margin: 11px 0 12px;
+    padding: 10px 12px;
+    border: 2px solid $stone;
+    font-size: 18px;
+    color: $stone;
+    
+    &:hover {
+        border-color: $white;
+        color: $white;
+    }
+    
+    &.active,
+    &:focus {
+        outline: none;
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+    
+    @include bp(860) {
+        display: block;
+    }
+        
+    @include bp(560) {
+        padding: 5px 12px;
+    }
 }
 
 // Main Menu
@@ -31,6 +77,15 @@
     margin: 0;
     list-style: none;
     text-align: right;
+    
+    @include bp(860) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 6px;
+        background-color: $blue;
+    }
 }
 
 .site_nav--item {
@@ -41,6 +96,17 @@
     &:hover {
         .site_nav--submenu {
             display: block;
+        }
+    }
+    
+    @include bp(860) {
+        display: block;
+        padding: 0;
+    
+        &:hover {
+            .site_nav--submenu {
+                display: none;
+            }
         }
     }
 }
@@ -57,6 +123,23 @@
         
         &:hover {
             border-color: $white;
+        }
+    }
+    
+    @include bp(860) {
+        padding: 6px 16px;
+        @include link-colors($white, $blue);
+        
+        &:hover {
+            background-color: $white;
+        }
+        
+        &.selected {
+            border-color: transparent;
+
+            &:hover {
+                border-color: transparent;
+            }
         }
     }
 }
@@ -106,4 +189,10 @@
     background-color: $blue;
     border-color: $blue;
     @include link-colors($white, $white);
+    
+    @include bp(860) {
+        border-color: $white;
+        border-right: none;
+        border-left: none;
+    }
 }

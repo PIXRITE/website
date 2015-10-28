@@ -5,7 +5,9 @@
 
         <!-- Nav -->
         <nav class="site_nav">
-           <ul class="site_nav--menu">
+            <button id="siteNavButton" class="site_nav--button">MENU <i class="fa fa-caret-down"></i></button>
+          
+           <ul id="siteNavMenu" class="site_nav--menu">
                @if( $page_type != 'landing' )
                <li class="site_nav--item">
                    <a class="site_nav--link home" href="{{ route('index-page') }}">HOME</a>

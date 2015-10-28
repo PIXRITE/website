@@ -8,6 +8,10 @@
     @include font-size(30);
     color: $pearl;
     text-align: center;
+    
+    @include bp(520) {
+        @include font-size(24);
+    }
 }
 .site_cta--button {
     display: inline-block;
@@ -23,5 +27,18 @@
     &:hover {
         background-color: transparent;
         text-decoration: none;
+    }
+    
+    @include bp(860) {
+        display: block;
+        width: 90%;
+        max-width: 300px;
+        margin: 10px auto 0;
+    }
+    
+    @include bp(520) {
+        max-width: 240px;
+        padding: 2px 10px;
+        @include font-size(16);
     }
 }

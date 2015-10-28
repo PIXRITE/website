@@ -2,8 +2,27 @@
     height: 60px;
     width: 180px;
     font-family: 'Brandon-Bold';
+    font-size: 16px;
     color: $sterling;
     line-height: 1;
+    
+    @include bp(800) {
+        height: 44px;
+        width: 100px;
+        font-size: 11px;
+    }
+}
+
+%years--line {
+    width: 51px;
+    margin: 0;
+    border: none;
+    border-bottom: 4px solid $blue;
+    
+    @include bp(800) {
+        width: 34px;
+        border-width: 2px;
+    }
 }
 
 .years--top {
@@ -15,47 +34,45 @@
 }
 
 .years--top--main {
-    font-size: 20px;
+    font-size: 125%;
 }
 .years--top--sub {
     display: block;
-    font-size: 14px;
+    font-size: 87.5%;
 }
 .years--top--mid {
     margin: 0 -3px;
-    font-size: 18px;
+    font-size: 112.5%;
     color: $stone;
     vertical-align: baseline;
 }
 .years--top--line {
-    width: 51px;
-    margin: 0;
-    border: none;
-    border-bottom: 4px solid $blue;
+    @extend %years--line;
 }
 
 .years--bottom--main {
-    font-size: 16px;
+    font-size: 100%;
     vertical-align: top; 
 }
 .years--bottom--sub {
     display: inline-block;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 62.5%;
+    line-height: 1;
 }
 .years--bottom--mid {
     margin: 0 -3px;
-    font-size: 24px;
-    line-height: 21px;
+    font-size: 150%;
+    line-height: .875;
     vertical-align: top;
     letter-spacing: -2px;
+    
+    @include bp(800) {
+        margin: 0 1px;
+    }
 }
 .years--bottom--line {
+    @extend %years--line;
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 51px;
-    margin: 0;
-    border: none;
-    border-bottom: 4px solid $blue;
 }

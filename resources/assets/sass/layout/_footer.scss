@@ -5,6 +5,10 @@
     .section_inner {
         min-height: 110px;
         padding-left: 340px + 60px;
+        
+        @include bp(1240) {
+            padding-left: 0;
+        }
     }
 }
 
@@ -15,6 +19,10 @@
     margin: 0;
     list-style: none;
     text-align: right;
+    
+    @include bp(1240) {
+        text-align: center;
+    }
 }
 
 .site_footer--item {
@@ -41,13 +49,26 @@
 // #Menu
 // ---------------------------------------
 .site_footer--contact {
-    padding-top: 10px;
+    padding: 10px 0;
     text-align: right;
+    
+    @include bp(1240) {
+        float: right
+    }
+    
+    @include bp(560) {
+        float: none;
+        text-align: center;
+    }
 }
 
 .site_footer--contact--text {
     color: $sterling;
     line-height: 1.5;
+    
+    @include bp(560) {
+        display: inline-block;
+    }
 }
 
 
@@ -59,7 +80,19 @@
     bottom: 0;
     left: 0;
     width: 340px;
-    padding-right: 20px;
+    
+    @include bp(1240) {
+        position: relative;
+        float: left;
+        margin: 20px 0;
+    }
+    
+    @include bp(560) {
+        float: none;
+        width: 100%;
+        margin: 30px auto 0;
+        text-align: center;
+    }
 }
 
 .site_footer--about--logo {
@@ -74,6 +107,10 @@
     font-size: 14px;
     color: $sterling;
     line-height: 1.25;
+    
+    @include bp(1240) {
+        display: none;
+    }
 }
 
 
@@ -81,10 +118,15 @@
 // ---------------------------------------
 .site_footer--social {
     position: absolute;
-    top: 2px;
-    left: 190px;
+    top: -2px;
+    left: 175px;
     margin: 0;
     list-style: none;
+    
+    @include bp(560) {
+        position: static;
+        margin: 16px auto 0;
+    }
 }
 
 .site_footer--social--item {
@@ -110,5 +152,12 @@
     
     a {
         @include link-colors(inherit, $blue);
+    }
+    
+    @include bp(800) {
+        clear: both;
+        position: static;
+        bottom: auto;
+        margin-bottom: -10px;
     }
 }
