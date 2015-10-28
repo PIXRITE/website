@@ -1889,6 +1889,33 @@ body {
   border-left: none;
 }
 
+@media (max-width: 75em) {
+  .quote {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 65em) {
+  .quote {
+    float: right;
+    width: 300px;
+    margin: 0 0 10px 20px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .quote {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px;
+    padding-bottom: 20px;
+  }
+}
+
 p.quote--text {
   margin-bottom: 10px;
   line-height: 1.25;
@@ -2716,6 +2743,13 @@ p.about_header--text {
   text-align: right;
 }
 
+@media (max-width: 37.5em) {
+  .services_links--heading {
+    padding: 4px 10px 0;
+    text-align: left;
+  }
+}
+
 .services_links--terms {
   position: absolute;
   bottom: 0;
@@ -2732,6 +2766,12 @@ p.about_header--text {
   margin: 0 6px;
 }
 
+@media (max-width: 37.5em) {
+  .services_links--terms {
+    display: none;
+  }
+}
+
 .services_links--text {
   margin: 0;
   padding: 16px;
@@ -2739,6 +2779,14 @@ p.about_header--text {
   font-size: 1.125rem;
   color: inherit;
   line-height: 1.25;
+}
+
+@media (max-width: 37.5em) {
+  .services_links--text {
+    padding: 4px 10px 10px;
+    font-size: 16px;
+    font-size: 1rem;
+  }
 }
 
 .services_links--arrow {
@@ -2774,6 +2822,41 @@ p.about_header--text {
 
 .service_box.right {
   margin-left: 2%;
+}
+
+@media (max-width: 83.75em) {
+  .service_box {
+    float: none;
+    width: 100%;
+  }
+  .service_box.left, .service_box.right {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 65em) {
+  .service_box {
+    float: left;
+    width: 32%;
+  }
+  .service_box.left {
+    margin: 0;
+    margin-right: 2%;
+  }
+  .service_box.right {
+    margin: 0;
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 42.5em) {
+  .service_box {
+    float: none;
+    width: 100%;
+  }
+  .service_box.left, .service_box.right {
+    margin: 20px 0;
+  }
 }
 
 .service_box--heading {
@@ -2894,6 +2977,13 @@ p.about_header--text {
   float: left;
   width: 50%;
   line-height: 1.5;
+}
+
+@media (max-width: 42.5em) {
+  .service--list li {
+    float: none;
+    width: 100%;
+  }
 }
 
 .hire_heading {

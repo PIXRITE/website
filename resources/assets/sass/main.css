@@ -2106,14 +2106,35 @@ body {
   border: 2px solid #C7C7C9;
   border-right: none;
   border-left: none; }
+  @media (max-width: 75em) {
+    /* line 3, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
+    .quote {
+      float: none;
+      width: 100%;
+      margin: 10px 0;
+      padding-bottom: 20px; } }
+  @media (max-width: 65em) {
+    /* line 3, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
+    .quote {
+      float: right;
+      width: 300px;
+      margin: 0 0 10px 20px;
+      padding: 10px 0; } }
+  @media (max-width: 43.75em) {
+    /* line 3, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
+    .quote {
+      float: none;
+      width: 100%;
+      margin: 0 0 10px;
+      padding-bottom: 20px; } }
 
-/* line 13, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
+/* line 34, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
 p.quote--text {
   margin-bottom: 10px;
   line-height: 1.25;
   color: #00B6FF; }
 
-/* line 18, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
+/* line 39, C:/wamp/www/pixrite/resources/assets/sass/components/_quote.scss */
 p.quote--credit {
   float: right;
   margin: 0;
@@ -2848,8 +2869,13 @@ p.about_header--text {
   font-weight: normal;
   color: inherit;
   text-align: right; }
+  @media (max-width: 37.5em) {
+    /* line 69, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .services_links--heading {
+      padding: 4px 10px 0;
+      text-align: left; } }
 
-/* line 78, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 83, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .services_links--terms {
   position: absolute;
   bottom: 0;
@@ -2860,11 +2886,15 @@ p.about_header--text {
   font-weight: 700;
   color: inherit;
   text-transform: uppercase; }
-  /* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 93, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .services_links--terms span {
     margin: 0 6px; }
+  @media (max-width: 37.5em) {
+    /* line 83, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .services_links--terms {
+      display: none; } }
 
-/* line 92, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 101, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .services_links--text {
   margin: 0;
   padding: 16px;
@@ -2872,8 +2902,14 @@ p.about_header--text {
   font-size: 1.125rem;
   color: inherit;
   line-height: 1.25; }
+  @media (max-width: 37.5em) {
+    /* line 101, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .services_links--text {
+      padding: 4px 10px 10px;
+      font-size: 16px;
+      font-size: 1rem; } }
 
-/* line 99, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 113, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .services_links--arrow {
   position: absolute;
   top: 0;
@@ -2883,7 +2919,7 @@ p.about_header--text {
   width: 60px;
   background-color: #00B6FF;
   color: #FEFEFE; }
-  /* line 109, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 123, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .services_links--arrow i {
     position: absolute;
     top: 50%;
@@ -2893,19 +2929,50 @@ p.about_header--text {
     font-size: 48px;
     text-align: center; }
 
-/* line 123, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 137, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service_box {
   float: left;
   width: 32%;
   border: 3px solid #00B6FF; }
-  /* line 128, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 142, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .service_box.left {
     margin-right: 2%; }
-  /* line 131, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 145, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   .service_box.right {
     margin-left: 2%; }
+  @media (max-width: 83.75em) {
+    /* line 137, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .service_box {
+      float: none;
+      width: 100%; }
+      /* line 154, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+      .service_box.left,
+      .service_box.right {
+        margin: 20px 0; } }
+  @media (max-width: 65em) {
+    /* line 137, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .service_box {
+      float: left;
+      width: 32%; }
+      /* line 163, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+      .service_box.left {
+        margin: 0;
+        margin-right: 2%; }
+      /* line 167, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+      .service_box.right {
+        margin: 0;
+        margin-left: 2%; } }
+  @media (max-width: 42.5em) {
+    /* line 137, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .service_box {
+      float: none;
+      width: 100%; }
+      /* line 178, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+      .service_box.left,
+      .service_box.right {
+        margin: 20px 0; } }
 
-/* line 136, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 184, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service_box--heading {
   padding: 10px;
   font-size: 18px;
@@ -2913,7 +2980,7 @@ p.about_header--text {
   color: #FEFEFE;
   text-align: center; }
 
-/* line 142, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 190, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service_box--text {
   padding: 10px;
   font-size: 14px;
@@ -2921,7 +2988,7 @@ p.about_header--text {
   color: inherit;
   line-height: 1.25; }
 
-/* line 148, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 196, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service_box--link {
   display: block;
   padding: 10px;
@@ -2939,90 +3006,95 @@ p.about_header--text {
   .service_box--link:hover {
     color: inherit; }
 
-/* line 157, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 205, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box {
   border-color: #6C477A;
   color: #6C477A; }
 
-/* line 163, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 211, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box--heading,
 #brand .service_box--link {
   background-color: #6C477A; }
 
-/* line 166, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 214, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #brand .service_box--link {
   border-color: #6C477A; }
-  /* line 169, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 217, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   #brand .service_box--link:hover {
     background-color: white; }
 
-/* line 176, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 224, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #marketing .service_box {
   border-color: #D9B346;
   color: #D9B346; }
 
-/* line 182, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 230, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #marketing .service_box--heading,
 #marketing .service_box--link {
   background-color: #D9B346; }
 
-/* line 185, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 233, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #marketing .service_box--link {
   border-color: #D9B346; }
-  /* line 188, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 236, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   #marketing .service_box--link:hover {
     background-color: white; }
 
-/* line 195, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 243, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #web .service_box {
   border-color: #6F9942;
   color: #6F9942; }
 
-/* line 201, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 249, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #web .service_box--heading,
 #web .service_box--link {
   background-color: #6F9942; }
 
-/* line 204, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 252, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #web .service_box--link {
   border-color: #6F9942; }
-  /* line 207, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 255, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   #web .service_box--link:hover {
     background-color: white; }
 
-/* line 214, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 262, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #ux .service_box {
   border-color: #CB5944;
   color: #CB5944; }
 
-/* line 220, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 268, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #ux .service_box--heading,
 #ux .service_box--link {
   background-color: #CB5944; }
 
-/* line 223, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 271, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 #ux .service_box--link {
   border-color: #CB5944; }
-  /* line 226, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+  /* line 274, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
   #ux .service_box--link:hover {
     background-color: white; }
 
-/* line 232, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 280, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service--image {
   width: 100%;
   margin: 30px 0; }
 
-/* line 237, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 285, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service--heading {
   padding-bottom: 10px;
   font-size: 24px;
   font-size: 1.5rem; }
 
-/* line 243, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+/* line 291, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
 .service--list li {
   float: left;
   width: 50%;
   line-height: 1.5; }
+  @media (max-width: 42.5em) {
+    /* line 291, C:/wamp/www/pixrite/resources/assets/sass/pages/_services.scss */
+    .service--list li {
+      float: none;
+      width: 100%; } }
 
 /* line 1, C:/wamp/www/pixrite/resources/assets/sass/pages/_hire.scss */
 .hire_heading {

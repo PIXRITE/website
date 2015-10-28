@@ -74,6 +74,11 @@
     font-weight: normal;
     color: inherit;
     text-align: right;
+    
+    @include bp(600) {
+        padding: 4px 10px 0;
+        text-align: left;
+    }
 }
 .services_links--terms {
     position: absolute;
@@ -88,6 +93,10 @@
     span {
         margin: 0 6px;
     }
+    
+    @include bp(600) {
+        display: none;
+    }
 }
 .services_links--text {
     margin: 0;
@@ -95,6 +104,11 @@
     @include font-size(18);
     color: inherit;
     line-height: 1.25;
+    
+    @include bp(600) {
+        padding: 4px 10px 10px;
+        @include font-size(16);
+    }
 }
 .services_links--arrow {
     position: absolute;
@@ -130,6 +144,40 @@
     }
     &.right {
         margin-left: 2%;
+    }
+    
+    @include bp(1340) {
+        float: none;
+        width: 100%;
+        
+        &.left,
+        &.right {
+            margin: 20px 0;
+        }
+    }
+    
+    @include bp(1040) {
+        float: left;
+        width: 32%;
+
+        &.left {
+            margin: 0;
+            margin-right: 2%;
+        }
+        &.right {
+            margin: 0;
+            margin-left: 2%;
+        }
+    }
+    
+    @include bp(680) {
+        float: none;
+        width: 100%;
+        
+        &.left,
+        &.right {
+            margin: 20px 0;
+        }
     }
 }
 
@@ -244,5 +292,10 @@
         float: left;
         width: 50%;
         line-height: 1.5;
+        
+        @include bp(680) {
+            float: none;
+            width: 100%;
+        }
     }
 }
