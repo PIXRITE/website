@@ -2886,6 +2886,25 @@ p.about_header--text {
   text-align: center;
 }
 
+@media (max-width: 66.25em) {
+  .work--item {
+    width: 25%;
+  }
+}
+
+@media (max-width: 47.5em) {
+  .work--item {
+    width: 33.3%;
+  }
+}
+
+@media (max-width: 32.5em) {
+  .work--item {
+    width: 50%;
+    padding: 10px;
+  }
+}
+
 .work--link {
   display: inline-block;
 }
@@ -2913,6 +2932,12 @@ p.about_header--text {
 
 .work--image.ux {
   border-color: #CB5944;
+}
+
+@media (max-width: 68.75em) {
+  .work_quotes {
+    display: none;
+  }
 }
 
 .work_quote--text {

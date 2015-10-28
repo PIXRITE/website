@@ -101,7 +101,7 @@
         </ul>
         
         
-        <div class="jcarousel-wrapper">
+        <div class="jcarousel-wrapper work_quotes">
             <div class="jcarousel">
                 <ul>
                     <li>

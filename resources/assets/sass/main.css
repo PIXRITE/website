@@ -3035,38 +3035,56 @@ p.about_header--text {
   width: 16.6%;
   padding: 20px;
   text-align: center; }
+  @media (max-width: 66.25em) {
+    /* line 20, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+    .work--item {
+      width: 25%; } }
+  @media (max-width: 47.5em) {
+    /* line 20, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+    .work--item {
+      width: 33.3%; } }
+  @media (max-width: 32.5em) {
+    /* line 20, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+    .work--item {
+      width: 50%;
+      padding: 10px; } }
 
-/* line 27, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 40, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work--link {
   display: inline-block; }
-  /* line 30, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 43, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--link:focus {
     outline: none; }
-  /* line 36, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 49, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--link:hover .work--image {
     opacity: 1.0; }
 
-/* line 42, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 55, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work--image {
   border: 10px solid #00B6FF;
   opacity: 0.7; }
-  /* line 46, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 59, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.brand {
     border-color: #6C477A; }
-  /* line 50, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 63, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.web {
     border-color: #6F9942; }
-  /* line 54, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.ux {
     border-color: #CB5944; }
 
-/* line 62, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+@media (max-width: 68.75em) {
+  /* line 75, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  .work_quotes {
+    display: none; } }
+
+/* line 81, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--text {
   position: relative;
   padding-left: 40px;
   color: #555555;
   line-height: 1.5; }
-  /* line 68, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 87, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work_quote--text i {
     position: absolute;
     top: 4px;
@@ -3074,14 +3092,14 @@ p.about_header--text {
     font-size: 32px;
     color: #00B6FF; }
 
-/* line 77, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 96, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--author {
   margin-top: 10px;
   color: #555555;
   text-align: right;
   line-height: 1; }
 
-/* line 84, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 103, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--company {
   font-size: 14px;
   font-size: 0.875rem;
