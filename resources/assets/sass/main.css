@@ -1963,7 +1963,7 @@ body {
       float: none;
       width: 100%; } }
   /* line 97, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
-  .page_body--left h2 {
+  .page_body--left h2, .page_body--left h3 {
     clear: both;
     padding-bottom: 20px; }
   /* line 102, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
@@ -2219,20 +2219,25 @@ p.quote--credit {
   font-family: 'Brandon-Bold';
   line-height: 1;
   text-align: center; }
+  @media (max-width: 30em) {
+    /* line 9, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+    .about_header--number {
+      top: 0;
+      margin-top: 0; } }
 
-/* line 20, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 25, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_header--heading {
   font-size: 24px;
   font-size: 1.5rem;
   color: #00B6FF; }
 
-/* line 24, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 29, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 p.about_header--text {
   margin: 0;
   font-size: 18px;
   font-size: 1.125rem; }
 
-/* line 32, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 37, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_link {
   display: block;
   width: 300px;
@@ -2240,13 +2245,19 @@ p.about_header--text {
   font-size: 20px;
   font-size: 1.25rem;
   text-align: center; }
+  @media (max-width: 30em) {
+    /* line 37, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+    .about_link {
+      width: 100%;
+      font-size: 18px;
+      font-size: 1.125rem; } }
 
-/* line 43, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 53, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_people--heading {
   margin: 30px 0;
   text-align: center; }
 
-/* line 48, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 58, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_founder {
   position: relative;
   min-height: 184px;
@@ -2255,30 +2266,30 @@ p.about_header--text {
   padding-right: 178px;
   border: 3px solid #00B6FF; }
 
-/* line 57, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_founder--heading {
   margin-bottom: 10px;
   font-size: 26px;
   font-size: 1.625rem; }
-  /* line 61, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+  /* line 71, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
   .about_founder--heading span {
     font-size: 80%;
     font-weight: 400;
     font-style: italic; }
 
-/* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 77, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_founder--image {
   position: absolute;
   top: 14px;
   right: 14px;
   width: 150px; }
 
-/* line 73, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 83, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_founder--text {
   font-size: 14px;
   font-size: 0.875rem; }
 
-/* line 78, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_person {
   position: relative;
   min-height: 102px;
@@ -2288,25 +2299,25 @@ p.about_header--text {
   background-color: #F2F3F4;
   border: 1px solid #C7C7C9; }
 
-/* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 98, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_person--heading {
   margin-bottom: 10px;
   font-size: 22px;
   font-size: 1.375rem; }
-  /* line 92, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+  /* line 102, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
   .about_person--heading span {
     font-size: 80%;
     font-weight: 400;
     font-style: italic; }
 
-/* line 98, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 108, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_person--image {
   position: absolute;
   top: 10px;
   right: 10px;
   width: 80px; }
 
-/* line 104, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
+/* line 114, C:/wamp/www/pixrite/resources/assets/sass/pages/_about.scss */
 .about_person--text {
   font-size: 14px;
   font-size: 0.875rem; }
@@ -3033,24 +3044,60 @@ p.about_header--text {
       .hire_form .form_group {
         padding: 20px 10px 0; } }
 
-/* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+@media (max-width: 65em) {
+  /* line 1, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+  .testimonials_content {
+    position: relative; }
+    /* line 6, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+    .testimonials_content h3, .testimonials_content p {
+      padding-right: 55%; } }
+
+@media (max-width: 46.25em) {
+  /* line 13, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+  .testimonials_content h3, .testimonials_content p {
+    padding-right: 0; } }
+
+/* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonials_form {
   margin-top: 40px; }
+  @media (max-width: 65em) {
+    /* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+    .testimonials_form {
+      position: absolute;
+      top: 26px;
+      right: 0;
+      width: 50%; }
+      /* line 31, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+      .testimonials_form .form_block.right,
+      .testimonials_form .form_block.left {
+        float: none;
+        width: 100%; } }
+  @media (max-width: 46.25em) {
+    /* line 21, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+    .testimonials_form {
+      position: static;
+      width: 100%; } }
 
-/* line 10, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+/* line 46, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonial_quote {
   position: relative;
   margin-bottom: 30px;
   padding-left: 120px; }
+  @media (max-width: 33.75em) {
+    /* line 46, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+    .testimonial_quote {
+      padding-left: 0;
+      text-align: right; } }
 
-/* line 16, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+/* line 57, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonial_quote--text {
   position: relative;
   font-size: 14px;
   font-size: 0.875rem;
   color: #555555;
-  line-height: 1.5; }
-  /* line 22, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+  line-height: 1.5;
+  text-align: left; }
+  /* line 64, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
   .testimonial_quote--text i {
     float: left;
     margin-right: 4px;
@@ -3058,7 +3105,7 @@ p.about_header--text {
     color: #00B6FF;
     line-height: 1; }
 
-/* line 31, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+/* line 73, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonial_quote--author {
   margin-top: 10px;
   font-size: 14px;
@@ -3066,18 +3113,23 @@ p.about_header--text {
   color: #555555;
   line-height: 1; }
 
-/* line 38, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+/* line 80, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonial_quote--company {
   font-size: 12px;
   font-size: 0.75rem;
   color: #555555; }
 
-/* line 43, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+/* line 85, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
 .testimonial_quote--logo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100px; }
+  @media (max-width: 33.75em) {
+    /* line 85, C:/wamp/www/pixrite/resources/assets/sass/pages/_testimonials.scss */
+    .testimonial_quote--logo {
+      position: static;
+      margin-top: 12px; } }
 
 /* line 3, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work--heading {

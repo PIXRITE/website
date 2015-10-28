@@ -16,6 +16,11 @@
     font-family: 'Brandon-Bold';
     line-height: 1;
     text-align: center;
+    
+    @include bp(480) {
+        top: 0;
+        margin-top: 0;
+    }
 }
 .about_header--heading {
     @include font-size(24);
@@ -35,6 +40,11 @@ p.about_header--text {
     margin: 30px auto 0;
     @include font-size(20);
     text-align: center;
+    
+    @include bp(480) {
+        width: 100%;
+        @include font-size(18);
+    }
 }
 
 
