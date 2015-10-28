@@ -16,12 +16,23 @@
 // #Menu
 // ---------------------------------------
 .site_footer--menu {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: 0;
     list-style: none;
     text-align: right;
     
     @include bp(1240) {
+        position: static;
+        clear: both;
+        margin-bottom: 20px;
         text-align: center;
+    }
+    
+    @include bp(800) {
+        max-width: 440px;
+        margin: 10px auto 20px;
     }
 }
 
@@ -43,17 +54,28 @@
             border-color: $white;
         }
     }
+    
+    @include bp(800) {
+        &.selected {
+            border-color: transparent;
+
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
 }
 
 
 // #Menu
 // ---------------------------------------
 .site_footer--contact {
-    padding: 10px 0;
+    padding-top: 42px;
     text-align: right;
     
     @include bp(1240) {
-        float: right
+        float: right;
+        padding: 0 0 10px;
     }
     
     @include bp(560) {
@@ -84,13 +106,13 @@
     @include bp(1240) {
         position: relative;
         float: left;
-        margin: 20px 0;
+        margin: 10px 0;
     }
     
     @include bp(560) {
         float: none;
         width: 100%;
-        margin: 30px auto 0;
+        margin: 0 auto 10px;
         text-align: center;
     }
 }

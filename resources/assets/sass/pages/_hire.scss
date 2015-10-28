@@ -12,5 +12,9 @@
     .form_group {
         padding: 20px 20px 0;
         border: 1px solid $heather;
+        
+        @include bp(600) {
+            padding: 20px 10px 0;
+        }
     }
 }

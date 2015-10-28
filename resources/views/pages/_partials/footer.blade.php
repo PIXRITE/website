@@ -8,37 +8,6 @@
 
 <div class="site_footer">
    <div class="section_inner">
-       
-       <!-- Footer Menu -->
-       <ul class="site_footer--menu">
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('index-page') }}">HOME</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('work-page') }}">WORK</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('services-page') }}">SERVICES</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('about-page') }}">ABOUT</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('testimonials-page') }}">TESTIMONIALS</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link" href="{{ route('contact-page') }}">CONTACT</a>
-           </li>
-
-           <li class="site_footer--item">
-               <a class="site_footer--link selected" href="{{ route('hire-page') }}">HIRE US</a>
-           </li>
-       </ul>
    
        <!-- About Box -->
        <div class="site_footer--about">
@@ -71,6 +40,37 @@
            <p class="site_footer--contact--text">{{ $email }}</p>
            <p class="site_footer--contact--text">{{ $phone }}</p>
        </div>
+       
+       <!-- Footer Menu -->
+       <ul class="site_footer--menu">
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('index-page') }}">HOME</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('work-page') }}">WORK</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('services-page') }}">SERVICES</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('about-page') }}">ABOUT</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('testimonials-page') }}">TESTIMONIALS</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link" href="{{ route('contact-page') }}">CONTACT</a>
+           </li>
+
+           <li class="site_footer--item">
+               <a class="site_footer--link selected" href="{{ route('hire-page') }}">HIRE US</a>
+           </li>
+       </ul>
    
         <p class="site_footer--copyright">&copy; 1994 - <?php echo date("Y"); ?> PIXRITE, LLC. All Rights Reserved. | <a href="//mail.pixrite.com/Login.aspx" target="_blank">WEBMAIL</a></p>
    </div>

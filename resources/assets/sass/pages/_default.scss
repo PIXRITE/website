@@ -68,19 +68,34 @@
         @include bp(660) {
             padding: 20px;
         }
+        
+        @include bp(480) {
+            padding: 20px 10px;
+        }
     }
 }
 
 .page_body--right {
     float: right;
     width: 54%;
+    
+    @include bp(1040) {
+        float: none;
+        width: 100%;
+    }
 }
 
 .page_body--left {
     float: left;
     width: 40%;
     
+    @include bp(1040) {
+        float: none;
+        width: 100%;
+    }
+    
     h2 {
+        clear: both;
         padding-bottom: 20px;
     }
     
