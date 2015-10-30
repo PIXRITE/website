@@ -1435,26 +1435,31 @@ body {
 
 /* line 18, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_header--logo {
+  position: relative;
+  z-index: 10;
   float: left;
   padding-top: 15px; }
-  /* line 22, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 24, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  .site_header--logo a {
+    display: block; }
+  /* line 28, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_header--logo .logo {
     height: 36px; }
     @media (max-width: 35em) {
-      /* line 22, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+      /* line 28, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
       .site_header--logo .logo {
         height: 26px; } }
 
-/* line 34, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 40, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav {
   position: relative;
   height: 66px; }
   @media (max-width: 35em) {
-    /* line 34, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 40, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav {
       height: 56px; } }
 
-/* line 44, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 50, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--button {
   display: none;
   float: right;
@@ -1463,11 +1468,11 @@ body {
   border: 2px solid #707070;
   font-size: 18px;
   color: #707070; }
-  /* line 53, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 59, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_nav--button:hover {
     border-color: #FEFEFE;
     color: #FEFEFE; }
-  /* line 59, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 65, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_nav--button.active,
   .site_nav--button:focus {
     outline: none;
@@ -1475,21 +1480,21 @@ body {
     border-color: #00B6FF;
     color: #FEFEFE; }
   @media (max-width: 53.75em) {
-    /* line 44, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 50, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--button {
       display: block; } }
   @media (max-width: 35em) {
-    /* line 44, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 50, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--button {
       padding: 5px 12px; } }
 
-/* line 76, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 82, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--menu {
   margin: 0;
   list-style: none;
   text-align: right; }
   @media (max-width: 53.75em) {
-    /* line 76, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 82, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--menu {
       display: none;
       position: absolute;
@@ -1498,21 +1503,21 @@ body {
       min-width: 140px;
       background-color: #00B6FF; } }
 
-/* line 91, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 97, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--item {
   position: relative;
   display: inline-block;
   padding: 11px 4px; }
-  /* line 97, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 103, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_nav--item:hover .site_nav--submenu {
     display: block; }
   @media (max-width: 53.75em) {
-    /* line 91, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 97, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--item {
       display: block;
       padding: 0; } }
 
-/* line 108, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 114, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--link {
   display: block;
   padding: 10px 12px;
@@ -1529,14 +1534,14 @@ body {
   /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
   .site_nav--link:hover {
     color: #FEFEFE; }
-  /* line 115, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 121, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   .site_nav--link.selected {
     border-color: #707070; }
-    /* line 118, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 124, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--link.selected:hover {
       border-color: #FEFEFE; }
   @media (max-width: 53.75em) {
-    /* line 108, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 114, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--link {
       padding: 6px 16px;
       font-size: 16px; }
@@ -1551,17 +1556,17 @@ body {
       /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
       .site_nav--link:hover {
         color: #00B6FF; }
-      /* line 128, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+      /* line 134, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
       .site_nav--link:hover {
         background-color: #FEFEFE; }
-      /* line 132, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+      /* line 138, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
       .site_nav--link.selected {
         border-color: transparent; }
-        /* line 135, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+        /* line 141, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
         .site_nav--link.selected:hover {
           border-color: transparent; } }
 
-/* line 144, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 150, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--submenu {
   display: none;
   position: absolute;
@@ -1574,7 +1579,7 @@ body {
   background-color: #131516;
   list-style: none; }
   @media (max-width: 53.75em) {
-    /* line 144, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 150, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--submenu {
       display: block;
       position: static;
@@ -1583,17 +1588,17 @@ body {
       border-right: 0;
       border-left: 0; } }
 
-/* line 166, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 172, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--submenu--item {
   padding: 0 8px;
   text-align: center; }
   @media (max-width: 53.75em) {
-    /* line 166, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 172, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--submenu--item {
       padding: 0;
       text-align: right; } }
 
-/* line 176, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 182, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 .site_nav--submenu--link {
   display: block;
   padding: 5px 10px;
@@ -1611,7 +1616,7 @@ body {
   .site_nav--submenu--link:hover {
     color: #FEFEFE; }
   @media (max-width: 53.75em) {
-    /* line 176, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 182, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     .site_nav--submenu--link {
       padding: 6px 16px;
       border: 2px solid transparent; }
@@ -1626,17 +1631,17 @@ body {
       /* line 30, C:/wamp/www/pixrite/resources/assets/sass/utils/_mixins.scss */
       .site_nav--submenu--link:hover {
         color: #00B6FF; }
-      /* line 188, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+      /* line 194, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
       .site_nav--submenu--link:hover {
         background-color: #FEFEFE; }
-      /* line 192, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+      /* line 198, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
       .site_nav--submenu--link.selected {
         border-color: transparent; }
-        /* line 195, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+        /* line 201, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
         .site_nav--submenu--link.selected:hover {
           border-color: transparent; } }
 
-/* line 215, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+/* line 221, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
 #home .home,
 #work .work,
 #services .services,
@@ -1706,7 +1711,7 @@ body {
   #hire .hire:hover {
     color: #FEFEFE; }
   @media (max-width: 53.75em) {
-    /* line 215, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+    /* line 221, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
     #home .home,
     #work .work,
     #services .services,
@@ -1722,7 +1727,7 @@ body {
       border-left: none; } }
 
 @media (max-width: 53.75em) {
-  /* line 231, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
+  /* line 237, C:/wamp/www/pixrite/resources/assets/sass/layout/_header.scss */
   #brand .brand,
   #marketing .marketing,
   #web .web,
@@ -1978,6 +1983,7 @@ body {
   @media (max-width: 53.75em) {
     /* line 60, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
     .page_body .section_inner {
+      width: 100%;
       padding: 20px 40px; } }
   @media (max-width: 41.25em) {
     /* line 60, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
@@ -1988,34 +1994,34 @@ body {
     .page_body .section_inner {
       padding: 20px 10px; } }
 
-/* line 78, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 79, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body--right {
   float: right;
   width: 54%; }
   @media (max-width: 65em) {
-    /* line 78, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+    /* line 79, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
     .page_body--right {
       float: none;
       width: 100%; } }
 
-/* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 89, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body--left {
   float: left;
   width: 40%; }
   @media (max-width: 65em) {
-    /* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+    /* line 89, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
     .page_body--left {
       float: none;
       width: 100%; } }
-  /* line 97, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+  /* line 98, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
   .page_body--left h2, .page_body--left h3 {
     clear: both;
     padding-bottom: 20px; }
-  /* line 102, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+  /* line 103, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
   .page_body--left p {
     margin-bottom: 14px; }
 
-/* line 107, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
+/* line 108, C:/wamp/www/pixrite/resources/assets/sass/pages/_default.scss */
 .page_body--skinny {
   clear: both;
   max-width: 800px;

@@ -16,8 +16,14 @@
 }
 
 .site_header--logo {
+    position: relative;
+    z-index: 10;
     float: left;
     padding-top: 15px; // header height - logo title - adj
+    
+    a {
+        display: block;
+    }
 
     .logo {
         height: $h-logo;
