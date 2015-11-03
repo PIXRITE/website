@@ -3306,29 +3306,30 @@ p.about_header--text {
 /* line 55, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work--image {
   border: 10px solid #00B6FF;
-  opacity: 0.7; }
-  /* line 59, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  opacity: 0.7;
+  width: 100%; }
+  /* line 60, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.brand {
     border-color: #6C477A; }
-  /* line 63, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 64, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.web {
     border-color: #6F9942; }
-  /* line 67, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 68, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work--image.ux {
     border-color: #CB5944; }
 
 @media (max-width: 68.75em) {
-  /* line 75, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 76, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work_quotes {
     display: none; } }
 
-/* line 81, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 82, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--text {
   position: relative;
   padding-left: 40px;
   color: #555555;
   line-height: 1.5; }
-  /* line 87, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+  /* line 88, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
   .work_quote--text i {
     position: absolute;
     top: 4px;
@@ -3336,14 +3337,14 @@ p.about_header--text {
     font-size: 32px;
     color: #00B6FF; }
 
-/* line 96, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 97, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--author {
   margin-top: 10px;
   color: #555555;
   text-align: right;
   line-height: 1; }
 
-/* line 103, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
+/* line 104, C:/wamp/www/pixrite/resources/assets/sass/pages/_work.scss */
 .work_quote--company {
   font-size: 14px;
   font-size: 0.875rem;
