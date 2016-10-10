@@ -16,13 +16,15 @@ class Client extends Model
         'name',
         'email',
         'phone',
-        'company',
-        'type',
         'details',
+        
         'budget',
         'deadline',
+        'hear_about',
         'website_prod',
+        
+        'company',
+        'type',
         'website_dev',
-        'hear_about'
     ];
 }

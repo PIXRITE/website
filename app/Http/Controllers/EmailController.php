@@ -9,6 +9,9 @@ use App\Http\Controllers\Controller;
 use Mail;
 use Validator;
 
+use App\Client;
+use App\Message;
+
 class EmailController extends Controller
 { 
 
@@ -34,27 +37,37 @@ class EmailController extends Controller
                 ->withInput();
         }
         
-        $name = $request->input('name');
-        $toEmail = 'hello@pixrite.com';
-        $fromEmail = $request->input('email');
-        $subject = 'New Contact Message';
+        $message = new Message;
+
+        $message->name = $request->name;
+        $message->email = $request->email;
+        $message->phone = $request->phone;
+        $message->message = $request->message;
+
+        $message->save();
+        
+        
+        // $name = $request->input('name');
+        // $toEmail = 'hello@pixrite.com';
+        // $fromEmail = $request->input('email');
+        // $subject = 'New Contact Message';
 
 
-        $data =
-        [
-            'name' => $name,
-            'email' => $fromEmail,
-            'phone' => $request->input('phone'),
-            'body' => $request->input('message'),
-        ];
+        // $data =
+        // [
+        //     'name' => $name,
+        //     'email' => $fromEmail,
+        //     'phone' => $request->input('phone'),
+        //     'body' => $request->input('message'),
+        // ];
 
-        Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
-        {
-            $message
-                ->from($fromEmail, $name)
-                ->to($toEmail, 'PIXRITE')
-                ->subject($subject);
-        });
+        // Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        // {
+        //     $message
+        //         ->from($fromEmail, $name)
+        //         ->to($toEmail, 'PIXRITE')
+        //         ->subject($subject);
+        // });
         
         return redirect($url)->with('form-thanks', 'Thanks for sending us a message. We\'ll be in touch shortly.');
     }
@@ -82,31 +95,46 @@ class EmailController extends Controller
                 ->withInput();
         }
         
-        $name = $request->input('name');
-        $toEmail = 'hello@pixrite.com';
-        $fromEmail = $request->input('email');
-        $subject = 'New Project Request';
+        $client = new Client;
+
+        $client->name = $request->name;
+        $client->email = $request->email;
+        $client->phone = $request->phone;
+        $client->details = $request->details;
+
+        $client->budget = $request->budget;
+        $client->deadline = $request->deadline;
+        $client->hear_about = $request->hearAbout;
+        $client->website_prod = $request->website;
+        
+        $client->save();
+        
+        
+        // $name = $request->input('name');
+        // $toEmail = 'hello@pixrite.com';
+        // $fromEmail = $request->input('email');
+        // $subject = 'New Project Request';
 
 
-        $data =
-        [
-            'name' => $name,
-            'email' => $fromEmail,
-            'phone' => $request->input('phone'),
-            'body' => $request->input('details'),
-            'budget' => $request->input('budget', 'none given'),
-            'deadline' => $request->input('deadline', 'none given'),
-            'website' => $request->input('website', 'none given'),
-            'hearAbout' => $request->input('hearAbout', 'none given'),
-        ];
+        // $data =
+        // [
+        //     'name' => $name,
+        //     'email' => $fromEmail,
+        //     'phone' => $request->input('phone'),
+        //     'body' => $request->input('details'),
+        //     'budget' => $request->input('budget', 'none given'),
+        //     'deadline' => $request->input('deadline', 'none given'),
+        //     'website' => $request->input('website', 'none given'),
+        //     'hearAbout' => $request->input('hearAbout', 'none given'),
+        // ];
 
-        Mail::send('emails.hire', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
-        {
-            $message
-                ->from($fromEmail, $name)
-                ->to($toEmail, 'PIXRITE')
-                ->subject($subject);
-        });
+        // Mail::send('emails.hire', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        // {
+        //     $message
+        //         ->from($fromEmail, $name)
+        //         ->to($toEmail, 'PIXRITE')
+        //         ->subject($subject);
+        // });
         
         return redirect($url)->with('form-thanks', 'We appreciate your interest in letting us work for you. We\'ll be in touch shortly.');
     }
