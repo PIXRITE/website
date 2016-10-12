@@ -47,27 +47,27 @@ class EmailController extends Controller
         $message->save();
         
         
-        // $name = $request->input('name');
-        // $toEmail = 'hello@pixrite.com';
-        // $fromEmail = $request->input('email');
-        // $subject = 'New Contact Message';
+        $name = $request->input('name');
+        $toEmail = 'sales@pixritedigital.com';
+        $fromEmail = $request->input('email');
+        $subject = 'New Contact Message';
 
 
-        // $data =
-        // [
-        //     'name' => $name,
-        //     'email' => $fromEmail,
-        //     'phone' => $request->input('phone'),
-        //     'body' => $request->input('message'),
-        // ];
+        $data =
+        [
+            'name' => $name,
+            'email' => $fromEmail,
+            'phone' => $request->input('phone'),
+            'body' => $request->input('message'),
+        ];
 
-        // Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
-        // {
-        //     $message
-        //         ->from($fromEmail, $name)
-        //         ->to($toEmail, 'PIXRITE')
-        //         ->subject($subject);
-        // });
+        Mail::send('emails.contact', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        {
+            $message
+                ->from($fromEmail, $name)
+                ->to($toEmail, 'PIXRITE')
+                ->subject($subject);
+        });
         
         return redirect($url)->with('form-thanks', 'Thanks for sending us a message. We\'ll be in touch shortly.');
     }
@@ -110,31 +110,31 @@ class EmailController extends Controller
         $client->save();
         
         
-        // $name = $request->input('name');
-        // $toEmail = 'hello@pixrite.com';
-        // $fromEmail = $request->input('email');
-        // $subject = 'New Project Request';
+        $name = $request->input('name');
+        $toEmail = 'sales@pixritedigital.com';
+        $fromEmail = $request->input('email');
+        $subject = 'New Project Request';
 
 
-        // $data =
-        // [
-        //     'name' => $name,
-        //     'email' => $fromEmail,
-        //     'phone' => $request->input('phone'),
-        //     'body' => $request->input('details'),
-        //     'budget' => $request->input('budget', 'none given'),
-        //     'deadline' => $request->input('deadline', 'none given'),
-        //     'website' => $request->input('website', 'none given'),
-        //     'hearAbout' => $request->input('hearAbout', 'none given'),
-        // ];
+        $data =
+        [
+            'name' => $name,
+            'email' => $fromEmail,
+            'phone' => $request->input('phone'),
+            'body' => $request->input('details'),
+            'budget' => $request->input('budget', 'none given'),
+            'deadline' => $request->input('deadline', 'none given'),
+            'website' => $request->input('website', 'none given'),
+            'hearAbout' => $request->input('hearAbout', 'none given'),
+        ];
 
-        // Mail::send('emails.hire', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
-        // {
-        //     $message
-        //         ->from($fromEmail, $name)
-        //         ->to($toEmail, 'PIXRITE')
-        //         ->subject($subject);
-        // });
+        Mail::send('emails.hire', $data, function($message) use ($toEmail, $fromEmail, $name, $subject)
+        {
+            $message
+                ->from($fromEmail, $name)
+                ->to($toEmail, 'PIXRITE')
+                ->subject($subject);
+        });
         
         return redirect($url)->with('form-thanks', 'We appreciate your interest in letting us work for you. We\'ll be in touch shortly.');
     }
@@ -165,7 +165,7 @@ class EmailController extends Controller
         }
         
         $name = $request->input('name');
-        $toEmail = 'hello@pixrite.com';
+        $toEmail = 'sales@pixritedigital.com';
         $fromEmail = $request->input('email');
         $subject = 'New Testimonial';
 
